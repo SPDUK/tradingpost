@@ -3,10 +3,32 @@
   height: 70px;
   width: 100%;
   background-color: $blue;
+  position: fixed;
+  &-icon {
+    height: 20px;
+    width: 200px;
+    padding: 20px;
+    position:fixed;
+  }
   &-wide {
     display: none;
     @include breakpoint(sm) {
       display: block;
+    }
+    &-links {
+      float: right;
+      a {
+        transition: 0.3s linear;
+        display: inline-block;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        &:hover {
+          background-color: $lightBlue;
+        }
+
+      }
     }
   }
   &-mobile{
@@ -21,7 +43,6 @@
       &:hover {
         transition: 0.2s ease-in;
         cursor: pointer;
-        opacity: 0.7;
       }
     }
     &-links {
@@ -30,9 +51,8 @@
       &-active {
         transition: 0.2s ease;
         display: inline-block;
-        height: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 22px;
+        padding-bottom: 22px;
         width: 100%;
         text-align: center;
         background-color: $blue;
@@ -45,4 +65,8 @@
       }
     }
   }
+}
+
+.contact-link {
+  background-color: lighten($color: $blue, $amount: 10)
 }
