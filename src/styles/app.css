@@ -45,4 +45,5 @@ table {
 a {
   text-decoration: inherit; }
   a:visited {
-    text-decoration: inherit; }
+    text-decoration: inherit;
+    color: #EBEDF8; }

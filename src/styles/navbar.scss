@@ -1,53 +1,48 @@
 @import 'variables.scss';
 .navbar {
+  height: 70px;
   width: 100%;
-  height: 80px;
   background-color: $blue;
-  &-icon {
-    width: 205px;
-    height: 40px;
-    position: fixed;
-    padding: 20px;
+  &-wide {
     display: none;
     @include breakpoint(sm) {
       display: block;
     }
   }
-  &-link {
-    display: inline-block;
-    width: 100%;
-    grid-column: 7;
-    float: left;
-    position: relative;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: $lightBlue;
-    color: $white;
-    text-align: center;
-    @include breakpoint(sm) {
+  &-mobile{
+    &-burger {
+      display: block;
+      color: $white;
       float: right;
-      width: auto;
-      padding: 32px;
-      background-color: $blue;
+      padding: 15px;
+      @include breakpoint(sm){
+        display: none;
+      }
+      &:hover {
+        transition: 0.2s ease-in;
+        cursor: pointer;
+        opacity: 0.7;
+      }
     }
-    &:hover {
-      background-color: $white;
-      color: $blue;
+    &-links {
+      display: none;
+      width: 100%;
+      &-active {
+        transition: 0.2s ease;
+        display: inline-block;
+        height: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        text-align: center;
+        background-color: $blue;
+        @include breakpoint(sm) {
+          display: none;
+        }
+        &:hover {
+          background-color: $lightBlue;
+        }
+      }
     }
-  }
-}
-
-.nav-toggle {
-  width: 100%;
-  height: 80px;
-  padding: 10px 25px;
-  background: $blue;
-  text-align: right;
-  box-sizing: border-box;
-  color: $white;
-  font-size: 1.85em;
-  display: block;
-  @include breakpoint(sm) {
-    display: none;
   }
 }
