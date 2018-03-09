@@ -28,6 +28,7 @@
 $white: #EBEDF8;
 $blue: #002D57;
 $lightBlue: #0054A3; // 30% lighter than base blue
+$orange: #FF6700;
 /////////center      @include ctr(both) = center middle - (y) = vertical (x) = horizontal
 @mixin absolutecenter($axis: "both") {
   position: absolute;

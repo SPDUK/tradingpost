@@ -12,6 +12,10 @@
     width: 200px;
     padding: 20px;
     position:fixed;
+    opacity: 1;
+    &:hover {
+      transform: scale(1.05);
+    }
   }
   &-wide {
     display: none;
@@ -36,7 +40,13 @@
           background-color: $lightBlue;
           border-bottom:  2px solid $white;
         }
-
+      }
+      &-contact {
+        background-color: $lightBlue;
+        border-bottom: 2px solid $lightBlue;
+        &:hover {
+          background-color: lighten($color: $lightBlue, $amount: 10)!important;
+        }
       }
     }
   }
@@ -115,10 +125,3 @@
     }
   }
 }
-
-.contact-link {
-  @include breakpoint (sm) {
-  background-color: lighten($color: $blue, $amount: 10);
-}
-}
-

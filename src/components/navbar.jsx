@@ -39,10 +39,10 @@ class Navbar extends Component {
         </div>
         <div className="navbar-wide">
           <div className="navbar-wide-links">
-            <a className="navbar-wide-links-active" href="https://www.google.com">Ebay</a>
-            <a className="navbar-wide-links-active" href="https://www.google.com">Craigslist</a>
-            <a className="navbar-wide-links-active" href="https://www.google.com">OfferUp</a>
-            <a className="navbar-wide-links-active contact-link" href="https://www.google.com">Contact</a>
+            <a className="navbar-wide-links navbar-wide-links navbar-wide-links-contact" href="https://www.google.com">Contact</a>
+            <a className="navbar-wide-links" href="https://www.google.com">Offerup</a>
+            <a className="navbar-wide-links" href="https://www.google.com">Craigslist</a>
+            <a className="navbar-wide-links" href="https://www.google.com">Ebay</a>
           </div>
         </div>
         <div className="navbar-mobile">

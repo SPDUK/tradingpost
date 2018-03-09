@@ -1,4 +1,5 @@
 .footer {
+  color: #EBEDF8;
   height: 200px;
   background-color: #002D57; }
   .footer-social {
@@ -10,9 +11,12 @@
     .footer-social a {
       transition: linear 0.1s;
       cursor: pointer;
-      font-size: 3em;
-      padding: 5px;
+      font-size: 2.1em;
+      padding: 8px 20px 6px 20px;
       opacity: 0.8; }
+      @media (min-width: 768px) {
+        .footer-social a {
+          font-size: 3em; } }
       .footer-social a:hover {
         opacity: 1; }
   .footer-contact {

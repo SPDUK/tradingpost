@@ -1,5 +1,6 @@
 @import 'variables.scss';
 .footer {
+  color: $white;
   height: 200px;
   background-color: $blue;
   &-social {
@@ -11,9 +12,12 @@
     a {
       transition: linear 0.1s;
       cursor: pointer;
-      font-size: 3em;
-      padding: 5px;
+      font-size: 2.1em;
+      padding: 8px 20px 6px 20px;
       opacity: 0.8;
+      @include breakpoint(sm) {
+        font-size: 3em;
+      }
       &:hover {
         opacity: 1;
       }

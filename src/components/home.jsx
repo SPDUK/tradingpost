@@ -10,7 +10,7 @@ import '../styles/home.css';
 class Home extends Component {
   render() {
     return (
-      <div>
+      <div className="home">
         <Navbar />
           <BuySellTrade />
         <Footer />
