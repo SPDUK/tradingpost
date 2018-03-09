@@ -1,5 +1,4 @@
-import React, {Component} from 'react';
-import classNames from 'classnames';
+import React, { Component } from 'react';
 
 import TradingPostIcon from '../images/tradingpost.svg';
 // css
@@ -8,10 +7,21 @@ import '../styles/navbar.css';
 class Navbar extends Component {
   constructor() {
     super();
+    this.burgerMenu = this.burgerMenu.bind(this);
+    this.burgerToggle = this.burgerToggle.bind(this);
   }
 
-burgerToggle() {
-    let linksEl = document.querySelector('.navbar-mobile-links');
+  burgerMenu() {
+    this.burgerToggle();
+    this.burgerAnimate();
+  }
+
+  burgerAnimate() {
+    const burgerMenu = document.querySelector('.navbar-mobile-burger');
+    burgerMenu.classList.toggle('open');
+  }
+  burgerToggle() {
+    const linksEl = document.querySelector('.navbar-mobile-links');
     if (linksEl.style.display === 'block') {
       linksEl.style.display = 'none';
     } else {
@@ -22,24 +32,32 @@ burgerToggle() {
   render() {
     return (
       <nav className="navbar">
-      <div className="navbar-icon">
-        <img src={TradingPostIcon} alt="Trading Post Icon"/>
-      </div>
+        <div className="navbar-icon">
+          <a href="#">
+            <img src={TradingPostIcon} alt="Trading Post Icon"/>
+          </a>
+        </div>
         <div className="navbar-wide">
           <div className="navbar-wide-links">
-            <a className="navbar-wide-links-active" href="#">Ebay</a>
-            <a className="navbar-wide-links-active" href="#">Craigslist</a>
-            <a className="navbar-wide-links-active" href="#">OfferUp</a>
-            <a className="navbar-wide-links-active contact-link" href="#">Contact</a>
+            <a className="navbar-wide-links-active" href="https://www.google.com">Ebay</a>
+            <a className="navbar-wide-links-active" href="https://www.google.com">Craigslist</a>
+            <a className="navbar-wide-links-active" href="https://www.google.com">OfferUp</a>
+            <a className="navbar-wide-links-active contact-link" href="https://www.google.com">Contact</a>
           </div>
         </div>
         <div className="navbar-mobile">
-          <i onClick={this.burgerToggle} className="fa fa-bars fa-2x navbar-mobile-burger" />
+          <div onClick={this.burgerMenu} className="navbar-mobile-burger">
+            <span />
+            <span />
+            <span />
+          </div>
           <div className="navbar-mobile-links">
-            <a className="navbar-mobile-links-active"  href="https://www.google.com">Ebay</a>
-            <a className="navbar-mobile-links-active"  href="https://www.google.com">Craigslist</a>
-            <a className="navbar-mobile-links-active"  href="https://www.google.com">OfferUp</a>
-            <a className="navbar-mobile-links-active contact-link"  href="https://www.google.com">Contact</a>
+            <a className="navbar-mobile-links-active" href="https://www.google.com">Ebay</a>
+            <a className="navbar-mobile-links-active" href="https://www.google.com">Craigslist</a>
+            <a className="navbar-mobile-links-active" href="https://www.google.com">OfferUp</a>
+            <a
+              className="navbar-mobile-links-active contact-link"
+              href="https://www.google.com">Contact</a>
           </div>
         </div>
       </nav>

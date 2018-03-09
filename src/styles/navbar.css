@@ -25,13 +25,44 @@
         .navbar-wide-links a:hover {
           background-color: #0054A3; }
   .navbar-mobile-burger {
+    position: relative;
+    float: right;
     display: block;
     color: #EBEDF8;
-    float: right;
-    padding: 15px; }
+    padding: 30px;
+    opacity: 1; }
     @media (min-width: 768px) {
       .navbar-mobile-burger {
         display: none; } }
+    .navbar-mobile-burger span {
+      opacity: 100%;
+      position: fixed;
+      transition: 0.25s ease-in;
+      height: 4px;
+      border-radius: 3px;
+      background-color: white;
+      width: 30px;
+      margin: 5px;
+      right: 10px;
+      display: inline-block; }
+    .navbar-mobile-burger span:nth-child(1) {
+      top: 15px; }
+    .navbar-mobile-burger span:nth-child(2) {
+      top: 25px; }
+    .navbar-mobile-burger span:nth-child(3) {
+      top: 35px; }
+    .navbar-mobile-burger.open {
+      position: relative;
+      top: 15x;
+      float: right; }
+      .navbar-mobile-burger.open span:nth-child(1) {
+        transform: rotate(135deg);
+        top: 24px; }
+      .navbar-mobile-burger.open span:nth-child(2) {
+        opacity: 0; }
+      .navbar-mobile-burger.open span:nth-child(3) {
+        transform: rotate(-135deg);
+        top: 24px; }
     .navbar-mobile-burger:hover {
       transition: 0.2s ease-in;
       cursor: pointer; }
