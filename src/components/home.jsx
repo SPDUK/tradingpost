@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 // components
 import Navbar from './navbar';
 import Footer from './footer';
+import BuySellTrade from './buyselltrade';
 // css
 import '../styles/home.css';
 
@@ -11,8 +12,7 @@ class Home extends Component {
     return (
       <div>
         <Navbar />
-        <div className="home">
-        </div>
+          <BuySellTrade />
         <Footer />
       </div>
     );

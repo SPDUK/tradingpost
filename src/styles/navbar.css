@@ -1,9 +1,12 @@
 .navbar {
+  z-index: 5;
+  top: 0;
   height: 70px;
   width: 100%;
   background-color: #002D57;
   position: fixed; }
   .navbar-icon {
+    transition: 0.2s linear;
     height: 20px;
     width: 200px;
     padding: 20px;
@@ -16,14 +19,19 @@
     .navbar-wide-links {
       float: right; }
       .navbar-wide-links a {
-        transition: 0.3s linear;
+        text-align: center !important;
+        width: 115px;
+        box-sizing: border-box;
+        transition: 0.25s linear;
         display: inline-block;
         padding-left: 30px;
         padding-right: 30px;
         padding-top: 27px;
-        padding-bottom: 27px; }
+        padding-bottom: 25px; }
         .navbar-wide-links a:hover {
-          background-color: #0054A3; }
+          transition: ease 0s;
+          background-color: #0054A3;
+          border-bottom: 2px solid #EBEDF8; }
   .navbar-mobile-burger {
     position: relative;
     float: right;
@@ -83,5 +91,6 @@
       .navbar-mobile-links-active:hover {
         background-color: #0054A3; }
 
-.contact-link {
-  background-color: #00478a; }
+@media (min-width: 768px) {
+  .contact-link {
+    background-color: #00478a; } }
