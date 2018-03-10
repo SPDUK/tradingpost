@@ -23,6 +23,10 @@ class BuySellTrade extends Component {
               <i className="fa fa-exchange"></i>
               </div>
             </div>
+            <div className="buyselltrade-about">
+              <p className="buyselltrade-about-top"> Trading Post in Crystal Lake is not a pawn shop, it is a new way to shop or sell.</p>
+              <p className="buyselltrade-about-bottom"> We Buy and sell</p>
+            </div>
             <div className="buyselltrade-merch">
               electronics
             </div>
