@@ -1,5 +1,5 @@
 .buyselltrade {
-  padding-top: 70px;
+  padding-top: 100px;
   height: 1200px;
   background-color: #EBEDF8; }
   .buyselltrade-grid {
@@ -8,9 +8,8 @@
   .buyselltrade-title {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 4fr 1fr;
-    height: 400px;
-    font-size: 2.5em;
+    height: 250px;
+    font-size: 3.0em;
     font-family: Bree Serif, serif;
     color: #002D57;
     text-align: center;
@@ -19,8 +18,19 @@
     @media (min-width: 768px) {
       .buyselltrade-title {
         font-size: 4em; } }
+    @media (min-width: 992px) {
+      .buyselltrade-title {
+        font-size: 5em; } }
+    @media (min-width: 1200px) {
+      .buyselltrade-title {
+        font-size: 5.5em; } }
     .buyselltrade-title i {
-      opacity: 0.5; }
+      transition: 0.2s linear;
+      opacity: 0.3; }
+      .buyselltrade-title i:hover {
+        transform: scale(1.1);
+        opacity: 1;
+        cursor: pointer; }
   .buyselltrade-merch {
     display: grid;
     grid-template-columns: 3fr 6fr; }
