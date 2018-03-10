@@ -7,6 +7,7 @@ class BuySellTrade extends Component {
     return (
       <div>
         <div className="buyselltrade">
+        HEY!
         </div>
       </div>
     );

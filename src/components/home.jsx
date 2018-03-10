@@ -12,7 +12,7 @@ class Home extends Component {
     return (
       <div className="home">
         <Navbar />
-          <BuySellTrade />
+        <BuySellTrade />
         <Footer />
       </div>
     );
