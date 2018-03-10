@@ -1,10 +1,10 @@
 .buyselltrade {
   padding-top: 130px;
-  height: 1200px;
+  height: 2000px;
   background-color: #EBEDF8; }
   .buyselltrade-grid {
     display: grid;
-    grid-template-rows: 3fr 1fr 1fr 1fr 1fr; }
+    grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr; }
   .buyselltrade-title {
     padding-right: 15px;
     display: grid;
@@ -31,19 +31,50 @@
       opacity: 0.6; }
       .buyselltrade-title i:hover {
         transform: scale(1.1);
-        opacity: 1;
-        cursor: pointer; }
+        opacity: 1; }
   .buyselltrade-merch {
     display: grid;
-    grid-template-columns: 3fr 6fr; }
+    border: 2px solid #002D57;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    grid-template-columns: 3fr 7fr; }
+    @media (min-width: 768px) {
+      .buyselltrade-merch {
+        padding: 30px;
+        margin-bottom: 30px; } }
+    .buyselltrade-merch-icon {
+      font-size: 1.2em;
+      font-weight: 800;
+      align-self: center; }
+      @media (min-width: 768px) {
+        .buyselltrade-merch-icon {
+          font-size: 1.5em; } }
+      @media (min-width: 992px) {
+        .buyselltrade-merch-icon {
+          font-size: 1.8em; } }
+    .buyselltrade-merch-info {
+      font-size: 0.9em;
+      align-self: center;
+      line-height: 20px;
+      white-space: wrap; }
+      @media (min-width: 768px) {
+        .buyselltrade-merch-info {
+          font-size: 1em; } }
+      @media (min-width: 992px) {
+        .buyselltrade-merch-info {
+          font-size: 1.2em; } }
   .buyselltrade-about {
     color: #002D57;
     text-align: center; }
     .buyselltrade-about-top {
+      letter-spacing: 0.3px;
       font-weight: 800;
       padding-bottom: 20px;
       font-size: 1em; }
     .buyselltrade-about-bottom {
+      font-variant: small-caps;
+      font-family: Bree Serif, Serif;
       font-size: 2em;
       font-weight: 800;
       padding-bottom: 40px; }
