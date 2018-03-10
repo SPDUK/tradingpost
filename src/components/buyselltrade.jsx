@@ -69,7 +69,6 @@ class BuySellTrade extends Component {
                 <p>Item 2 / Item 2 / Item 2</p>
                 <p>Item 3 / Item 3 / Item 3</p>
                 <p>Item 4 / Item 4 / Item 4</p>
-                test
               </div>
             </div>
             <div className="buyselltrade-contact">
