@@ -5,7 +5,7 @@
   background-color: $white;
   &-grid {
     display: grid;
-    grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr 1fr;
   }
   &-title {
     padding-right: 15px;
@@ -13,19 +13,19 @@
     grid-template-columns: 1fr 1fr 1fr;
     height: 250px;
     font-size: 3.0em;
-    font-family:Bree Serif, serif;
+    font-family: Bree Serif, serif;
     color: $blue;
     text-align: center;
     font-weight: 800;
     font-variant: small-caps;
-    @include breakpoint(sm){
+    @include breakpoint(sm) {
       font-size: 4em;
       padding-right: 0;
     }
-    @include breakpoint(md){
+    @include breakpoint(md) {
       font-size: 5em;
     }
-    @include breakpoint(lg){
+    @include breakpoint(lg) {
       font-size: 5.5em;
     }
     i {
@@ -44,18 +44,18 @@
     padding: 10px;
     text-align: center;
     grid-template-columns: 3fr 7fr;
-    @include breakpoint(sm){
+    @include breakpoint(sm) {
       padding: 30px;
       margin-bottom: 30px;
     }
     &-icon {
-      font-size: 1.2em;
+      font-size: 1.3em;
       font-weight: 800;
       align-self: center;
-      @include breakpoint(sm){
+      @include breakpoint(sm) {
         font-size: 1.5em;
       }
-      @include breakpoint(md){
+      @include breakpoint(md) {
         font-size: 1.8em;
       }
     }
@@ -64,18 +64,18 @@
       align-self: center;
       line-height: 20px;
       white-space: wrap;
-      @include breakpoint(sm){
+      @include breakpoint(sm) {
         font-size: 1em;
       }
-      @include breakpoint(md){
+      @include breakpoint(md) {
         font-size: 1.2em;
       }
     }
   }
   &-about {
     color: $blue;
-    text-align:center;
-    &-top{
+    text-align: center;
+    &-top {
       letter-spacing: 0.3px;
       font-weight: 800;
       padding-bottom: 20px;
@@ -87,6 +87,32 @@
       font-size: 2em;
       font-weight: 800;
       padding-bottom: 40px;
+    }
+  }
+  &-contact {
+    color: $blue;
+    text-align: center;
+    &-info {
+      font-size: 1.1em;
+      @include breakpoint(sm) {
+        font-size: 1.2em;
+      }
+      span {
+        font-weight: 800;
+        text-decoration: underline;
+      }
+      &-number {
+        font-weight: 800;
+        padding: 5px 0px 5px 0px;
+      }
+      &-top {
+        padding-bottom: 10px;
+        font-size: 1.3em;
+        font-weight: 800;
+        @include breakpoint(sm) {
+          font-size: 1.5em;
+        }
+      }
     }
   }
 }

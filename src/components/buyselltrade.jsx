@@ -10,7 +10,7 @@ class BuySellTrade extends Component {
   }
 
   scrollFunction() {
-    console.log("hey");
+    console.log('hey');
   }
 
   render() {
@@ -28,12 +28,12 @@ class BuySellTrade extends Component {
                 <i className="fa fa-dollar" />
               </div>
               <div className="buyselltrade-title-text">
-              <p>Trade</p>
+                <p>Trade</p>
                 <i className="fa fa-exchange" />
               </div>
             </div>
             <div className="buyselltrade-about">
-              <p className="buyselltrade-about-top"> Trading Post in Crystal Lake is not a pawn shop, it is a new way to shop or sell.</p>
+              <p className="buyselltrade-about-top"> Trading Post in Crystal Lake, IL is not a pawn shop, it is a new way to shop or sell.</p>
               <p className="buyselltrade-about-bottom"> We Buy and Sell..</p>
             </div>
             <div className="buyselltrade-merch">
@@ -60,23 +60,22 @@ class BuySellTrade extends Component {
                 <p>Watches / Earrings / Chains</p>
                 <p>Bracelets / Broken Gold / Precious Stones</p>
                 <p>Diamonds / Antiques</p>
-             </div>
+              </div>
+            </div>
+            <div className="buyselltrade-merch">
+              <p className="buyselltrade-merch-icon"><i className="fa fa-music" /> Extra stuff</p>
+              <div className="buyselltrade-merch-info">
+                <p>Item / Item / Item</p>
+                <p>Item 2 / Item 2 / Item 2</p>
+                <p>Item 3 / Item 3 / Item 3</p>
+                <p>Item 4 / Item 4 / Item 4</p>
+              </div>
             </div>
             <div className="buyselltrade-contact">
-              <div className="buyselltrade-merch-info">
-                <p>Everything Else</p>
+              <div className="buyselltrade-contact-info">
+                <p className="buyselltrade-contact-info-top">Everything Else!</p>
                 <p>Think you have something worth selling?</p>
-                <p>Call us at 815-893-0218</p>
-                <p>Or Give us a visit in store</p>
-                <div className="buyselltrade-merch-info-times">
-                  Mon: s9s9s
-                  Mon: s9s9s
-                  Mon: s9s9s
-                  Mon: s9s9s
-                  Mon: s9s9s
-                  Mon: s9s9s
-                  Mon: s9s9s
-                </div>
+                <p className="buyselltrade-contact-info-number">Call us at: <a href="tel:8158930218" aria-label="8 1 5. 8 9 3. 0 2 1 8.">(815) 893-0218</a></p>
               </div>
             </div>
           </div>

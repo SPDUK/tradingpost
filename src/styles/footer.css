@@ -1,11 +1,11 @@
 .footer {
-  color: #EBEDF8;
+  color: white;
   height: 200px;
   background-color: #002D57;
   overflow: hidden; }
   .footer-social {
     overflow: hidden;
-    color: #EBEDF8;
+    color: white;
     height: 60px;
     width: 100%;
     background-color: #00478a;
@@ -34,7 +34,7 @@
         font-size: 1em; } }
     .footer-contact-info {
       width: 100%;
-      color: #EBEDF8;
+      color: white;
       padding-left: 10px;
       text-align: center; }
       @media (min-width: 768px) {
@@ -63,7 +63,7 @@
       padding-top: 20px;
       width: 100%;
       text-align: center;
-      color: #EBEDF8;
+      color: white;
       opacity: 0.3;
       font-weight: 300;
       font-size: 0.8em; }

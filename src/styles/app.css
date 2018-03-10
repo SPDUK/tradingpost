@@ -46,11 +46,11 @@ a {
   text-decoration: inherit; }
   a:visited {
     text-decoration: inherit;
-    color: #EBEDF8; }
+    color: white; }
 
 .container {
   margin: 0; }
   @media (min-width: 768px) {
     .container {
-      margin-left: 15%;
-      margin-right: 15%; } }
+      margin-left: 17%;
+      margin-right: 17%; } }

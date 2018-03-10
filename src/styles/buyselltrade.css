@@ -1,10 +1,10 @@
 .buyselltrade {
   padding-top: 130px;
   height: 2000px;
-  background-color: #EBEDF8; }
+  background-color: white; }
   .buyselltrade-grid {
     display: grid;
-    grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr; }
+    grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr 1fr; }
   .buyselltrade-title {
     padding-right: 15px;
     display: grid;
@@ -44,7 +44,7 @@
         padding: 30px;
         margin-bottom: 30px; } }
     .buyselltrade-merch-icon {
-      font-size: 1.2em;
+      font-size: 1.3em;
       font-weight: 800;
       align-self: center; }
       @media (min-width: 768px) {
@@ -78,3 +78,24 @@
       font-size: 2em;
       font-weight: 800;
       padding-bottom: 40px; }
+  .buyselltrade-contact {
+    color: #002D57;
+    text-align: center; }
+    .buyselltrade-contact-info {
+      font-size: 1.1em; }
+      @media (min-width: 768px) {
+        .buyselltrade-contact-info {
+          font-size: 1.2em; } }
+      .buyselltrade-contact-info span {
+        font-weight: 800;
+        text-decoration: underline; }
+      .buyselltrade-contact-info-number {
+        font-weight: 800;
+        padding: 5px 0px 5px 0px; }
+      .buyselltrade-contact-info-top {
+        padding-bottom: 10px;
+        font-size: 1.3em;
+        font-weight: 800; }
+        @media (min-width: 768px) {
+          .buyselltrade-contact-info-top {
+            font-size: 1.5em; } }
