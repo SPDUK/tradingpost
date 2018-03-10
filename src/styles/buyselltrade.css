@@ -2,3 +2,25 @@
   padding-top: 70px;
   height: 1200px;
   background-color: #EBEDF8; }
+  .buyselltrade-grid {
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr 1fr; }
+  .buyselltrade-title {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 4fr 1fr;
+    height: 400px;
+    font-size: 2.5em;
+    font-family: Bree Serif, serif;
+    color: #002D57;
+    text-align: center;
+    font-weight: 800;
+    font-variant: small-caps; }
+    @media (min-width: 768px) {
+      .buyselltrade-title {
+        font-size: 4em; } }
+    .buyselltrade-title i {
+      opacity: 0.5; }
+  .buyselltrade-merch {
+    display: grid;
+    grid-template-columns: 3fr 6fr; }

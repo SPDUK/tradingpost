@@ -47,3 +47,10 @@ a {
   a:visited {
     text-decoration: inherit;
     color: #EBEDF8; }
+
+.container {
+  margin: 0; }
+  @media (min-width: 768px) {
+    .container {
+      margin-left: 15%;
+      margin-right: 15%; } }
