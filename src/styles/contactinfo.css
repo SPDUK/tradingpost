@@ -1,0 +1,37 @@
+.contactinfo {
+  overflow: hidden;
+  color: white;
+  font-size: 1em;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: grid;
+  object-fit: cover;
+  grid-template-columns: 1fr;
+  background-color: #002D57; }
+  @media (min-width: 768px) {
+    .contactinfo {
+      grid-template-columns: 6fr 4fr; } }
+  .contactinfo-times {
+    text-align: center;
+    height: 400px;
+    display: grid;
+    grid-template-rows: 2fr 8fr;
+    padding: 2%;
+    grid-template-rows: repeat(8, 1fr); }
+    .contactinfo-times-title {
+      font-size: 2em;
+      opacity: 1; }
+    .contactinfo-times-day {
+      font-size: 1.2em;
+      opacity: 1; }
+  .contactinfo-location {
+    height: 400px;
+    display: grid;
+    grid-template-rows: 2fr 8fr;
+    padding: 2%; }
+    .contactinfo-location-title {
+      font-size: 2em;
+      text-align: center; }
+      .contactinfo-location-title p:nth-of-type(2) {
+        font-size: 0.5em;
+        opacity: 0.8; }
