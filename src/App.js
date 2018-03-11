@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
-//components
-import Home from  './components/home';
-//css
+// components
+import Home from './components/home';
+// css
 import './styles/app.css';
 
 class App extends Component {
