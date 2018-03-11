@@ -24,11 +24,7 @@ class ContactInfo extends Component {
             <p>7100 Teckler Blvd</p>
           </div>
           <div className="contactinfo-location-map">
-          <iframe
-  width="100%"
-  height="300"
-  frameborder="0" Style="border:0"
-  src={URL} allowfullscreen>
+          <iframe className="contactinfo-location-map-display" frameborder="0" Style="border:0" src={URL} allowfullscreen>
 </iframe>
           </div>
         </div>

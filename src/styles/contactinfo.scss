@@ -10,7 +10,7 @@
   grid-template-columns: 1fr;
   background-color: $blue;
   @include breakpoint(sm) {
-    grid-template-columns: 6fr 4fr;
+    grid-template-columns: 4fr 5fr;
   }
   &-times {
     align-items: center;
@@ -20,6 +20,9 @@
     grid-template-rows: 2fr 8fr;
     padding: 2%;
     grid-template-rows: repeat(8, 1fr);
+    @include breakpoint (sm) {
+      height: 600px;
+    }
     &-title {
       font-size: 2em;
       opacity: 1;
@@ -31,10 +34,21 @@
   }
   &-location {
     align-items: center;
-    height: 400px;
+    height: 600px;
     display: grid;
     grid-template-rows: 2fr 8fr;
     padding: 2%;
+    &-map {
+      &-display {
+        width: 100%;
+        height: 400px;
+        @include breakpoint(sm){
+          padding-left: 10%;
+          padding-right: 10%;
+          width: 80%;
+        }
+      }
+    }
     &-title {
 
       font-size: 2em;
