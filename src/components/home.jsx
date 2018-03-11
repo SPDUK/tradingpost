@@ -4,8 +4,7 @@ import React, { Component } from 'react';
 import Navbar from './navbar';
 import Footer from './footer';
 import BuySellTrade from './buyselltrade';
-// css
-import '../styles/home.css';
+import ContactInfo from './contactinfo';
 
 class Home extends Component {
   render() {
@@ -13,6 +12,7 @@ class Home extends Component {
       <div className="home">
         <Navbar />
         <BuySellTrade />
+        <ContactInfo />
         <Footer />
       </div>
     );
