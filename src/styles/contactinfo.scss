@@ -13,6 +13,7 @@
     grid-template-columns: 6fr 4fr;
   }
   &-times {
+    align-items: center;
     text-align: center;
     height: 400px;
     display: grid;
@@ -29,11 +30,13 @@
       }
   }
   &-location {
+    align-items: center;
     height: 400px;
     display: grid;
     grid-template-rows: 2fr 8fr;
     padding: 2%;
     &-title {
+
       font-size: 2em;
       text-align: center;
       p:nth-of-type(2){
