@@ -15,7 +15,8 @@
       cursor: pointer;
       padding: 14.5px 20px 6px 20px;
       opacity: 0.8;
-      font-size: 2em; }
+      font-size: 2em;
+      color: white; }
       @media (min-width: 768px) {
         .footer-social-links {
           font-size: 2.4em;
@@ -42,6 +43,7 @@
           padding-left: 50px;
           text-align: left; } }
       .footer-contact-info-links {
+        color: white;
         display: block;
         padding-bottom: 5px;
         opacity: 0.9; }

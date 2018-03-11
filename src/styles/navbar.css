@@ -20,6 +20,7 @@
     .navbar-wide-links {
       float: right; }
       .navbar-wide-links a {
+        color: white;
         text-align: center !important;
         width: 115px;
         box-sizing: border-box;

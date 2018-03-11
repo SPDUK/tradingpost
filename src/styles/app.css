@@ -46,7 +46,7 @@ a {
   text-decoration: inherit; }
   a:visited {
     text-decoration: inherit;
-    color: white; }
+    color: white !important; }
 
 .container {
   margin: 0; }

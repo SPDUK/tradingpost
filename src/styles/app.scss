@@ -47,8 +47,8 @@ table {
 a {
 	text-decoration: inherit;
 	&:visited {
-		text-decoration: inherit; 
-		color: $white;
+		text-decoration: inherit;
+		color: $white !important;
   }
 }
 
