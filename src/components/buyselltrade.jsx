@@ -1,13 +1,26 @@
-import React from 'react';
+import React , { Component } from 'react';
+import { Link, DirectLink, Element , Events, animateScroll as scroll} from 'react-scroll';
 
+import ContactButtonComponent from  './contactbuttoncomponent';
 import '../styles/buyselltrade.css';
 import '../styles/app.css';
 
-const BuySellTrade = () => {
-
-  function contactButtonClick () {
-    console.log("hey");
+class BuySellTrade extends Component {
+  constructor(props) {
+    super(props) 
+      this.state = {
+        showComponent: false,
+      };
+    this.contactButtonClick = this.contactButtonClick.bind(this);
   }
+
+  contactButtonClick () {
+    this.setState({
+      showComponent: true,
+    });
+  }
+
+  render() {
   return (
     <div className="buyselltrade">
       <div className="container">
@@ -28,7 +41,11 @@ const BuySellTrade = () => {
           </div>
           <div className="buyselltrade-about">
             <p className="buyselltrade-about-top">Trading Post in Crystal Lake, IL is not a pawn shop, it is a new way to shop or sell.</p>
-            <button onClick={contactButtonClick} className="buyselltrade-about-button button">Get In Touch</button>
+            <button onClick={this.contactButtonClick} className="buyselltrade-about-button button">Get In Touch</button>
+            {this.state.showComponent ?
+           <ContactButtonComponent /> :
+           null
+            }
           </div>
           </div>
           <div className="buyselltrade-grid-merch">
@@ -82,5 +99,6 @@ const BuySellTrade = () => {
     </div>
   );
 };
+}
 
 export default BuySellTrade;

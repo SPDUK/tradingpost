@@ -1,17 +1,14 @@
 .buyselltrade {
   padding-top: 130px; }
-  .buyselltrade-grid {
+  .buyselltrade-grid-merch {
+    margin-top: 20px;
     display: grid;
-    grid-template-rows: 1.5fr 1fr; }
-    .buyselltrade-grid-merch {
-      margin-top: 20px;
-      display: grid;
-      grid-template-rows: 1fr 1fr 1fr 1fr; }
-      @media (min-width: 1200px) {
-        .buyselltrade-grid-merch {
-          grid-template-columns: 1fr 1fr;
-          grid-template-rows: 1fr 1fr;
-          grid-column-gap: 30px; } }
+    grid-template-rows: 1fr 1fr 1fr 1fr; }
+    @media (min-width: 1200px) {
+      .buyselltrade-grid-merch {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 30px; } }
   .buyselltrade-title {
     padding-right: 15px;
     display: grid;
