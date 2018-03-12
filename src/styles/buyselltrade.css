@@ -3,7 +3,15 @@
   background-color: white; }
   .buyselltrade-grid {
     display: grid;
-    grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr 1fr; }
+    grid-template-rows: 1.5fr 1fr; }
+    .buyselltrade-grid-merch {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr; }
+      @media (min-width: 992px) {
+        .buyselltrade-grid-merch {
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          grid-column-gap: 30px; } }
   .buyselltrade-title {
     padding-right: 15px;
     display: grid;

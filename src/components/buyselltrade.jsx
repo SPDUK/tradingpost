@@ -26,6 +26,8 @@ const BuySellTrade = () => {
             <p className="buyselltrade-about-top">Trading Post in Crystal Lake, IL is not a pawn shop, it is a new way to shop or sell.</p>
             <p className="buyselltrade-about-bottom">We Buy and Sell..</p>
           </div>
+          </div>
+          <div className="buyselltrade-grid-merch">
           <div className="buyselltrade-merch">
             <p className="buyselltrade-merch-icon"><i className="fa fa-mobile" /> Electronics</p>
             <div className="buyselltrade-merch-info">
@@ -61,6 +63,7 @@ const BuySellTrade = () => {
               <p>Item 4 / Item 4 / Item 4</p>
             </div>
           </div>
+          </div>
           <div className="buyselltrade-contact">
             <div className="buyselltrade-contact-info">
               <p className="buyselltrade-contact-info-top">Everything Else!</p>
@@ -70,7 +73,6 @@ const BuySellTrade = () => {
               </p>
             </div>
           </div>
-        </div>
       </div>
     </div>
   );
