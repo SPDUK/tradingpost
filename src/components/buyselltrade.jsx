@@ -48,8 +48,8 @@ class BuySellTrade extends Component {
           <div className="buyselltrade-grid-merch">
             <div className="buyselltrade-merch">
               <p className="buyselltrade-merch-icon">
-              <i className="fa fa-mobile"><span> Electronics</span></i>
-              <a href="https://www.ebay.com/sch/Jewelry-Watches/281/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=pajatek1&_sac=1">
+                <i className="fa fa-mobile"><span> Electronics</span></i>
+                <a href="https://www.ebay.com/sch/Jewelry-Watches/281/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=pajatek1&_sac=1">
                   <button className="button">Shop Electronics at Ebay</button>
                 </a>
               </p>
@@ -67,7 +67,7 @@ class BuySellTrade extends Component {
                 <a href="https://www.ebay.com/sch/Jewelry-Watches/281/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=pajatek1&_sac=1">
                   <button className="button">Shop Tools at Ebay</button>
                 </a>
-                </p>
+              </p>
               <div className="buyselltrade-merch-info">
                 <p>Chain Saws / Weed Eaters / Pressure Washers</p>
                 <p>Drills / Cordless Power Tools / Saws</p>
@@ -79,7 +79,7 @@ class BuySellTrade extends Component {
                 <a href="https://www.ebay.com/sch/Jewelry-Watches/281/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=pajatek1&_sac=1">
                   <button className="button">Shop Jewellery at Ebay</button>
                 </a>
-                </p>
+              </p>
               <div className="buyselltrade-merch-info">
                 <p>Men's and Women's Jewellery</p>
                 <p>Gold / Silver / Platinum</p>
@@ -91,7 +91,7 @@ class BuySellTrade extends Component {
             <div className="buyselltrade-merch">
               <p className="buyselltrade-merch-icon">
                 <i className="fa fa-music"><span> Extra stuff</span></i>
-              <a href="https://www.ebay.com/sch/Jewelry-Watches/281/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=pajatek1&_sac=1">
+                <a href="https://www.ebay.com/sch/Jewelry-Watches/281/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=pajatek1&_sac=1">
                   <button className="button">Shop Extras at Ebay</button>
                 </a>
               </p>
