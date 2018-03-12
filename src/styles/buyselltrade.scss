@@ -59,6 +59,9 @@
       padding: 8px;
     }
     &-icon {
+      color: $lightBlue;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
       font-size: 1.3em;
       font-weight: 800;
       align-self: center;
@@ -67,6 +70,15 @@
       }
       @include breakpoint(md) {
         font-size: 1.8em;
+      }
+      button {
+        -webkit-text-stroke: 0px;
+        height: 45px;
+        font-size: 0.50em;
+      }
+      span {
+        color: $lightBlue;
+        font-family: noto sans, sans-serif;
       }
     }
     &-info {

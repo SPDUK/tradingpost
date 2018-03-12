@@ -52,6 +52,9 @@
       .buyselltrade-merch {
         padding: 8px; } }
     .buyselltrade-merch-icon {
+      color: #0054A3;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
       font-size: 1.3em;
       font-weight: 800;
       align-self: center; }
@@ -61,6 +64,13 @@
       @media (min-width: 992px) {
         .buyselltrade-merch-icon {
           font-size: 1.8em; } }
+      .buyselltrade-merch-icon button {
+        -webkit-text-stroke: 0px;
+        height: 45px;
+        font-size: 0.50em; }
+      .buyselltrade-merch-icon span {
+        color: #0054A3;
+        font-family: noto sans, sans-serif; }
     .buyselltrade-merch-info {
       font-size: 0.8em;
       align-self: center;

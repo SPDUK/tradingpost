@@ -47,7 +47,12 @@ class BuySellTrade extends Component {
           </div>
           <div className="buyselltrade-grid-merch">
             <div className="buyselltrade-merch">
-              <p className="buyselltrade-merch-icon"><i className="fa fa-mobile" /> Electronics</p>
+              <p className="buyselltrade-merch-icon">
+              <i className="fa fa-mobile"><span> Electronics</span></i>
+              <a href="https://www.ebay.com/sch/Jewelry-Watches/281/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=pajatek1&_sac=1">
+                  <button className="button">Shop Electronics at Ebay</button>
+                </a>
+              </p>
               <div className="buyselltrade-merch-info">
                 <p>Game systems / Car Audio</p>
                 <p>Home Stereo Systems / TVs</p>
@@ -57,14 +62,24 @@ class BuySellTrade extends Component {
               </div>
             </div>
             <div className="buyselltrade-merch">
-              <p className="buyselltrade-merch-icon"><i className="fa fa-wrench" /> Tools</p>
+              <p className="buyselltrade-merch-icon">
+                <i className="fa fa-wrench"><span> Tools</span></i>
+                <a href="https://www.ebay.com/sch/Jewelry-Watches/281/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=pajatek1&_sac=1">
+                  <button className="button">Shop Tools at Ebay</button>
+                </a>
+                </p>
               <div className="buyselltrade-merch-info">
                 <p>Chain Saws / Weed Eaters / Pressure Washers</p>
                 <p>Drills / Cordless Power Tools / Saws</p>
               </div>
             </div>
             <div className="buyselltrade-merch">
-              <p className="buyselltrade-merch-icon"><i className="fa fa-diamond"/> Jewellery</p>
+              <p className="buyselltrade-merch-icon">
+                <i className="fa fa-diamond"><span> Jewellery</span></i>
+                <a href="https://www.ebay.com/sch/Jewelry-Watches/281/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=pajatek1&_sac=1">
+                  <button className="button">Shop Jewellery at Ebay</button>
+                </a>
+                </p>
               <div className="buyselltrade-merch-info">
                 <p>Men's and Women's Jewellery</p>
                 <p>Gold / Silver / Platinum</p>
@@ -74,7 +89,12 @@ class BuySellTrade extends Component {
               </div>
             </div>
             <div className="buyselltrade-merch">
-              <p className="buyselltrade-merch-icon"><i className="fa fa-music" /> Extra stuff</p>
+              <p className="buyselltrade-merch-icon">
+                <i className="fa fa-music"><span> Extra stuff</span></i>
+              <a href="https://www.ebay.com/sch/Jewelry-Watches/281/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=pajatek1&_sac=1">
+                  <button className="button">Shop Extras at Ebay</button>
+                </a>
+              </p>
               <div className="buyselltrade-merch-info">
                 <p>Item / Item / Item</p>
                 <p>Item 2 / Item 2 / Item 2</p>
@@ -95,7 +115,7 @@ class BuySellTrade extends Component {
         </div>
       </div>
     );
-  };
+  }
 }
 
 export default BuySellTrade;
