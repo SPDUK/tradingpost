@@ -6,6 +6,7 @@
   width: 100%;
   background-color: $blue;
   position: fixed;
+  transition: 0.3s ease-in;
   &-icon {
     transition: 0.2s linear;
     height: 20px;
