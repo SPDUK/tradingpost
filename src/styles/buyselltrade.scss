@@ -1,12 +1,12 @@
 @import 'variables.scss';
 .buyselltrade {
   padding-top: 130px;
-  background-color: $white;
+  background:
   &-grid {
     display: grid;
     grid-template-rows: 1.5fr 1fr;
-    // grid-template-columns: 1fr 1fr;
     &-merch {
+      margin-top: 20px;
       display: grid;
       grid-template-rows: 1fr 1fr 1fr 1fr;
       @include breakpoint(md){
@@ -92,7 +92,11 @@
       font-size: 1em;
     }
     &-button {
-      box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
+      box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.2);
+      font-size: 1em;
+      @include breakpoint(sm) {
+        font-size: 1em;
+      }
       &:hover {
         box-shadow: 0px 37px 20px -20px rgba(0,0,0,0.2);
         transform: translate(0px, -10px) scale(1.2);
@@ -128,10 +132,5 @@
         }
       }
     }
-  }
-}
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .buyselltrade-title {
-      font-size: 2.5em;
   }
 }
