@@ -11,6 +11,13 @@ class Navbar extends Component {
     this.burgerToggle = this.burgerToggle.bind(this);
   }
 
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
   burgerMenu() {
     this.burgerToggle();
     this.burgerAnimate();
@@ -29,9 +36,22 @@ class Navbar extends Component {
     }
   }
 
+  handleScroll() {
+    const myNav = document.querySelector('.navbar');
+    window.onscroll = function () {
+      if (document.documentElement.scrollTop >= 1450) {
+        myNav.classList.add('nav-darkblue');
+        myNav.classList.remove('nav-blue');
+      } else {
+        myNav.classList.add('nav-blue');
+        myNav.classList.remove('nav-darkblue');
+      }
+    };
+  }
+
   render() {
     return (
-      <nav className="navbar">
+      <nav id="mynav" className="navbar">
         <div className="navbar-icon">
           <a href="#">
             <img src={TradingPostIcon} alt="Trading Post Buy Sell Trade Icon" />
@@ -68,5 +88,4 @@ class Navbar extends Component {
     );
   }
 }
-
 export default Navbar;

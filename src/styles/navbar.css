@@ -91,9 +91,15 @@
       padding-bottom: 22px;
       width: 100%;
       text-align: center;
-      background-color: #002D57; }
+      background-color: #00478a; }
       @media (min-width: 768px) {
         .navbar-mobile-links-active {
           display: none; } }
       .navbar-mobile-links-active:hover {
         background-color: #0054A3; }
+
+.nav-blue {
+  background-color: #002D57; }
+
+.nav-darkblue {
+  background-color: #00478a; }

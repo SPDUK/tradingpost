@@ -112,7 +112,7 @@
         padding-bottom: 22px;
         width: 100%;
         text-align: center;
-        background-color: $blue;
+        background-color: lighten($color: $blue, $amount: 10);
         @include breakpoint(sm) {
           display: none;
         }
@@ -122,4 +122,11 @@
       }
     }
   }
+}
+
+.nav-blue {
+  background-color: $blue;
+}
+.nav-darkblue{
+  background-color: lighten($color: $blue, $amount: 10);
 }
