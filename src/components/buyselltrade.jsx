@@ -4,6 +4,10 @@ import '../styles/buyselltrade.css';
 import '../styles/app.css';
 
 const BuySellTrade = () => {
+
+  function contactButtonClick () {
+    console.log("hey");
+  }
   return (
     <div className="buyselltrade">
       <div className="container">
@@ -24,15 +28,16 @@ const BuySellTrade = () => {
           </div>
           <div className="buyselltrade-about">
             <p className="buyselltrade-about-top">Trading Post in Crystal Lake, IL is not a pawn shop, it is a new way to shop or sell.</p>
-            <button className="buyselltrade-about-button button">Looking for a deal? Contact Us</button>
+            <button onClick={contactButtonClick} className="buyselltrade-about-button button">Get In Touch</button>
           </div>
           </div>
           <div className="buyselltrade-grid-merch">
           <div className="buyselltrade-merch">
             <p className="buyselltrade-merch-icon"><i className="fa fa-mobile" /> Electronics</p>
             <div className="buyselltrade-merch-info">
-              <p>Game systems / TVs / Home Stereo Systems</p>
-              <p>Bluray & DVD Players / Car Audio Equipment</p>
+              <p>Game systems / Car Audio </p>
+              <p>Home Stereo Systems / TVs</p>
+              <p>Bluray & DVD Players </p>
               <p>iPhones / Smartphones / Laptops</p>
               <p>PCs & iMacs / iPads / Tablets</p>
             </div>

@@ -1,7 +1,6 @@
 @import 'variables.scss';
 .buyselltrade {
   padding-top: 130px;
-  background:
   &-grid {
     display: grid;
     grid-template-rows: 1.5fr 1fr;
@@ -9,7 +8,7 @@
       margin-top: 20px;
       display: grid;
       grid-template-rows: 1fr 1fr 1fr 1fr;
-      @include breakpoint(md){
+      @include breakpoint(lg){
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-column-gap: 30px;
@@ -55,8 +54,11 @@
     text-align: center;
     grid-template-columns: 3fr 7fr;
     @include breakpoint(sm) {
-      padding: 30px;
+      padding: 20px;
       margin-bottom: 30px;
+    }
+    @include breakpoint(lg){
+      padding: 8px;
     }
     &-icon {
       font-size: 1.3em;
@@ -70,15 +72,16 @@
       }
     }
     &-info {
-      font-size: 0.9em;
+      font-size: 0.8em;
       align-self: center;
       line-height: 20px;
       white-space: wrap;
       @include breakpoint(sm) {
         font-size: 1em;
+        line-height: 25px;
       }
-      @include breakpoint(md) {
-        font-size: 1.2em;
+      @include breakpoint(lg) {
+        font-size: 1em;
       }
     }
   }
@@ -92,10 +95,12 @@
       font-size: 1em;
     }
     &-button {
-      box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.2);
+      width: 170px;
+      box-shadow: 0px 15px 10px -10px rgba(0,0,0,0.2);
       font-size: 1em;
       @include breakpoint(sm) {
         font-size: 1em;
+        width: 220px;
       }
       &:hover {
         box-shadow: 0px 37px 20px -20px rgba(0,0,0,0.2);

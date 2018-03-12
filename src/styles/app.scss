@@ -61,16 +61,17 @@ a {
 .container {
 	margin:0;
 	@include breakpoint(sm) {
-	margin-left: 17%;
-	margin-right: 17%;
+	margin-left: 15%;
+	margin-right: 15%;
 	}
 }
 .button {
+	text-align: center;
 	color: $white;
 	transition: 0.2s linear;
 	background: linear-gradient(#006ED6, #0054A3);
 	cursor: pointer;
-	border-radius: 3px;
+	border-radius:3px;
 	border: 0;
 	padding: 15px;
 	@include breakpoint(sm){

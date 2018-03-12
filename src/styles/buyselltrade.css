@@ -1,6 +1,5 @@
 .buyselltrade {
-  padding-top: 130px;
-  background-color: white; }
+  padding-top: 130px; }
   .buyselltrade-grid {
     display: grid;
     grid-template-rows: 1.5fr 1fr; }
@@ -8,7 +7,7 @@
       margin-top: 20px;
       display: grid;
       grid-template-rows: 1fr 1fr 1fr 1fr; }
-      @media (min-width: 992px) {
+      @media (min-width: 1200px) {
         .buyselltrade-grid-merch {
           grid-template-columns: 1fr 1fr;
           grid-template-rows: 1fr 1fr;
@@ -50,8 +49,11 @@
     grid-template-columns: 3fr 7fr; }
     @media (min-width: 768px) {
       .buyselltrade-merch {
-        padding: 30px;
+        padding: 20px;
         margin-bottom: 30px; } }
+    @media (min-width: 1200px) {
+      .buyselltrade-merch {
+        padding: 8px; } }
     .buyselltrade-merch-icon {
       font-size: 1.3em;
       font-weight: 800;
@@ -63,16 +65,17 @@
         .buyselltrade-merch-icon {
           font-size: 1.8em; } }
     .buyselltrade-merch-info {
-      font-size: 0.9em;
+      font-size: 0.8em;
       align-self: center;
       line-height: 20px;
       white-space: wrap; }
       @media (min-width: 768px) {
         .buyselltrade-merch-info {
-          font-size: 1em; } }
-      @media (min-width: 992px) {
+          font-size: 1em;
+          line-height: 25px; } }
+      @media (min-width: 1200px) {
         .buyselltrade-merch-info {
-          font-size: 1.2em; } }
+          font-size: 1em; } }
   .buyselltrade-about {
     color: #002D57;
     text-align: center; }
@@ -82,11 +85,13 @@
       padding-bottom: 30px;
       font-size: 1em; }
     .buyselltrade-about-button {
-      box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.2);
+      width: 170px;
+      box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.2);
       font-size: 1em; }
       @media (min-width: 768px) {
         .buyselltrade-about-button {
-          font-size: 1em; } }
+          font-size: 1em;
+          width: 220px; } }
       .buyselltrade-about-button:hover {
         box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
         transform: translate(0px, -10px) scale(1.2); }
