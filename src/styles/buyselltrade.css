@@ -91,6 +91,9 @@
       .buyselltrade-contact-info-number {
         font-weight: 800;
         padding: 5px 0px 5px 0px; }
+        .buyselltrade-contact-info-number a {
+          color: #0054A3;
+          text-decoration: underline; }
       .buyselltrade-contact-info-top {
         padding-bottom: 10px;
         font-size: 1.3em;
