@@ -16,7 +16,7 @@
     padding-right: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 250px;
+    height: 200px;
     font-size: 3.0em;
     font-family: Bree Serif, serif;
     color: #002D57;
@@ -40,6 +40,7 @@
         transform: scale(1.1);
         opacity: 1; }
   .buyselltrade-merch {
+    -webkit-text-stroke: 0.45px;
     display: grid;
     border: 2px solid #002D57;
     margin-bottom: 10px;
@@ -77,14 +78,13 @@
     .buyselltrade-about-top {
       letter-spacing: 0.3px;
       font-weight: 800;
-      padding-bottom: 20px;
+      padding-bottom: 30px;
       font-size: 1em; }
-    .buyselltrade-about-bottom {
-      font-variant: small-caps;
-      font-family: Bree Serif, Serif;
-      font-size: 2em;
-      font-weight: 800;
-      padding-bottom: 40px; }
+    .buyselltrade-about-button {
+      box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4); }
+      .buyselltrade-about-button:hover {
+        box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+        transform: translate(0px, -10px) scale(1.2); }
   .buyselltrade-contact {
     color: #002D57;
     text-align: center; }

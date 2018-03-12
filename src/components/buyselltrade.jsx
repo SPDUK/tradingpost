@@ -24,7 +24,7 @@ const BuySellTrade = () => {
           </div>
           <div className="buyselltrade-about">
             <p className="buyselltrade-about-top">Trading Post in Crystal Lake, IL is not a pawn shop, it is a new way to shop or sell.</p>
-            <p className="buyselltrade-about-bottom">We Buy and Sell..</p>
+            <button className="buyselltrade-about-button button">Looking for a deal? Contact Us</button>
           </div>
           </div>
           <div className="buyselltrade-grid-merch">
