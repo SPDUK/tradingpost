@@ -46,6 +46,7 @@ table {
 }
 a {
 	text-decoration: inherit;
+	color: $white;
 	&:visited {
 		text-decoration: inherit;
 		color: $white !important;

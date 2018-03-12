@@ -98,3 +98,7 @@
         @media (min-width: 768px) {
           .buyselltrade-contact-info-top {
             font-size: 1.5em; } }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .buyselltrade-title {
+    font-size: 2.5em; } }

@@ -43,7 +43,8 @@ table {
   border-spacing: 0; }
 
 a {
-  text-decoration: inherit; }
+  text-decoration: inherit;
+  color: white; }
   a:visited {
     text-decoration: inherit;
     color: white !important; }
