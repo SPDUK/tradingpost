@@ -78,10 +78,47 @@ a {
     color: white; }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .buyselltrade-merch {
+    display: inline-block;
+    width: 80%;
+    margin: 5%;
+    height: 220px;
+    overflow: auto; } }
+  @media screen and (-ms-high-contrast: active) and (min-width: 768px), (-ms-high-contrast: none) and (min-width: 768px) {
+    .buyselltrade-merch {
+      width: 80%;
+      margin: 5%;
+      display: inline-block; } }
+  @media screen and (-ms-high-contrast: active) and (min-width: 992px), (-ms-high-contrast: none) and (min-width: 992px) {
+    .buyselltrade-merch {
+      width: 38%;
+      margin: 5%;
+      display: inline-block; } }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .buyselltrade-merch-icon i {
+      margin-right: 30px;
+      margin-bottom: 20px; }
   .buyselltrade-title {
     font-size: 2em;
     padding-bottom: 20px; }
+    .buyselltrade-title-text {
+      display: inline-block;
+      zoom: 1;
+      padding: 5px;
+      font-size: 1em; } }
+    @media screen and (-ms-high-contrast: active) and (min-width: 768px), (-ms-high-contrast: none) and (min-width: 768px) {
+      .buyselltrade-title-text {
+        font-size: 2em; } }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .buyselltrade-about-button {
     margin-bottom: 20px; }
-  .contactinfo-times-day {
-    padding: 10px; } }
+  .buyselltrade-contact-info-number a {
+    color: #0054A3 !important; }
+  .contactinfo-times {
+    height: 260px !important; }
+    .contactinfo-times-day {
+      padding: 5px; }
+    .contactinfo-times-title {
+      padding-bottom: 10px; } }

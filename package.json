@@ -5,8 +5,10 @@
   "private": true,
   "dependencies": {
     "bulma": "^0.6.2",
+    "core-js": "^2.5.3",
     "node-sass-chokidar": "0.0.3",
     "npm": "^5.7.1",
+    "raf": "^3.4.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-headroom": "^2.2.2",

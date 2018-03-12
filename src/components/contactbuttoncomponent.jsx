@@ -4,7 +4,7 @@ import '../styles/contactbuttoncomponent.css';
 const ContactButtonComponent = () => {
   return (
     <div className="contactbuttoncomponent">
-      HEY!
+      LOOL
 
     </div>
   );

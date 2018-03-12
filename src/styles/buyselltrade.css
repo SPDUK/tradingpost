@@ -37,6 +37,7 @@
         transform: scale(1.1);
         opacity: 1; }
   .buyselltrade-merch {
+    margin-top: 30px;
     -webkit-text-stroke: 0.45px;
     display: grid;
     border: 2px solid #002D57;
@@ -87,10 +88,14 @@
     color: #002D57;
     text-align: center; }
     .buyselltrade-about-top {
+      padding-bottom: 20px;
       letter-spacing: 0.3px;
       font-weight: 800;
-      padding-bottom: 30px;
       font-size: 1em; }
+      @media (min-width: 768px) {
+        .buyselltrade-about-top {
+          padding-top: 30px;
+          padding-bottom: 15px; } }
     .buyselltrade-about-button {
       width: 170px;
       box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.2);
