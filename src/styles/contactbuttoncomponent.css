@@ -1,4 +1,6 @@
 .contactbuttoncomponent {
+  margin-top: 50px;
   height: 300px;
   display: block;
-  position: relative; }
+  position: relative;
+  border: 2px solid red; }

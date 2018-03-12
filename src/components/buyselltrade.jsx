@@ -1,90 +1,87 @@
-import React , { Component } from 'react';
-import { Link, DirectLink, Element , Events, animateScroll as scroll} from 'react-scroll';
+import React, { Component } from 'react';
+import { animateScroll as scroll } from 'react-scroll';
 
-import ContactButtonComponent from  './contactbuttoncomponent';
+import ContactButtonComponent from './contactbuttoncomponent';
 import '../styles/buyselltrade.css';
 import '../styles/app.css';
 
 class BuySellTrade extends Component {
   constructor(props) {
-    super(props) 
-      this.state = {
-        showComponent: false,
-      };
+    super(props);
+    this.state = {
+      showComponent: false,
+    };
     this.contactButtonClick = this.contactButtonClick.bind(this);
   }
 
-  contactButtonClick () {
-    this.setState({
-      showComponent: true,
-    });
+  contactButtonClick() {
+    this.setState({ showComponent: true });
   }
 
   render() {
-  return (
-    <div className="buyselltrade">
-      <div className="container">
-        <div className="buyselltrade-grid">
-          <div className="buyselltrade-title">
-            <div className="buyselltrade-title-text">
-              <p>Buy</p>
-              <i className="fa fa-shopping-cart" />
+    return (
+      <div className="buyselltrade">
+        <div className="container">
+          <div className="buyselltrade-grid">
+            <div className="buyselltrade-title">
+              <div className="buyselltrade-title-text">
+                <p>Buy</p>
+                <i className="fa fa-shopping-cart" />
+              </div>
+              <div className="buyselltrade-title-text">
+                <p>Sell</p>
+                <i className="fa fa-dollar" />
+              </div>
+              <div className="buyselltrade-title-text">
+                <p>Trade</p>
+                <i className="fa fa-exchange" />
+              </div>
             </div>
-            <div className="buyselltrade-title-text">
-              <p>Sell</p>
-              <i className="fa fa-dollar" />
+            <div className="buyselltrade-about">
+              <p className="buyselltrade-about-top">Trading Post in Crystal Lake, IL is not a pawn shop, it is a new way to shop or sell.</p>
+              <button onClick={this.contactButtonClick}className="buyselltrade-about-button button">Get In Touch</button>
+              {this.state.showComponent
+                ? <ContactButtonComponent />
+                : null}
             </div>
-            <div className="buyselltrade-title-text">
-              <p>Trade</p>
-              <i className="fa fa-exchange" />
-            </div>
-          </div>
-          <div className="buyselltrade-about">
-            <p className="buyselltrade-about-top">Trading Post in Crystal Lake, IL is not a pawn shop, it is a new way to shop or sell.</p>
-            <button onClick={this.contactButtonClick} className="buyselltrade-about-button button">Get In Touch</button>
-            {this.state.showComponent ?
-           <ContactButtonComponent /> :
-           null
-            }
-          </div>
           </div>
           <div className="buyselltrade-grid-merch">
-          <div className="buyselltrade-merch">
-            <p className="buyselltrade-merch-icon"><i className="fa fa-mobile" /> Electronics</p>
-            <div className="buyselltrade-merch-info">
-              <p>Game systems / Car Audio </p>
-              <p>Home Stereo Systems / TVs</p>
-              <p>Bluray & DVD Players </p>
-              <p>iPhones / Smartphones / Laptops</p>
-              <p>PCs & iMacs / iPads / Tablets</p>
+            <div className="buyselltrade-merch">
+              <p className="buyselltrade-merch-icon"><i className="fa fa-mobile" /> Electronics</p>
+              <div className="buyselltrade-merch-info">
+                <p>Game systems / Car Audio</p>
+                <p>Home Stereo Systems / TVs</p>
+                <p>Bluray & DVD Players</p>
+                <p>iPhones / Smartphones / Laptops</p>
+                <p>PCs & iMacs / iPads / Tablets</p>
+              </div>
             </div>
-          </div>
-          <div className="buyselltrade-merch">
-            <p className="buyselltrade-merch-icon"><i className="fa fa-wrench" /> Tools</p>
-            <div className="buyselltrade-merch-info">
-              <p>Chain Saws / Weed Eaters / Pressure Washers</p>
-              <p>Drills / Cordless Power Tools / Saws</p>
+            <div className="buyselltrade-merch">
+              <p className="buyselltrade-merch-icon"><i className="fa fa-wrench" /> Tools</p>
+              <div className="buyselltrade-merch-info">
+                <p>Chain Saws / Weed Eaters / Pressure Washers</p>
+                <p>Drills / Cordless Power Tools / Saws</p>
+              </div>
             </div>
-          </div>
-          <div className="buyselltrade-merch">
-            <p className="buyselltrade-merch-icon"><i className="fa fa-diamond" /> Jewellery</p>
-            <div className="buyselltrade-merch-info">
-              <p>Men's and Women's Jewellery</p>
-              <p>Gold / Silver / Platinum</p>
-              <p>Watches / Earrings / Chains</p>
-              <p>Bracelets / Broken Gold / Precious Stones</p>
-              <p>Diamonds / Antiques</p>
+            <div className="buyselltrade-merch">
+              <p className="buyselltrade-merch-icon"><i className="fa fa-diamond"/> Jewellery</p>
+              <div className="buyselltrade-merch-info">
+                <p>Men's and Women's Jewellery</p>
+                <p>Gold / Silver / Platinum</p>
+                <p>Watches / Earrings / Chains</p>
+                <p>Bracelets / Broken Gold / Precious Stones</p>
+                <p>Diamonds / Antiques</p>
+              </div>
             </div>
-          </div>
-          <div className="buyselltrade-merch">
-            <p className="buyselltrade-merch-icon"><i className="fa fa-music" /> Extra stuff</p>
-            <div className="buyselltrade-merch-info">
-              <p>Item / Item / Item</p>
-              <p>Item 2 / Item 2 / Item 2</p>
-              <p>Item 3 / Item 3 / Item 3</p>
-              <p>Item 4 / Item 4 / Item 4</p>
+            <div className="buyselltrade-merch">
+              <p className="buyselltrade-merch-icon"><i className="fa fa-music" /> Extra stuff</p>
+              <div className="buyselltrade-merch-info">
+                <p>Item / Item / Item</p>
+                <p>Item 2 / Item 2 / Item 2</p>
+                <p>Item 3 / Item 3 / Item 3</p>
+                <p>Item 4 / Item 4 / Item 4</p>
+              </div>
             </div>
-          </div>
           </div>
           <div className="buyselltrade-contact">
             <div className="buyselltrade-contact-info">
@@ -95,10 +92,10 @@ class BuySellTrade extends Component {
               </p>
             </div>
           </div>
+        </div>
       </div>
-    </div>
-  );
-};
+    );
+  };
 }
 
 export default BuySellTrade;
