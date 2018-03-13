@@ -1,5 +1,10 @@
 @import 'variables.scss';
+.home {
+	background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #003B72, $lightBlue, $blue); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
 * {
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -67,20 +72,21 @@ a {
 }
 .button {
 	height: 50px;
+	border: 1px solid black;
 	text-align: center;
 	color: $white;
 	letter-spacing: 0.0425em;
 	transition: 0.2s linear;
-	background: linear-gradient(#006ED6, #0054A3);
+	background: linear-gradient(#007FF7, #0061BC);
 	cursor: pointer;
-	border-radius:3px;
-	border: 0;
+	border-radius:0px;
+
 	@include breakpoint(sm){
 		font-size: 1.1em;
 	}
 	&:hover {
-		background: linear-gradient(#007FF7, #0061BC);
-		color: white;
+		background: linear-gradient(rgb(9, 122, 228), rgb(0, 88, 170));
+		color:  $white;
 		}
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {

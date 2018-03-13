@@ -23,6 +23,7 @@ const ContactInfo = () => {
         <div className="contactinfo-location-title">
           <p>Location</p>
           <p>7100 Teckler Blvd</p>
+          <a href="tel:8158930218" aria-label="8 1 5. 8 9 3. 0 2 1 8.">(815) 893-0218</a>
         </div>
         <div className="contactinfo-location-map">
           <iframe

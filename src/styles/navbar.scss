@@ -41,8 +41,8 @@
         }
       }
       &-contact {
-        background-color: $lightBlue;
-        border-bottom: 2px solid $lightBlue;
+        background-color: lighten($color: $lightBlue, $amount: 2)!important;
+
         &:hover {
           background-color: lighten($color: $lightBlue, $amount: 10)!important;
         }
@@ -113,7 +113,7 @@
         padding-bottom: 22px;
         width: 100%;
         text-align: center;
-        background-color: lighten($color: $blue, $amount: 10);
+        background-color: lighten($color: $blue, $amount: 20);
         @include breakpoint(sm) {
           display: none;
         }
@@ -129,5 +129,5 @@
   background-color: $blue;
 }
 .nav-darkblue{
-  background-color: lighten($color: $blue, $amount: 10);
+  background-color: $lightBlue;
 }

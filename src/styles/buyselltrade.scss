@@ -1,9 +1,13 @@
 @import 'variables.scss';
 .buyselltrade {
+  height: 980px;
+
   padding-top: 130px;
+  @include breakpoint(sm){
+    height: 1300px;
+  }
   &-grid {
     &-merch {
-      margin-top: 20px;
       display: grid;
       grid-template-rows: 1fr 1fr 1fr 1fr;
       @include breakpoint(lg){
@@ -19,8 +23,9 @@
     grid-template-columns: 1fr 1fr 1fr;
     height: 200px;
     font-size: 3.0em;
-    font-family: Bree Serif, serif;
-    color: $blue;
+    font-family: noto sans;
+    color: white;
+    text-shadow: 0 4px 8px rgba(0,0,0,(0.7));
     text-align: center;
     font-weight: 800;
     font-variant: small-caps;
@@ -32,11 +37,12 @@
       font-size: 5em;
     }
     @include breakpoint(lg) {
-      font-size: 5.5em;
+      font-size: 5em;
     }
     i {
+      font-size: 0.7em;
       transition: 0.2s linear;
-      opacity: 0.6;
+      opacity: 0.5;
       &:hover {
         transform: scale(1.1);
         opacity: 1;
@@ -44,15 +50,19 @@
     }
   }
   &-merch {
+    background-color: rgba($color: black, $alpha: 0.2);
+    color: $white;
+    text-shadow: 0 1px 2px rgba(0,0,0,(1.0));
+    font-size: 1.1em;
     margin-top:30px;
-    -webkit-text-stroke: 0.45px;
     display: grid;
-    border: 2px solid $blue;
+    border: 2px solid $lightBlue;
     margin-bottom: 10px;
     padding: 10px;
     text-align: center;
     grid-template-columns: 3fr 7fr;
     @include breakpoint(sm) {
+      font-size: 1em;
       padding: 20px;
       margin-bottom: 30px;
     }
@@ -60,7 +70,7 @@
       padding: 8px;
     }
     &-icon {
-      color: $lightBlue;
+      color: lighten($color: $white, $amount: 20);
       display: grid;
       grid-template-rows: 1fr 1fr;
       font-size: 1.3em;
@@ -73,12 +83,13 @@
         font-size: 1.8em;
       }
       button {
+        margin-top: 2px;
         -webkit-text-stroke: 0px;
         height: 45px;
         font-size: 0.50em;
       }
       span {
-        color: $lightBlue;
+        color: darken($color: $white, $amount: 20);
         font-family: noto sans, sans-serif;
       }
     }
@@ -97,16 +108,21 @@
     }
   }
   &-about {
-    color: $blue;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,(1.0));
     text-align: center;
     &-top {
+      padding-left: 5px;
+      padding-right: 5px;
       padding-bottom: 30px;
       letter-spacing: 0.3px;
       font-weight: 800;
       font-size: 1em;
       @include breakpoint(sm){
+        color: white;
         padding-top: 30px;
-        padding-bottom: 25px;
+        padding-bottom: 85px;
+        font-size: 1.5em;
       }
     }
     &-button {
@@ -119,26 +135,42 @@
       }
       &:hover {
         box-shadow: 0px 37px 20px -20px rgba(0,0,0,0.2);
-        transform: translate(0px, -10px) scale(1.2);
-      }
-      &:focus {
-        transform: translate(0px, 0px) scale(1);
       }
       span {
-        display: none;
+        left: -55px;
+        text-align: center;
+        position: relative;
+        color: $white;
+        text-align: center;
+        transition: 0.3 linear;
+        opacity: 0;
+      }
+      p {
+        transition: 0.3s linear;
+        color: $white;
+        display: inline-block;
+        left: 30px;
+        text-align: center;
+        position: relative;
+
+        opacity: 1;
       }
       &-open {
         span {
-          display: block;
+          transition:  linear 0.3s;
+          opacity: 1;
         }
         p {
-          display: none;
+          transition: 0.3 linear;
+          opacity: 0;
+          // display: none;
         }
       }
     }
   }
   &-contact {
-    color: $blue;
+    color: $white;
+    text-shadow: 0 1px 2px rgba(0,0,0,(1.0));
     text-align: center;
     &-info {
       font-size: 1.1em;
@@ -153,7 +185,7 @@
         font-weight: 800;
         padding: 5px 0px 5px 0px;
         a {
-          color: $lightBlue;
+          color:white;
           text-decoration: underline;
         }
       }

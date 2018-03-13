@@ -6,8 +6,6 @@ import ContactButtonComponent from './contactbuttoncomponent';
 import '../styles/buyselltrade.css';
 import '../styles/app.css';
 
-
-
 class BuySellTrade extends Component {
   constructor(props) {
     super(props);

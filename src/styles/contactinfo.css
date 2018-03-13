@@ -55,6 +55,8 @@
     .contactinfo-location-title {
       font-size: 2em;
       text-align: center; }
+      .contactinfo-location-title a {
+        font-size: 0.6em; }
       .contactinfo-location-title p:nth-of-type(2) {
         font-size: 0.5em;
         opacity: 0.8; }

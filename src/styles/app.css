@@ -1,3 +1,11 @@
+.home {
+  background: #0f0c29;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #003B72, #0054A3, #002D57);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -48,10 +56,10 @@ table {
 
 a {
   text-decoration: inherit;
-  color: white; }
+  color: #F9F9F9; }
   a:visited {
     text-decoration: inherit;
-    color: white !important; }
+    color: #F9F9F9 !important; }
 
 .container {
   margin: 0; }
@@ -62,20 +70,20 @@ a {
 
 .button {
   height: 50px;
+  border: 1px solid black;
   text-align: center;
-  color: white;
+  color: #F9F9F9;
   letter-spacing: 0.0425em;
   transition: 0.2s linear;
-  background: linear-gradient(#006ED6, #0054A3);
+  background: linear-gradient(#007FF7, #0061BC);
   cursor: pointer;
-  border-radius: 3px;
-  border: 0; }
+  border-radius: 0px; }
   @media (min-width: 768px) {
     .button {
       font-size: 1.1em; } }
   .button:hover {
-    background: linear-gradient(#007FF7, #0061BC);
-    color: white; }
+    background: linear-gradient(#097ae4, #0058aa);
+    color: #F9F9F9; }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .buyselltrade-merch {
