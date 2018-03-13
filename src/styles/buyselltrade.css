@@ -88,14 +88,14 @@
     color: #002D57;
     text-align: center; }
     .buyselltrade-about-top {
-      padding-bottom: 20px;
+      padding-bottom: 30px;
       letter-spacing: 0.3px;
       font-weight: 800;
       font-size: 1em; }
       @media (min-width: 768px) {
         .buyselltrade-about-top {
           padding-top: 30px;
-          padding-bottom: 15px; } }
+          padding-bottom: 25px; } }
     .buyselltrade-about-button {
       width: 170px;
       box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.2);
@@ -107,6 +107,14 @@
       .buyselltrade-about-button:hover {
         box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
         transform: translate(0px, -10px) scale(1.2); }
+      .buyselltrade-about-button:focus {
+        transform: translate(0px, 0px) scale(1); }
+      .buyselltrade-about-button span {
+        display: none; }
+      .buyselltrade-about-button-open span {
+        display: block; }
+      .buyselltrade-about-button-open p {
+        display: none; }
   .buyselltrade-contact {
     color: #002D57;
     text-align: center; }

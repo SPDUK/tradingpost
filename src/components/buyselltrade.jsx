@@ -7,6 +7,7 @@ import '../styles/buyselltrade.css';
 import '../styles/app.css';
 
 
+
 class BuySellTrade extends Component {
   constructor(props) {
     super(props);
@@ -16,9 +17,10 @@ class BuySellTrade extends Component {
     this.contactButtonClick = this.contactButtonClick.bind(this);
     this.componentButtonClick = this.componentButtonClick.bind(this);
   }
-
   contactButtonClick() {
-    this.setState({ showComponent: true });
+    const contactButton = document.querySelector('.buyselltrade-about-button');
+    contactButton.classList.toggle('buyselltrade-about-button-open');
+    this.setState({ showComponent: !this.state.showComponent });
   }
   componentButtonClick(){
     this.setState({ showComponent: false });
@@ -45,7 +47,7 @@ class BuySellTrade extends Component {
             </div>
             <div className="buyselltrade-about">
               <p className="buyselltrade-about-top">Trading Post in Crystal Lake, IL is not a pawn shop, it is a new way to shop or sell.</p>
-              <button onClick={this.contactButtonClick}className="buyselltrade-about-button button">Get In Touch</button>
+              <button onClick={this.contactButtonClick}className="buyselltrade-about-button button"><p>Get In Touch</p> <span>Close</span></button>
               <CSSTransitionGroup
     transitionName='contactButtonClick'
     transitionEnter={true}
