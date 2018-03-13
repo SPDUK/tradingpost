@@ -1,13 +1,17 @@
-import React from 'react';
-
+import React, { Component } from 'react';
 import '../styles/contactbuttoncomponent.css';
-const ContactButtonComponent = () => {
-  return (
-    <div className="contactbuttoncomponent">
-      LOOL
 
-    </div>
-  );
-};
+class ContactButtonComponent extends Component {
+  render(props) {
+    return (
+      <div className="contactbuttoncomponent">
+        <div onClick={this.props.componentButtonClick} className="contactbuttoncomponent-x">
+
+          CLICK
+        </div>
+      </div>
+    );
+  }
+}
 
 export default ContactButtonComponent;

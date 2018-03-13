@@ -4,3 +4,7 @@
   display: block;
   position: relative;
   border: 2px solid red; }
+  .contactbuttoncomponent-x {
+    height: 100%;
+    background-color: blue;
+    width: 70%; }

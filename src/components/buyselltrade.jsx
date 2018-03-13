@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import { CSSTransitionGroup } from 'react-transition-group';
 import { animateScroll as scroll } from 'react-scroll';
 
 import ContactButtonComponent from './contactbuttoncomponent';
 import '../styles/buyselltrade.css';
 import '../styles/app.css';
+
 
 class BuySellTrade extends Component {
   constructor(props) {
@@ -12,10 +14,14 @@ class BuySellTrade extends Component {
       showComponent: false,
     };
     this.contactButtonClick = this.contactButtonClick.bind(this);
+    this.componentButtonClick = this.componentButtonClick.bind(this);
   }
 
   contactButtonClick() {
     this.setState({ showComponent: true });
+  }
+  componentButtonClick(){
+    this.setState({ showComponent: false });
   }
 
   render() {
@@ -40,9 +46,16 @@ class BuySellTrade extends Component {
             <div className="buyselltrade-about">
               <p className="buyselltrade-about-top">Trading Post in Crystal Lake, IL is not a pawn shop, it is a new way to shop or sell.</p>
               <button onClick={this.contactButtonClick}className="buyselltrade-about-button button">Get In Touch</button>
+              <CSSTransitionGroup
+    transitionName='contactButtonClick'
+    transitionEnter={true}
+    transitionLeave={true}
+    transitionEnterTimeout={250}
+    transitionLeaveTimeout={250}>
               {this.state.showComponent
-                ? <ContactButtonComponent />
+                ? <ContactButtonComponent key={'auhaauhahu'} componentButtonClick={this.componentButtonClick} />
                 : null}
+                </CSSTransitionGroup>
             </div>
           </div>
           <div className="buyselltrade-grid-merch">
@@ -117,5 +130,6 @@ class BuySellTrade extends Component {
     );
   }
 }
+
 
 export default BuySellTrade;

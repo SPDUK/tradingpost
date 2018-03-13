@@ -154,3 +154,24 @@
     }
   }
 }
+.contactButtonClick-enter {
+  opacity: 0.1;
+  height: 0;
+}
+
+.contactButtonClick-enter.contactButtonClick-enter-active {
+  transition: linear 250ms;
+  opacity: 1;
+  height: 300px;
+}
+
+.contactButtonClick-leave {
+  opacity: 1;
+  height: 300px;
+}
+
+.contactButtonClick-leave.contactButtonClick-leave-active {
+  transition: 250ms linear;
+  opacity: 0.1;
+  height: 0px;
+}
