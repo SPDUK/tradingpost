@@ -1,12 +1,11 @@
 .buyselltrade {
-  height: 1050px;
+  background: #1e3c72;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom right, #2a5298, #1e3c72);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom right, #2a5298, #1e3c72);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding-top: 130px; }
-  @media (min-width: 768px) {
-    .buyselltrade {
-      height: 1600px; } }
-  @media (min-width: 992px) {
-    .buyselltrade {
-      height: 1350px; } }
   .buyselltrade-grid-merch {
     margin-top: 40px;
     display: grid;

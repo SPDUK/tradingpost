@@ -92,7 +92,7 @@
       padding-bottom: 22px;
       width: 100%;
       text-align: center;
-      background-color: #011627; }
+      background-color: #172e6d; }
       @media (min-width: 768px) {
         .navbar-mobile-links-active {
           display: none; } }
@@ -103,4 +103,4 @@
   background-color: transparent; }
 
 .nav-darkblue {
-  background-color: #011627; }
+  background-color: #172e6d; }

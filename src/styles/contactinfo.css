@@ -7,7 +7,7 @@
   display: grid;
   object-fit: cover;
   grid-template-columns: 1fr;
-  background-color: #011627; }
+  background-color: #172e6d; }
   @media (min-width: 768px) {
     .contactinfo {
       grid-template-columns: 4fr 5fr; } }
