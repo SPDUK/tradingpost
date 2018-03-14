@@ -3,7 +3,7 @@
   top: 0;
   height: 70px;
   width: 100%;
-  background-color: #002D57;
+  background-color: transparent;
   position: fixed;
   transition: 0.3s ease-in; }
   .navbar-icon {
@@ -36,9 +36,10 @@
           background-color: #0054A3;
           border-bottom: 2px solid #F9F9F9; }
       .navbar-wide-links-contact {
-        background-color: #0059ad !important; }
+        background-color: #0054A3;
+        border-bottom: 2px solid #0054A3; }
         .navbar-wide-links-contact:hover {
-          background-color: #006ed6 !important; }
+          background-color: #006ed6; }
   .navbar-mobile-burger {
     position: relative;
     float: right;
@@ -99,7 +100,7 @@
         background-color: #0054A3; }
 
 .nav-blue {
-  background-color: #002D57; }
+  background-color: transparent; }
 
 .nav-darkblue {
   background-color: #0054A3; }

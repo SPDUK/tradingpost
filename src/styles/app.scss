@@ -1,8 +1,9 @@
 @import 'variables.scss';
+
 .home {
-	background: #0f0c29;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #003B72, $lightBlue, $blue); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #1e3c72;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #2a5298, #1e3c72);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 * {
@@ -66,13 +67,17 @@ a {
 .container {
 	margin:0;
 	@include breakpoint(sm) {
-	margin-left: 15%;
-	margin-right: 15%;
+	margin-left: 10%;
+	margin-right: 10%;
+	}
+	@include breakpoint(lg){
+		margin-left: 13%;
+		margin-right:13%;
 	}
 }
 .button {
 	height: 50px;
-	border: 1px solid black;
+	border: 0px;
 	text-align: center;
 	color: $white;
 	letter-spacing: 0.0425em;

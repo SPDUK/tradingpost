@@ -53,7 +53,7 @@ class BuySellTrade extends Component {
     transitionEnterTimeout={250}
     transitionLeaveTimeout={250}>
               {this.state.showComponent
-                ? <ContactButtonComponent key={'auhaauhahu'} componentButtonClick={this.componentButtonClick} />
+                ? <ContactButtonComponent key={'contactButtonClickKey'} componentButtonClick={this.componentButtonClick} />
                 : null}
                 </CSSTransitionGroup>
             </div>
@@ -61,10 +61,8 @@ class BuySellTrade extends Component {
           <div className="buyselltrade-grid-merch">
             <div className="buyselltrade-merch">
               <p className="buyselltrade-merch-icon">
-                <i className="fa fa-mobile"><span> Electronics</span></i>
-                <a href="https://www.ebay.com/sch/Jewelry-Watches/281/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=pajatek1&_sac=1">
-                  <button className="button">Shop Electronics at Ebay</button>
-                </a>
+                <i className="fa fa-mobile"></i>
+                <span> Electronics</span>
               </p>
               <div className="buyselltrade-merch-info">
                 <p>Game systems / Car Audio</p>
@@ -73,54 +71,49 @@ class BuySellTrade extends Component {
                 <p>iPhones / Smartphones / Laptops</p>
                 <p>PCs & iMacs / iPads / Tablets</p>
               </div>
+              <a href="https://www.ebay.com/sch/Consumer-Electronics/293/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=pajatek1">
+                  <button className="button">Shop Our Electronics at Ebay</button>
+                </a>
             </div>
             <div className="buyselltrade-merch">
               <p className="buyselltrade-merch-icon">
-                <i className="fa fa-wrench"><span> Tools</span></i>
-                <a href="https://www.ebay.com/sch/Jewelry-Watches/281/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=pajatek1&_sac=1">
-                  <button className="button">Shop Tools at Ebay</button>
-                </a>
+                <i className="fa fa-wrench"></i>
+                <span> Tools</span>
               </p>
               <div className="buyselltrade-merch-info">
-                <p>Chain Saws / Weed Eaters / Pressure Washers</p>
+                <p>Chain Saws / Weed Eaters /</p>
                 <p>Drills / Cordless Power Tools / Saws</p>
+                <p>Pressure Washers / item </p>
+                <p>Item 2 / Long item name </p>
+                <p>Item 3 / item 4  </p>
               </div>
+              <a href="https://www.ebay.com/sch/Business-Industrial/12576/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=pajatek1">
+                  <button className="button">Buy Our Tools at Ebay</button>
+                </a>
             </div>
             <div className="buyselltrade-merch">
               <p className="buyselltrade-merch-icon">
-                <i className="fa fa-diamond"><span> Jewellery</span></i>
-                <a href="https://www.ebay.com/sch/Jewelry-Watches/281/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=pajatek1&_sac=1">
-                  <button className="button">Shop Jewellery at Ebay</button>
-                </a>
+                <i className="fa fa-diamond"></i>
+                <span> Jewelery</span>
               </p>
               <div className="buyselltrade-merch-info">
-                <p>Men's and Women's Jewellery</p>
+                <p>Men's and Women's Jewelery</p>
                 <p>Gold / Silver / Platinum</p>
                 <p>Watches / Earrings / Chains</p>
                 <p>Bracelets / Broken Gold / Precious Stones</p>
                 <p>Diamonds / Antiques</p>
               </div>
-            </div>
-            <div className="buyselltrade-merch">
-              <p className="buyselltrade-merch-icon">
-                <i className="fa fa-music"><span> Extra stuff</span></i>
-                <a href="https://www.ebay.com/sch/Jewelry-Watches/281/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=pajatek1&_sac=1">
-                  <button className="button">Shop Extras at Ebay</button>
+              <a href="https://www.ebay.com/sch/Jewelry-Watches/281/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=pajatek1&_sac=1">
+                  <button className="button">See Our Jewelery at Ebay</button>
                 </a>
-              </p>
-              <div className="buyselltrade-merch-info">
-                <p>Item / Item / Item</p>
-                <p>Item 2 / Item 2 / Item 2</p>
-                <p>Item 3 / Item 3 / Item 3</p>
-                <p>Item 4 / Item 4 / Item 4</p>
-              </div>
             </div>
           </div>
           <div className="buyselltrade-contact">
             <div className="buyselltrade-contact-info">
               <p className="buyselltrade-contact-info-top">Everything Else!</p>
               <p>Think you have something worth selling?</p>
-              <p className="buyselltrade-contact-info-number">Call us at:
+              <p>Our friendly staff will help you find the best price for your item.</p>
+              <p className="buyselltrade-contact-info-number">Our Number:
                 <a href="tel:8158930218" aria-label="8 1 5. 8 9 3. 0 2 1 8.">(815) 893-0218</a>
               </p>
             </div>

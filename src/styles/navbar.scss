@@ -4,7 +4,7 @@
   top: 0;
   height: 70px;
   width: 100%;
-  background-color: $blue;
+  background-color: rgba($color: #000000, $alpha: 0);
   position: fixed;
   transition: 0.3s ease-in;
   &-icon {
@@ -41,10 +41,11 @@
         }
       }
       &-contact {
-        background-color: lighten($color: $lightBlue, $amount: 2)!important;
+        background-color: $lightBlue;
+        border-bottom: 2px solid $lightBlue;
 
         &:hover {
-          background-color: lighten($color: $lightBlue, $amount: 10)!important;
+          background-color: lighten($color: $lightBlue, $amount: 10);
         }
       }
     }
@@ -126,7 +127,7 @@
 }
 
 .nav-blue {
-  background-color: $blue;
+ background-color: rgba($color: #000000, $alpha: 0);
 }
 .nav-darkblue{
   background-color: $lightBlue;
