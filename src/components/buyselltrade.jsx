@@ -76,7 +76,7 @@ class BuySellTrade extends Component {
                 </ul>
               </div>
               <a href="https://www.ebay.com/sch/Consumer-Electronics/293/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=pajatek1">
-                <button id="elecBtn" className="button buyselltrade-merch-button">Shop Our Electronics at Ebay</button>
+                <button id="elecBtn" className="button buyselltrade-merch-button">Buy Our Electronics at Ebay</button>
               </a>
             </div>
             </div>
@@ -116,7 +116,7 @@ class BuySellTrade extends Component {
                </ul>
               </div>
               <a href="https://www.ebay.com/sch/Jewelry-Watches/281/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=pajatek1&_sac=1">
-                <button id="jewelryBtn" className="button buyselltrade-merch-button">See Our Jewelry at Ebay</button>
+                <button id="jewelryBtn" className="button buyselltrade-merch-button">Buy Our Jewelry at Ebay</button>
               </a>
             </div>
             </div>
