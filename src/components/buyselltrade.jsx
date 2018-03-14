@@ -94,17 +94,17 @@ class BuySellTrade extends Component {
             <div className="buyselltrade-merch">
               <p className="buyselltrade-merch-icon">
                 <i className="fa fa-diamond"></i>
-                <span> Jewelery</span>
+                <span> Jewelry</span>
               </p>
               <div className="buyselltrade-merch-info">
-                <p>Men's and Women's Jewelery</p>
+                <p>Men's and Women's Jewelry</p>
                 <p>Gold / Silver / Platinum</p>
                 <p>Watches / Earrings / Chains</p>
                 <p>Bracelets / Broken Gold / Precious Stones</p>
                 <p>Diamonds / Antiques</p>
               </div>
               <a href="https://www.ebay.com/sch/Jewelry-Watches/281/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=pajatek1&_sac=1">
-                  <button className="button">See Our Jewelery at Ebay</button>
+                  <button className="button">See Our Jewelry at Ebay</button>
                 </a>
             </div>
           </div>
