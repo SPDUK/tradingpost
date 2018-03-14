@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../styles/contactbuttoncomponent.css';
 
 class ContactButtonComponent extends Component {
-  render(props) {
+  render() {
     return (
       <div className="contactbuttoncomponent">
         <div onClick={this.props.componentButtonClick} className="contactbuttoncomponent-x">

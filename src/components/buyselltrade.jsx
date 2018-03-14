@@ -20,7 +20,7 @@ class BuySellTrade extends Component {
     contactButton.classList.toggle('buyselltrade-about-button-open');
     this.setState({ showComponent: !this.state.showComponent });
   }
-  componentButtonClick(){
+  componentButtonClick() {
     this.setState({ showComponent: false });
   }
 
@@ -47,21 +47,22 @@ class BuySellTrade extends Component {
               <p className="buyselltrade-about-top">Trading Post in Crystal Lake, IL is not a pawn shop, it is a new way to shop or sell.</p>
               <button onClick={this.contactButtonClick}className="buyselltrade-about-button button"><p>Get In Touch</p> <span>Close</span></button>
               <CSSTransitionGroup
-    transitionName='contactButtonClick'
-    transitionEnter={true}
-    transitionLeave={true}
-    transitionEnterTimeout={250}
-    transitionLeaveTimeout={250}>
-              {this.state.showComponent
-                ? <ContactButtonComponent key={'contactButtonClickKey'} componentButtonClick={this.componentButtonClick} />
-                : null}
-                </CSSTransitionGroup>
+                transitionName="contactButtonClick"
+                transitionEnter={true}
+                transitionLeave={true}
+                transitionEnterTimeout={250}
+                transitionLeaveTimeout={250}
+              >
+                {this.state.showComponent
+                  ? <ContactButtonComponent key="contactButtonClickKey" componentButtonClick={this.componentButtonClick} />
+                  : null}
+              </CSSTransitionGroup>
             </div>
           </div>
           <div className="buyselltrade-grid-merch">
             <div className="buyselltrade-merch">
               <p className="buyselltrade-merch-icon">
-                <i className="fa fa-mobile"></i>
+                <i className="fa fa-mobile" />
                 <span> Electronics</span>
               </p>
               <div className="buyselltrade-merch-info">
@@ -72,12 +73,12 @@ class BuySellTrade extends Component {
                 <p>PCs & iMacs / iPads / Tablets</p>
               </div>
               <a href="https://www.ebay.com/sch/Consumer-Electronics/293/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=pajatek1">
-                  <button className="button">Shop Our Electronics at Ebay</button>
-                </a>
+                <button className="button">Shop Our Electronics at Ebay</button>
+              </a>
             </div>
             <div className="buyselltrade-merch">
               <p className="buyselltrade-merch-icon">
-                <i className="fa fa-wrench"></i>
+                <i className="fa fa-wrench" />
                 <span> Tools</span>
               </p>
               <div className="buyselltrade-merch-info">
@@ -88,12 +89,12 @@ class BuySellTrade extends Component {
                 <p>Item 3 / item 4  </p>
               </div>
               <a href="https://www.ebay.com/sch/Business-Industrial/12576/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=pajatek1">
-                  <button className="button">Buy Our Tools at Ebay</button>
-                </a>
+                <button className="button">Buy Our Tools at Ebay</button>
+              </a>
             </div>
             <div className="buyselltrade-merch">
               <p className="buyselltrade-merch-icon">
-                <i className="fa fa-diamond"></i>
+                <i className="fa fa-diamond" />
                 <span> Jewelry</span>
               </p>
               <div className="buyselltrade-merch-info">
@@ -104,8 +105,8 @@ class BuySellTrade extends Component {
                 <p>Diamonds / Antiques</p>
               </div>
               <a href="https://www.ebay.com/sch/Jewelry-Watches/281/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=pajatek1&_sac=1">
-                  <button className="button">See Our Jewelry at Ebay</button>
-                </a>
+                <button className="button">See Our Jewelry at Ebay</button>
+              </a>
             </div>
           </div>
           <div className="buyselltrade-contact">
