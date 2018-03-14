@@ -25,10 +25,12 @@
   }
 }
 //Colors 
-$white: #FDFFFC;
-$blue: #172e6d;
+$white: white;
+$black: #363636;
+$lightGray: #F4F4F4;
 $lightBlue: #2D5DC4;
-$orange: #FF9F1C;
+$green: #436436;
+$orange: #F15025;
 $red: #E71D36;
 /////////center      @include ctr(both) = center middle - (y) = vertical (x) = horizontal
 @mixin absolutecenter($axis: "both") {

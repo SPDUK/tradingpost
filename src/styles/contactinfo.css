@@ -1,13 +1,13 @@
 .contactinfo {
   overflow: hidden;
-  color: white;
+  color: #363636;
   font-size: 1em;
   margin-top: 100px;
   margin-bottom: 100px;
   display: grid;
   object-fit: cover;
   grid-template-columns: 1fr;
-  background-color: #172e6d; }
+  background-color: #F4F4F4; }
   @media (min-width: 768px) {
     .contactinfo {
       grid-template-columns: 4fr 5fr; } }
@@ -26,6 +26,7 @@
       font-size: 2em;
       opacity: 1; }
     .contactinfo-times-day {
+      padding-top: 1px;
       font-size: 1.2em;
       opacity: 1; }
   .contactinfo-location {

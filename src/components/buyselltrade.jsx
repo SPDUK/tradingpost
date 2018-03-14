@@ -30,21 +30,11 @@ class BuySellTrade extends Component {
         <div className="container">
           <div className="buyselltrade-grid">
             <div className="buyselltrade-title">
-              <div className="buyselltrade-title-text">
-                <p>Buy</p>
-                <i className="fa fa-shopping-cart" />
-              </div>
-              <div className="buyselltrade-title-text">
-                <p>Sell</p>
-                <i className="fa fa-dollar" />
-              </div>
-              <div className="buyselltrade-title-text">
-                <p>Trade</p>
-                <i className="fa fa-exchange" />
-              </div>
+              <p className="buyselltrade-title-top">Trading Post</p>
+              <p className="buyselltrade-title-middle">Crystal Lake, IL</p>
+              <p className="buyselltrade-title-bottom">Buy <span>/</span> Sell <span>/</span> Trade</p>
             </div>
             <div className="buyselltrade-about">
-              <p className="buyselltrade-about-top">Trading Post in Crystal Lake, IL is not a pawn shop, it is a new way to shop or sell.</p>
               <button onClick={this.contactButtonClick}className="buyselltrade-about-button button"><p>Get In Touch</p> <span>Close</span></button>
               <CSSTransitionGroup
                 transitionName="contactButtonClick"
@@ -76,7 +66,7 @@ class BuySellTrade extends Component {
                 </ul>
               </div>
               <a href="https://www.ebay.com/sch/Consumer-Electronics/293/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=pajatek1">
-                <button id="elecBtn" className="button buyselltrade-merch-button">Buy Our Electronics at Ebay</button>
+                <button id="elecBtn" className="button buyselltrade-merch-button"><p>Buy Our Electronics at Ebay</p></button>
               </a>
             </div>
             </div>
@@ -96,7 +86,7 @@ class BuySellTrade extends Component {
                 </ul>
               </div>
               <a href="https://www.ebay.com/sch/Business-Industrial/12576/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=pajatek1">
-                <button id="toolsBtn" className="button buyselltrade-merch-button">Buy Our Tools at Ebay</button>
+                <button id="toolsBtn" className="button buyselltrade-merch-button"><p>Buy Our Tools at Ebay</p></button>
               </a>
             </div>
           </div>
@@ -116,7 +106,7 @@ class BuySellTrade extends Component {
                </ul>
               </div>
               <a href="https://www.ebay.com/sch/Jewelry-Watches/281/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=pajatek1&_sac=1">
-                <button id="jewelryBtn" className="button buyselltrade-merch-button">Buy Our Jewelry at Ebay</button>
+                <button id="jewelryBtn" className="button buyselltrade-merch-button"><p>Buy Our Jewelry at Ebay</p></button>
               </a>
             </div>
             </div>
@@ -125,7 +115,7 @@ class BuySellTrade extends Component {
             <div className="buyselltrade-contact-info">
               <p className="buyselltrade-contact-info-top"></p>
               <p>Think you have something worth selling?</p>
-              <p>Our friendly staff will help you find the best price for your item.</p>
+              <p>Give us a call and we will be happy to help you with any questions you might have.</p>
               <p className="buyselltrade-contact-info-number">Our Number:
                 <a href="tel:8158930218" aria-label="8 1 5. 8 9 3. 0 2 1 8.">(815) 893-0218</a>
               </p>

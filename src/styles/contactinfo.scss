@@ -1,14 +1,14 @@
 @import './variables.scss';
 .contactinfo {
   overflow: hidden;
-  color: white;
+  color: $black;
   font-size: 1em;
   margin-top: 100px;
   margin-bottom: 100px;
   display: grid;
   object-fit: cover;
   grid-template-columns: 1fr;
-  background-color: $blue;
+  background-color: $lightGray;
   @include breakpoint(sm) {
     grid-template-columns: 4fr 5fr;
   }
@@ -28,6 +28,7 @@
       opacity: 1;
     }
     &-day {
+      padding-top: 1px;
       font-size: 1.2em;
       opacity: 1;
       }

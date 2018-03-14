@@ -3,7 +3,8 @@
   top: 0;
   height: 70px;
   width: 100%;
-  background: transparent;
+  background: #292929;
+  border-bottom: 1px solid black;
   position: fixed;
   transition: 0.3s ease-in; }
   .navbar-icon {
@@ -21,7 +22,7 @@
     .navbar-wide-links {
       float: right; }
       .navbar-wide-links a {
-        color: #FDFFFC;
+        color: white;
         text-align: center !important;
         width: 115px;
         box-sizing: border-box;
@@ -33,18 +34,18 @@
         padding-bottom: 25px; }
         .navbar-wide-links a:hover {
           transition: ease 0s;
-          background-color: #2D5DC4;
-          border-bottom: 2px solid #FDFFFC; }
+          background-color: #838383;
+          border-bottom: 3px solid white; }
       .navbar-wide-links-contact {
-        background-color: #FF9F1C;
-        border-bottom: 2px solid #FF9F1C; }
+        background-color: #F15025;
+        border-bottom: 3px solid #F15025; }
         .navbar-wide-links-contact:hover {
-          background-color: #ffb54f !important; }
+          background-color: #f47655 !important; }
   .navbar-mobile-burger {
     position: relative;
     float: right;
     display: block;
-    color: #FDFFFC;
+    color: white;
     padding: 30px;
     opacity: 1; }
     @media (min-width: 768px) {
@@ -86,21 +87,22 @@
     display: none;
     width: 100%; }
     .navbar-mobile-links-active {
+      color: white;
       transition: 0.2s ease;
       display: inline-block;
       padding-top: 22px;
       padding-bottom: 22px;
       width: 100%;
       text-align: center;
-      background-color: #172e6d; }
+      background: #363636; }
       @media (min-width: 768px) {
         .navbar-mobile-links-active {
           display: none; } }
       .navbar-mobile-links-active:hover {
-        background-color: #2D5DC4; }
+        background-color: #838383; }
 
-.nav-blue {
-  background-color: transparent; }
+.nav-black {
+  background: #484848; }
 
-.nav-darkblue {
-  background-color: #172e6d; }
+.nav-darkBlack {
+  background-color: #363636; }

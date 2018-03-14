@@ -1,8 +1,6 @@
 @import 'variables.scss';
 .buyselltrade {
-  background: #1e3c72;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom right, #2a5298, #1e3c72);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to  bottom right, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: $white;
   padding-top: 130px;
   padding-bottom: 80px;
   &-grid {
@@ -31,35 +29,51 @@
     }
   }
   &-title {
-    padding-right: 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display:block;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr 1fr;
     height: 200px;
-    font-size: 3.0em;
-    font-family: noto sans;
-    color: $white;
+    font-size: 1.0em;
+    color: $black;
     text-align: center;
-    font-weight: 800;
-    font-variant: small-caps;
-    @include breakpoint(sm) {
-      margin-left: 10%;
-      margin-right: 10%;
-      font-size: 4em;
-      padding-right: 0;
+    &-top {
+      font-weight: 800;
+      display: inline-block;
+      width: 100%;
+      letter-spacing: -1px;
+      text-align: center;
+      font-size: 2.3em;
+      @include breakpoint(sm){
+        font-size: 3.1em;
+      }
+      @include breakpoint(md){
+        font-size: 3.2em;
+      }
     }
-    @include breakpoint(md) {
-      font-size: 5em;
+    &-middle {
+      padding-top: 7px;
+      padding-bottom: 7px;
+      opacity: 0.8;
+      letter-spacing: -1px;
+      font-size: 1.7em;
+      font-weight: 400;
+      width: 100%;
+      display: inline-block;
+      @include breakpoint(sm){
+        font-size: 2.4em;
+      }
     }
-    @include breakpoint(lg) {
-      font-size: 5em;
-    }
-    i {
-      font-size: 0.7em;
-      transition: 0.2s linear;
-      opacity: 0.5;
-      &:hover {
-        transform: scale(1.1);
-        opacity: 1;
+    &-bottom{
+      letter-spacing: -1px;
+      font-size: 1.2em;
+      opacity: 0.7;
+      width: 100%;
+      display: inline-block;
+      @include breakpoint(sm){
+        font-size: 1.4em;
+      }
+      span {
+        opacity: 0.6;
       }
     }
   }
@@ -67,16 +81,20 @@
     margin-bottom: 0;
     height: 100%;
     &-button {
+      border: 0px;
+      color: $white;
       margin-left: 5%;
       margin-right: 5%;
       margin-bottom: 20px;
       height: 50px;
       border-radius: 0;
-      -webkit-text-stroke: 0px;
       font-size: 1em;
       @include breakpoint(sm){
         height: 100%;
         margin:0;
+      }
+      p {
+        opacity: 0.9;
       }
     }
     border-radius:0px;
@@ -86,7 +104,7 @@
     text-align: center;
     grid-template-rows: 1fr;
     @include breakpoint(sm) {
-      background-color: white;
+      background-color: $lightGray;
       grid-template-rows: 1fr 1fr 0.4fr;
       font-size: 1em;
     }
@@ -134,8 +152,12 @@
     }
   }
   &-about {
-    color: $white;
+    color: $black;
     text-align: center;
+    @include breakpoint(md){
+      padding-bottom: 30px;
+
+    }
     &-top {
       padding-left: 10px;
       padding-right: 10px;
@@ -150,28 +172,32 @@
       }
     }
     &-button {
+      border: 2px solid black;
       height: 45px;
       letter-spacing: 0.0425em;
       width: 170px;
       font-size: 1em;
-      background: red;
+      color: $black;
+      background: $lightGray;
       @include breakpoint(sm) {
         height: 50px;
         font-size: 1em;
         width: 220px;
       }
+      &:hover {
+        background: $black;
+        color: $white;
+      }
       span {
         left: -55px;
         text-align: center;
         position: relative;
-        color: $white;
         text-align: center;
-        transition: 0.3 linear;
+        transition: 0.2s ease;
         opacity: 0;
       }
       p {
-        transition: 0.3s linear;
-        color: $white;
+        transition: 0.2s ease;
         display: inline-block;
         left: 30px;
         text-align: center;
@@ -193,7 +219,7 @@
     }
   }
   &-contact {
-    color: $white;
+    color: $black;
     text-align: center;
     &-info {
       padding-left: 10px;
@@ -211,7 +237,7 @@
         font-weight: 800;
         padding: 5px 0px 5px 0px;
         a {
-          color: white;
+          color: $black;
           text-decoration: underline;
         }
       }
@@ -235,10 +261,10 @@
   font-size: 2em;
 }
 #toolsBtn {
-  background: $lightBlue;
+  background: $green;
 }
 #toolsIcon {
-  color: $lightBlue;
+  color: $green;
   font-size: 1.9em;
 }
 #jewelryBtn {

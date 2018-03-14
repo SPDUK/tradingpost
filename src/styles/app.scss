@@ -51,7 +51,6 @@ table {
 }
 a {
 	text-decoration: inherit;
-	color: $white;
 	&:visited {
 		text-decoration: inherit;
 		color: $white !important;
@@ -70,38 +69,48 @@ a {
 	}
 }
 .button {
-	border: 0px;
 	text-align: center;
-	color: $white;
-	transition: 0.2s linear;
-	background: linear-gradient(#007FF7, #0061BC);
+	transition: 0.2s ease;
 	cursor: pointer;
 	border-radius:0px;
 	@include breakpoint(sm){
 		font-size: 1.1em;
 	}
-	&:hover {
-		background: linear-gradient(rgb(9, 122, 228), rgb(0, 88, 170));
-		color:  $white;
-		}
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 	.buyselltrade {
+
 		&-merch{
 			display: block;
 			position: relative;
-			width:100% !important;
+			width:99%;
+			margin: 10px;
 			height: 50px;
 			overflow: hidden;
-			@include breakpoint(sm){			
+			@include breakpoint(sm){		
+				margin-top: 35px;
 				@include absolutecenter(x);
 				position: relative;
+				width: 50%;
 			}
 			&-button {
 				width:50%;
 				@include breakpoint(sm){
 					width: 100%;
 				}
+			}
+			&-card {
+					height: 100%;
+					@include breakpoint(sm){
+					transition: 0.3s ease;
+					transform: translateY(0);
+					}
+					&:hover{
+						@include breakpoint(sm){
+						transition: 0.2s ease;
+						transform: translateY(0px);
+						}
+					}
 			}
 
 			&-icon {
@@ -112,15 +121,15 @@ a {
 			}
 		}
 		&-title {
-			font-size: 2em;
+			font-size: 1em;
 			padding-bottom: 20px;
 			&-text{
 				display: inline-block;
 				zoom:1;
 				padding: 5px;
-				font-size: 1em;
+				font-size: 1.5em;
 				@include breakpoint(sm){
-					font-size: 2em;
+					font-size: 1.5em;
 				}
 			}
 		}
@@ -148,4 +157,16 @@ a {
 			}
 		}
 	}
+	.buyselltrade-grid-merch-card {
+		@include breakpoint(sm){
+		transition: 0.3s ease;
+		transform: translateY(0);
+		}
+		&:hover{
+			@include breakpoint(sm){
+			transition: 0.2s ease;
+			transform: translateY(0px);
+			}
+		}
+}
 }

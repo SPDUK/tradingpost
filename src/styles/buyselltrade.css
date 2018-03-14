@@ -1,10 +1,5 @@
 .buyselltrade {
-  background: #1e3c72;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom right, #2a5298, #1e3c72);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom right, #2a5298, #1e3c72);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: white;
   padding-top: 130px;
   padding-bottom: 80px; }
   .buyselltrade-grid-merch {
@@ -27,35 +22,49 @@
           transition: 0.2s ease;
           transform: translateY(-30px); } }
   .buyselltrade-title {
-    padding-right: 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: block;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr 1fr;
     height: 200px;
-    font-size: 3.0em;
-    font-family: noto sans;
-    color: #FDFFFC;
-    text-align: center;
-    font-weight: 800;
-    font-variant: small-caps; }
-    @media (min-width: 768px) {
-      .buyselltrade-title {
-        margin-left: 10%;
-        margin-right: 10%;
-        font-size: 4em;
-        padding-right: 0; } }
-    @media (min-width: 992px) {
-      .buyselltrade-title {
-        font-size: 5em; } }
-    @media (min-width: 1200px) {
-      .buyselltrade-title {
-        font-size: 5em; } }
-    .buyselltrade-title i {
-      font-size: 0.7em;
-      transition: 0.2s linear;
-      opacity: 0.5; }
-      .buyselltrade-title i:hover {
-        transform: scale(1.1);
-        opacity: 1; }
+    font-size: 1.0em;
+    color: #363636;
+    text-align: center; }
+    .buyselltrade-title-top {
+      font-weight: 800;
+      display: inline-block;
+      width: 100%;
+      letter-spacing: -1px;
+      text-align: center;
+      font-size: 2.3em; }
+      @media (min-width: 768px) {
+        .buyselltrade-title-top {
+          font-size: 3.1em; } }
+      @media (min-width: 992px) {
+        .buyselltrade-title-top {
+          font-size: 3.2em; } }
+    .buyselltrade-title-middle {
+      padding-top: 7px;
+      padding-bottom: 7px;
+      opacity: 0.8;
+      letter-spacing: -1px;
+      font-size: 1.7em;
+      font-weight: 400;
+      width: 100%;
+      display: inline-block; }
+      @media (min-width: 768px) {
+        .buyselltrade-title-middle {
+          font-size: 2.4em; } }
+    .buyselltrade-title-bottom {
+      letter-spacing: -1px;
+      font-size: 1.2em;
+      opacity: 0.7;
+      width: 100%;
+      display: inline-block; }
+      @media (min-width: 768px) {
+        .buyselltrade-title-bottom {
+          font-size: 1.4em; } }
+      .buyselltrade-title-bottom span {
+        opacity: 0.6; }
   .buyselltrade-merch {
     margin-bottom: 0;
     height: 100%;
@@ -66,20 +75,23 @@
     text-align: center;
     grid-template-rows: 1fr; }
     .buyselltrade-merch-button {
+      border: 0px;
+      color: white;
       margin-left: 5%;
       margin-right: 5%;
       margin-bottom: 20px;
       height: 50px;
       border-radius: 0;
-      -webkit-text-stroke: 0px;
       font-size: 1em; }
       @media (min-width: 768px) {
         .buyselltrade-merch-button {
           height: 100%;
           margin: 0; } }
+      .buyselltrade-merch-button p {
+        opacity: 0.9; }
     @media (min-width: 768px) {
       .buyselltrade-merch {
-        background-color: white;
+        background-color: #F4F4F4;
         grid-template-rows: 1fr 1fr 0.4fr;
         font-size: 1em; } }
     .buyselltrade-merch-icon {
@@ -120,8 +132,11 @@
         .buyselltrade-merch-info {
           font-size: 1em; } }
   .buyselltrade-about {
-    color: #FDFFFC;
+    color: #363636;
     text-align: center; }
+    @media (min-width: 992px) {
+      .buyselltrade-about {
+        padding-bottom: 30px; } }
     .buyselltrade-about-top {
       padding-left: 10px;
       padding-right: 10px;
@@ -135,27 +150,30 @@
           padding-bottom: 85px;
           font-size: 1.5em; } }
     .buyselltrade-about-button {
+      border: 2px solid black;
       height: 45px;
       letter-spacing: 0.0425em;
       width: 170px;
       font-size: 1em;
-      background: red; }
+      color: #363636;
+      background: #F4F4F4; }
       @media (min-width: 768px) {
         .buyselltrade-about-button {
           height: 50px;
           font-size: 1em;
           width: 220px; } }
+      .buyselltrade-about-button:hover {
+        background: #363636;
+        color: white; }
       .buyselltrade-about-button span {
         left: -55px;
         text-align: center;
         position: relative;
-        color: #FDFFFC;
         text-align: center;
-        transition: 0.3 linear;
+        transition: 0.2s ease;
         opacity: 0; }
       .buyselltrade-about-button p {
-        transition: 0.3s linear;
-        color: #FDFFFC;
+        transition: 0.2s ease;
         display: inline-block;
         left: 30px;
         text-align: center;
@@ -168,7 +186,7 @@
         transition: 0.3 linear;
         opacity: 0; }
   .buyselltrade-contact {
-    color: #FDFFFC;
+    color: #363636;
     text-align: center; }
     .buyselltrade-contact-info {
       padding-left: 10px;
@@ -185,7 +203,7 @@
         font-weight: 800;
         padding: 5px 0px 5px 0px; }
         .buyselltrade-contact-info-number a {
-          color: white;
+          color: #363636;
           text-decoration: underline; }
       .buyselltrade-contact-info-top {
         padding-bottom: 10px;
@@ -196,17 +214,17 @@
             font-size: 1.5em; } }
 
 #elecBtn {
-  background: #FF9F1C; }
+  background: #F15025; }
 
 #elecIcon {
-  color: #FF9F1C;
+  color: #F15025;
   font-size: 2em; }
 
 #toolsBtn {
-  background: #2D5DC4; }
+  background: #436436; }
 
 #toolsIcon {
-  color: #2D5DC4;
+  color: #436436;
   font-size: 1.9em; }
 
 #jewelryBtn {

@@ -40,12 +40,12 @@ class Navbar extends Component {
   handleScroll() {
     const myNav = document.querySelector('.navbar');
     window.onscroll = function () {
-      if (document.documentElement.scrollTop >= 1) {
-        myNav.classList.add('nav-darkblue');
-        myNav.classList.remove('nav-blue');
+      if (document.documentElement.scrollTop >= 25) {
+        myNav.classList.add('nav-darkBlack');
+        myNav.classList.remove('nav-black');
       } else {
-        myNav.classList.add('nav-blue');
-        myNav.classList.remove('nav-darkblue');
+        myNav.classList.add('nav-black');
+        myNav.classList.remove('nav-darkBlack');
       }
     };
   }
