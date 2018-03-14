@@ -137,8 +137,8 @@
     color: $white;
     text-align: center;
     &-top {
-      padding-left: 5px;
-      padding-right: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
       padding-bottom: 30px;
       letter-spacing: 0.3px;
       font-weight: 400;
@@ -196,6 +196,8 @@
     color: $white;
     text-align: center;
     &-info {
+      padding-left: 10px;
+      padding-right: 10px;
       padding-top: 20px;
       font-size: 1.1em;
       @include breakpoint(sm) {
@@ -230,7 +232,7 @@
 }
 #elecIcon {
   color: $orange;
-  font-size: 1.9em;
+  font-size: 2em;
 }
 #toolsBtn {
   background: $lightBlue;
