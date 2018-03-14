@@ -5,7 +5,8 @@
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom right, #2a5298, #1e3c72);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  padding-top: 130px; }
+  padding-top: 130px;
+  padding-bottom: 80px; }
   .buyselltrade-grid-merch {
     margin-top: 40px;
     display: grid;
@@ -15,6 +16,16 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         grid-column-gap: 30px; } }
+    .buyselltrade-grid-merch-card {
+      height: 100%; }
+      @media (min-width: 768px) {
+        .buyselltrade-grid-merch-card {
+          transition: 0.3s ease;
+          transform: translateY(0); } }
+      @media (min-width: 768px) {
+        .buyselltrade-grid-merch-card:hover {
+          transition: 0.2s ease;
+          transform: translateY(-30px); } }
   .buyselltrade-title {
     padding-right: 15px;
     display: grid;
@@ -46,17 +57,18 @@
         transform: scale(1.1);
         opacity: 1; }
   .buyselltrade-merch {
+    margin-bottom: 0;
+    height: 100%;
     border-radius: 0px;
     font-size: 1.1em;
     display: grid;
     border: 0;
-    margin-bottom: 10px;
     text-align: center;
     grid-template-rows: 1fr; }
     .buyselltrade-merch-button {
       margin-left: 5%;
       margin-right: 5%;
-      margin-bottom: 2%;
+      margin-bottom: 20px;
       height: 50px;
       border-radius: 0;
       -webkit-text-stroke: 0px;
@@ -69,8 +81,7 @@
       .buyselltrade-merch {
         background-color: white;
         grid-template-rows: 1fr 1fr 0.4fr;
-        font-size: 1em;
-        margin-bottom: 30px; } }
+        font-size: 1em; } }
     .buyselltrade-merch-icon {
       display: none;
       font-size: 2em;
@@ -160,6 +171,7 @@
     color: #FDFFFC;
     text-align: center; }
     .buyselltrade-contact-info {
+      padding-top: 20px;
       font-size: 1.1em; }
       @media (min-width: 768px) {
         .buyselltrade-contact-info {

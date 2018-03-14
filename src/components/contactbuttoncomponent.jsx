@@ -6,7 +6,6 @@ class ContactButtonComponent extends Component {
     return (
       <div className="contactbuttoncomponent">
         <div onClick={this.props.componentButtonClick} className="contactbuttoncomponent-x">
-
           CLICK
         </div>
       </div>

@@ -1,10 +1,5 @@
 @import 'variables.scss';
 
-.home {
-// 	background: #1e3c72;  /* fallback for old browsers */
-// background: -webkit-linear-gradient(to left, #2a5298, #1e3c72);  /* Chrome 10-25, Safari 5.1-6 */
-// background: linear-gradient(to left, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
 * {
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -66,12 +61,12 @@ a {
 .container {
 	margin:0;
 	@include breakpoint(sm) {
-	margin-left: 10%;
-	margin-right: 10%;
+		margin-left: 4%;
+		margin-right: 4%;
 	}
 	@include breakpoint(lg){
-		margin-left: 13%;
-		margin-right:13%;
+		margin-left: 12%;
+		margin-right:12%; 
 	}
 }
 .button {
@@ -93,21 +88,22 @@ a {
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 	.buyselltrade {
 		&-merch{
-			display: inline-block;
-			width:80%;
-			margin: 5%;
-			height: 220px;
-			overflow: auto;
-			@include breakpoint(sm) {
-				width: 80%;
-				margin: 5%;
-				display: inline-block;
+			display: block;
+			position: relative;
+			width:100% !important;
+			height: 50px;
+			overflow: hidden;
+			@include breakpoint(sm){			
+				@include absolutecenter(x);
+				position: relative;
 			}
-			@include breakpoint(md){
-				width:38%;
-				margin: 5%;
-				display: inline-block;
+			&-button {
+				width:50%;
+				@include breakpoint(sm){
+					width: 100%;
+				}
 			}
+
 			&-icon {
 				i {
 					margin-right: 30px;

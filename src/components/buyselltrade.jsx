@@ -60,6 +60,7 @@ class BuySellTrade extends Component {
             </div>
           </div>
           <div className="buyselltrade-grid-merch">
+          <div className="buyselltrade-grid-merch-card">
             <div className="buyselltrade-merch">
               <p className="buyselltrade-merch-icon">
                 <i id="elecIcon" className="fa fa-mobile" />
@@ -78,6 +79,8 @@ class BuySellTrade extends Component {
                 <button id="elecBtn" className="button buyselltrade-merch-button">Shop Our Electronics at Ebay</button>
               </a>
             </div>
+            </div>
+            <div className="buyselltrade-grid-merch-card">
             <div className="buyselltrade-merch">
               <p className="buyselltrade-merch-icon">
                 <i id="toolsIcon" className="fa fa-wrench" />
@@ -96,6 +99,8 @@ class BuySellTrade extends Component {
                 <button id="toolsBtn" className="button buyselltrade-merch-button">Buy Our Tools at Ebay</button>
               </a>
             </div>
+          </div>
+          <div className="buyselltrade-grid-merch-card">
             <div className="buyselltrade-merch">
               <p className="buyselltrade-merch-icon">
                 <i id="jewelryIcon" className="fa fa-diamond" />
@@ -114,10 +119,11 @@ class BuySellTrade extends Component {
                 <button id="jewelryBtn" className="button buyselltrade-merch-button">See Our Jewelry at Ebay</button>
               </a>
             </div>
+            </div>
           </div>
           <div className="buyselltrade-contact">
             <div className="buyselltrade-contact-info">
-              <p className="buyselltrade-contact-info-top">Everything Else!</p>
+              <p className="buyselltrade-contact-info-top"></p>
               <p>Think you have something worth selling?</p>
               <p>Our friendly staff will help you find the best price for your item.</p>
               <p className="buyselltrade-contact-info-number">Our Number:
