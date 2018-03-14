@@ -62,50 +62,56 @@ class BuySellTrade extends Component {
           <div className="buyselltrade-grid-merch">
             <div className="buyselltrade-merch">
               <p className="buyselltrade-merch-icon">
-                <i className="fa fa-mobile" />
+                <i id="elecIcon" className="fa fa-mobile" />
                 <span> Electronics</span>
               </p>
               <div className="buyselltrade-merch-info">
-                <p>Game systems / Car Audio</p>
-                <p>Home Stereo Systems / TVs</p>
-                <p>Bluray & DVD Players</p>
-                <p>iPhones / Smartphones / Laptops</p>
-                <p>PCs & iMacs / iPads / Tablets</p>
+                <ul>
+                <li>item & item 2</li>
+                <li>item & item 2</li>
+                <li>item & item 2</li>
+                <li>item & item 2</li>
+                <li>item & item 2</li>
+                </ul>
               </div>
               <a href="https://www.ebay.com/sch/Consumer-Electronics/293/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=pajatek1">
-                <button className="button">Shop Our Electronics at Ebay</button>
+                <button id="elecBtn" className="button buyselltrade-merch-button">Shop Our Electronics at Ebay</button>
               </a>
             </div>
             <div className="buyselltrade-merch">
               <p className="buyselltrade-merch-icon">
-                <i className="fa fa-wrench" />
+                <i id="toolsIcon" className="fa fa-wrench" />
                 <span> Tools</span>
               </p>
               <div className="buyselltrade-merch-info">
-                <p>Chain Saws / Weed Eaters /</p>
-                <p>Drills / Cordless Power Tools / Saws</p>
-                <p>Pressure Washers / item </p>
-                <p>Item 2 / Long item name </p>
-                <p>Item 3 / item 4  </p>
+                <ul>
+                  <li>item & item 2</li>
+                  <li>item</li>
+                  <li>item & item 2</li>
+                  <li>item & item 2</li>
+                  <li>item & item 2</li>
+                </ul>
               </div>
               <a href="https://www.ebay.com/sch/Business-Industrial/12576/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=pajatek1">
-                <button className="button">Buy Our Tools at Ebay</button>
+                <button id="toolsBtn" className="button buyselltrade-merch-button">Buy Our Tools at Ebay</button>
               </a>
             </div>
             <div className="buyselltrade-merch">
               <p className="buyselltrade-merch-icon">
-                <i className="fa fa-diamond" />
+                <i id="jewelryIcon" className="fa fa-diamond" />
                 <span> Jewelry</span>
               </p>
               <div className="buyselltrade-merch-info">
-                <p>Men's and Women's Jewelry</p>
-                <p>Gold / Silver / Platinum</p>
-                <p>Watches / Earrings / Chains</p>
-                <p>Bracelets / Broken Gold / Precious Stones</p>
-                <p>Diamonds / Antiques</p>
+               <ul>
+                 <li>item</li>
+                 <li>item</li>
+                 <li>item</li>
+                 <li>item</li>
+                 <li>item</li>
+               </ul>
               </div>
               <a href="https://www.ebay.com/sch/Jewelry-Watches/281/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=pajatek1&_sac=1">
-                <button className="button">See Our Jewelry at Ebay</button>
+                <button id="jewelryBtn" className="button buyselltrade-merch-button">See Our Jewelry at Ebay</button>
               </a>
             </div>
           </div>

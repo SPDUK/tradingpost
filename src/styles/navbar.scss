@@ -4,7 +4,7 @@
   top: 0;
   height: 70px;
   width: 100%;
-  background-color: rgba($color: #000000, $alpha: 0);
+  background: rgba($color: #000000, $alpha: 0);
   position: fixed;
   transition: 0.3s ease-in;
   &-icon {
@@ -41,11 +41,10 @@
         }
       }
       &-contact {
-        background-color: $lightBlue;
-        border-bottom: 2px solid $lightBlue;
-
+        background-color: $orange;
+        border-bottom: 2px solid $orange;
         &:hover {
-          background-color: lighten($color: $lightBlue, $amount: 10);
+          background-color: lighten($color: $orange, $amount: 10) !important;
         }
       }
     }
@@ -114,7 +113,7 @@
         padding-bottom: 22px;
         width: 100%;
         text-align: center;
-        background-color: lighten($color: $blue, $amount: 20);
+        background-color:$blue;
         @include breakpoint(sm) {
           display: none;
         }
@@ -130,5 +129,5 @@
  background-color: rgba($color: #000000, $alpha: 0);
 }
 .nav-darkblue{
-  background-color: $lightBlue;
+  background-color: $blue;
 }

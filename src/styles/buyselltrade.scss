@@ -12,8 +12,8 @@
     &-merch {
       margin-top: 40px;
       display: grid;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      @include breakpoint(md){
+      grid-template-rows: 1fr 1fr 1fr;
+      @include breakpoint(sm){
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         grid-column-gap: 30px;
@@ -54,8 +54,20 @@
     }
   }
   &-merch {
+    &-button {
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 2%;
+      height: 50px;
+      border-radius: 0;
+      -webkit-text-stroke: 0px;
+      font-size: 1em;
+      @include breakpoint(sm){
+        height: 100%;
+        margin:0;
+      }
+    }
     border-radius:0px;
-    color: black;
     font-size: 1.1em;
     display: grid;
     border:0;
@@ -64,13 +76,12 @@
     grid-template-rows: 1fr;
     @include breakpoint(sm) {
       background-color: white;
-      grid-template-rows: 1.1fr 3.8fr 0.9fr;
+      grid-template-rows: 1fr 1fr 0.4fr;
       font-size: 1em;
       margin-bottom: 30px;
     }
     &-icon {
       display: none;
-      color: lighten($color:$blue, $amount: 15);
       font-size: 2em;
       font-weight: 800;
       align-self: center;
@@ -85,7 +96,7 @@
       }
       span {
         font-weight: 800;
-        color: lighten($color: $lightBlue, $amount: 10);
+        color: black;
         font-family: noto sans, sans-serif;
       }
     }
@@ -93,19 +104,6 @@
       display: grid;
       grid-template-rows: 1fr;
 
-    }
-    button { 
-      margin-left: 5%;
-      margin-right: 5%;
-      margin-bottom: 2%;
-      height: 50px;
-      border-radius: 0;
-      -webkit-text-stroke: 0px;
-      font-size: 1em;
-      @include breakpoint(sm){
-        height: 100%;
-        margin:0;
-      }
     }
     &-info {
       display:none;
@@ -116,9 +114,9 @@
       white-space: wrap;
       @include breakpoint(sm) {
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         font-size: 1em;
         line-height: 25px;
+        padding-bottom: 20px;
       }
       @include breakpoint(lg) {
         font-size: 1em;
@@ -142,13 +140,16 @@
       }
     }
     &-button {
+      height: 45px;
+      letter-spacing: 0.0425em;
       width: 170px;
       font-size: 1em;
+      background: red;
       @include breakpoint(sm) {
+        height: 50px;
         font-size: 1em;
         width: 220px;
       }
-
       span {
         left: -55px;
         text-align: center;
@@ -211,6 +212,28 @@
       }
     }
   }
+}
+
+#elecBtn {
+  background: $orange;
+}
+#elecIcon {
+  color: $orange;
+  font-size: 1.9em;
+}
+#toolsBtn {
+  background: $lightBlue;
+}
+#toolsIcon {
+  color: $lightBlue;
+  font-size: 1.9em;
+}
+#jewelryBtn {
+  background: $red;
+}
+#jewelryIcon {
+  color: $red;
+  font-size: 1.9em;
 }
 .contactButtonClick-enter {
   opacity: 0.1;

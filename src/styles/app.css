@@ -56,10 +56,10 @@ table {
 
 a {
   text-decoration: inherit;
-  color: #F9F9F9; }
+  color: #FDFFFC; }
   a:visited {
     text-decoration: inherit;
-    color: #F9F9F9 !important; }
+    color: #FDFFFC !important; }
 
 .container {
   margin: 0; }
@@ -73,11 +73,9 @@ a {
       margin-right: 13%; } }
 
 .button {
-  height: 50px;
   border: 0px;
   text-align: center;
-  color: #F9F9F9;
-  letter-spacing: 0.0425em;
+  color: #FDFFFC;
   transition: 0.2s linear;
   background: linear-gradient(#007FF7, #0061BC);
   cursor: pointer;
@@ -87,7 +85,7 @@ a {
       font-size: 1.1em; } }
   .button:hover {
     background: linear-gradient(#097ae4, #0058aa);
-    color: #F9F9F9; }
+    color: #FDFFFC; }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .buyselltrade-merch {
@@ -127,7 +125,7 @@ a {
   .buyselltrade-about-button {
     margin-bottom: 20px; }
   .buyselltrade-contact-info-number a {
-    color: #0054A3 !important; }
+    color: #2D5DC4 !important; }
   .contactinfo-times {
     height: 260px !important; }
     .contactinfo-times-day {
