@@ -19,6 +19,7 @@
           transform: translateY(0); } }
       @media (min-width: 768px) {
         .buyselltrade-grid-merch-card:hover {
+          box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
           transition: 0.2s ease;
           transform: translateY(-30px); } }
   .buyselltrade-title {

@@ -10,54 +10,69 @@
   background-color: #F4F4F4; }
   @media (min-width: 768px) {
     .contactinfo {
-      grid-template-columns: 4fr 5fr; } }
+      grid-template-columns: 5fr 5fr; } }
   .contactinfo-times {
+    margin-bottom: 100px;
     align-items: center;
     text-align: center;
     height: 300px;
-    display: grid;
     grid-template-rows: 2fr 8fr;
-    padding: 2%;
-    grid-template-rows: repeat(8, 1fr); }
+    padding: 2%; }
     @media (min-width: 768px) {
       .contactinfo-times {
-        height: 400px; } }
+        height: 400px;
+        margin-bottom: 0; } }
     .contactinfo-times-title {
+      font-weight: 800;
       font-size: 2em;
       opacity: 1; }
     .contactinfo-times-day {
-      padding-top: 1px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-top: 20px;
       font-size: 1.2em;
       opacity: 1; }
+      @media (min-width: 768px) {
+        .contactinfo-times-day {
+          text-align: right; } }
+      .contactinfo-times-day span {
+        font-weight: 800; }
+        @media (min-width: 768px) {
+          .contactinfo-times-day span {
+            padding-left: 7px;
+            text-align: left; } }
+    .contactinfo-times ul {
+      padding-top: 30px; }
+      @media (min-width: 768px) {
+        .contactinfo-times ul {
+          padding-top: 50px;
+          line-height: 1.2; } }
   .contactinfo-location {
+    font-weight: 800;
     align-items: center;
     height: 400px;
     display: grid;
     grid-template-rows: 2fr 8fr;
     padding: 2%; }
     .contactinfo-location-map-display {
-      width: 100%;
+      padding: 2.5%;
+      width: 95%;
       height: 300px; }
       @media (min-width: 768px) {
         .contactinfo-location-map-display {
           padding-left: 10%;
           padding-right: 10%;
           width: 80%; } }
-      @media (min-width: 992px) {
-        .contactinfo-location-map-display {
-          padding-right: 15%;
-          padding-left: 15%;
-          width: 70%; } }
-      @media (min-width: 1200px) {
-        .contactinfo-location-map-display {
-          padding-left: 20%;
-          padding-right: 20%;
-          width: 60%; } }
     .contactinfo-location-title {
       font-size: 2em;
       text-align: center; }
       .contactinfo-location-title a {
+        text-decoration: underline;
+        color: #363636;
         font-size: 0.6em; }
+        .contactinfo-location-title a:visited {
+          color: #363636; }
       .contactinfo-location-title p:nth-of-type(2) {
         font-size: 0.5em;
         opacity: 0.8; }
