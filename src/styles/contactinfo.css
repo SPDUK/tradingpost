@@ -23,9 +23,12 @@
         height: 400px;
         margin-bottom: 0; } }
     .contactinfo-times-title {
+      position: relative;
       font-weight: 800;
-      font-size: 2em;
-      opacity: 1; }
+      font-size: 2em; }
+      @media (min-width: 768px) {
+        .contactinfo-times-title {
+          padding-left: 50px; } }
     .contactinfo-times-day {
       width: 100%;
       display: grid;

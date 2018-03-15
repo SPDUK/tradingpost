@@ -24,9 +24,12 @@
       margin-bottom: 0;
     }
     &-title {
+      position: relative;   
       font-weight: 800;
       font-size: 2em;
-      opacity: 1;
+      @include breakpoint(sm){
+        padding-left: 50px;
+      }
     }
     &-day {
       width: 100%;
