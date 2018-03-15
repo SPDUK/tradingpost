@@ -3,8 +3,12 @@
   height: 300px;
   display: block;
   position: relative;
-  border: 2px solid red; }
+  background-color: #F4F4F4; }
   .contactbuttoncomponent-x {
-    height: 100%;
-    background-color: blue;
-    width: 70%; }
+    color: #363636;
+    font-size: 2.2em;
+    font-weight: 800;
+    z-index: 5;
+    float: right;
+    height: 50px;
+    width: 50px; }

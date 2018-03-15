@@ -1,16 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../styles/contactbuttoncomponent.css';
 
-class ContactButtonComponent extends Component {
-  render() {
-    return (
-      <div className="contactbuttoncomponent">
-        <div onClick={this.props.componentButtonClick} className="contactbuttoncomponent-x">
-          CLICK
-        </div>
+const ContactButtonComponent = (props) => {
+  return (
+    <div className="contactbuttoncomponent">
+      <div onKeyDown={props.componentButtonClick}  role="Button" tabIndex="0" onClick={props.componentButtonClick} className="contactbuttoncomponent-x">
+        <span>X</span>
       </div>
-    );
-  }
-}
+      <div className="contactbuttoncomponent-left">
+        left
+      </div>
+      <div className="contactbuttoncomponent-right">
+        right
+      </div>
+    </div>
+  );
+};
 
 export default ContactButtonComponent;
