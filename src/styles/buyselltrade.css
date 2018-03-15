@@ -65,7 +65,14 @@
         .buyselltrade-title-bottom {
           font-size: 1.4em; } }
       .buyselltrade-title-bottom span {
-        opacity: 0.6; }
+        opacity: 0.4; }
+    .buyselltrade-title-tagline {
+      font-size: 0.9em;
+      margin-top: 10px;
+      opacity: 0.6; }
+      @media (min-width: 768px) {
+        .buyselltrade-title-tagline {
+          font-size: 1em; } }
   .buyselltrade-merch {
     margin-bottom: 0;
     height: 100%;

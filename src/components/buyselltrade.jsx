@@ -32,7 +32,8 @@ class BuySellTrade extends Component {
             <div className="buyselltrade-title">
               <p className="buyselltrade-title-top">Trading Post</p>
               <p className="buyselltrade-title-middle">Crystal Lake, IL</p>
-              <p className="buyselltrade-title-bottom">Buy <span>/</span> Sell <span>/</span> Trade</p>
+              <p className="buyselltrade-title-bottom">Buy <span>/ </span>Sell <span>/ </span>Trade</p>
+              <p className="buyselltrade-title-tagline">Bringing you the best deals at the lowest prices.</p>
             </div>
             <div className="buyselltrade-about">
               <button onClick={this.contactButtonClick}className="buyselltrade-about-button button"><p>Get In Touch</p> <span>Close</span></button>

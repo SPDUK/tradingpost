@@ -74,7 +74,15 @@
         font-size: 1.4em;
       }
       span {
-        opacity: 0.6;
+        opacity: 0.4;
+      }
+    }
+    &-tagline {
+      font-size: 0.9em;
+      margin-top: 10px;
+      opacity: 0.6;
+      @include breakpoint(sm){
+        font-size: 1em;
       }
     }
   }

@@ -28,7 +28,7 @@
           width: 65px; } }
       .navbar-icon img:hover {
         transition: 0.2s ease;
-        transform: scale(1.1); }
+        transform: scale(1.05); }
   .navbar-wide {
     display: none; }
     @media (min-width: 768px) {
