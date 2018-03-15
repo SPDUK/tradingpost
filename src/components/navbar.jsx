@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import TradingPostIcon from '../images/tradingpost.svg';
+import TradingPostIcon from '../images/tpcl orng.svg';
 // css
 import '../styles/navbar.css';
 

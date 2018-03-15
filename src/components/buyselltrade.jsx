@@ -115,7 +115,7 @@ class BuySellTrade extends Component {
             <div className="buyselltrade-contact-info">
               <p className="buyselltrade-contact-info-top"></p>
               <p>Think you have something worth selling?</p>
-              <p>Give us a call and we will be happy to help you with any questions you might have.</p>
+              <p>We deal in all kinds of items, give us a call with any questions you might have.</p>
               <p className="buyselltrade-contact-info-number">Our Number:
                 <a href="tel:8158930218" aria-label="8 1 5. 8 9 3. 0 2 1 8.">(815) 893-0218</a>
               </p>

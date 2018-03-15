@@ -10,11 +10,28 @@
   transition: 0.3s ease-in;
   &-icon {
     transition: 0.2s linear;
-    height: 20px;
-    width: 200px;
-    padding: 20px;
     position:fixed;
     opacity: 1;
+    left: 10px;
+    top: 10px;
+    @include breakpoint(sm){
+      left: 5px;
+      top: 3px;
+    }
+    img {
+      transition: 0.2s ease;
+      transform: scale(1);
+      height: 50px;
+      width: 50px;
+      @include breakpoint(sm){
+        height: 65px;
+        width: 65px;
+      }
+      &:hover {
+        transition: 0.2s ease;
+        transform: scale(1.1);
+      }
+    }
   }
   &-wide {
     display: none;

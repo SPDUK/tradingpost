@@ -9,11 +9,26 @@
   transition: 0.3s ease-in; }
   .navbar-icon {
     transition: 0.2s linear;
-    height: 20px;
-    width: 200px;
-    padding: 20px;
     position: fixed;
-    opacity: 1; }
+    opacity: 1;
+    left: 10px;
+    top: 10px; }
+    @media (min-width: 768px) {
+      .navbar-icon {
+        left: 5px;
+        top: 3px; } }
+    .navbar-icon img {
+      transition: 0.2s ease;
+      transform: scale(1);
+      height: 50px;
+      width: 50px; }
+      @media (min-width: 768px) {
+        .navbar-icon img {
+          height: 65px;
+          width: 65px; } }
+      .navbar-icon img:hover {
+        transition: 0.2s ease;
+        transform: scale(1.1); }
   .navbar-wide {
     display: none; }
     @media (min-width: 768px) {
