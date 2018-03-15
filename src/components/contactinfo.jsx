@@ -12,13 +12,13 @@ const ContactInfo = () => {
           <p>Opening Times</p>
         </div>
         <ul>
-        <li className="contactinfo-times-day">Monday<span> 10:00 - 19:00</span></li>
-        <li className="contactinfo-times-day">Tuesday<span> 10:00 - 19:00</span></li>
-        <li className="contactinfo-times-day">Wednesday<span> 10:00 - 19:00</span></li>
-        <li className="contactinfo-times-day">Thursday<span> 10:00 - 19:00</span></li>
-        <li className="contactinfo-times-day">Friday<span> 10:00 - 19:00</span></li>
-        <li className="contactinfo-times-day">Saturday<span> 10:00 - 18:00</span></li>
-        <li className="contactinfo-times-day">Sunday<span> 10:00 - 16:00</span></li>
+          <li className="contactinfo-times-day">Monday<span> 10:00 - 19:00</span></li>
+          <li className="contactinfo-times-day">Tuesday<span> 10:00 - 19:00</span></li>
+          <li className="contactinfo-times-day">Wednesday<span> 10:00 - 19:00</span></li>
+          <li className="contactinfo-times-day">Thursday<span> 10:00 - 19:00</span></li>
+          <li className="contactinfo-times-day">Friday<span> 10:00 - 19:00</span></li>
+          <li className="contactinfo-times-day">Saturday<span> 10:00 - 18:00</span></li>
+          <li className="contactinfo-times-day">Sunday<span> 10:00 - 16:00</span></li>
         </ul>
       </div>
       <div className="contactinfo-location">

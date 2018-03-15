@@ -231,8 +231,9 @@
     color: $black;
     text-align: center;
     &-info {
-      padding-left: 10px;
-      padding-right: 10px;
+      width: 80%;
+      padding-left: 10%;
+      padding-right: 10%;
       padding-top: 20px;
       font-size: 1.1em;
       @include breakpoint(sm) {
@@ -255,6 +256,9 @@
         font-size: 1.3em;
         font-weight: 800;
         @include breakpoint(sm) {
+          font-size: 1.4em;
+        }
+        @include breakpoint(md){
           font-size: 1.5em;
         }
       }

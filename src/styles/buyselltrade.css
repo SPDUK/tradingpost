@@ -197,8 +197,9 @@
     color: #363636;
     text-align: center; }
     .buyselltrade-contact-info {
-      padding-left: 10px;
-      padding-right: 10px;
+      width: 80%;
+      padding-left: 10%;
+      padding-right: 10%;
       padding-top: 20px;
       font-size: 1.1em; }
       @media (min-width: 768px) {
@@ -218,6 +219,9 @@
         font-size: 1.3em;
         font-weight: 800; }
         @media (min-width: 768px) {
+          .buyselltrade-contact-info-top {
+            font-size: 1.4em; } }
+        @media (min-width: 992px) {
           .buyselltrade-contact-info-top {
             font-size: 1.5em; } }
 
