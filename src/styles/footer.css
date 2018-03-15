@@ -41,6 +41,10 @@
         .footer-contact-info {
           padding-left: 50px;
           text-align: left; } }
+      .footer-contact-info-phone {
+        color: #cccccc; }
+        .footer-contact-info-phone a {
+          color: white; }
       .footer-contact-info-links {
         width: 0;
         color: white;
@@ -65,7 +69,8 @@
       padding-top: 20px;
       width: 100%;
       text-align: center;
-      color: white;
       opacity: 0.3;
       font-weight: 300;
       font-size: 0.8em; }
+      .footer-contact-webdev a {
+        color: white; }

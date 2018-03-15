@@ -18,7 +18,7 @@ const Footer = () => {
           <a className="footer-contact-info-links" href="https://chicago.craigslist.org/search/sss?sort=rel&is_paid=all&search_distance_type=mi&query=7100+Teckler+Blvd">Craigslist</a>
         </div>
         <div className="footer-contact-adress">
-          <p className="footer-contact-info-phone">Phone: <span>815-893-0218</span></p>
+          <p className="footer-contact-info-phone">Phone: <a href="tel:8158930218" aria-label="8 1 5. 8 9 3. 0 2 1 8.">(815) 893-0218</a></p>
           <p> 7100 Teckler Blvd, Crystal Lake, IL 60014 </p>
         </div>
       </div>

@@ -45,6 +45,12 @@
         padding-left: 50px;
         text-align: left;
       }
+      &-phone {
+        color: darken($color: $white, $amount: 20);
+        a {
+          color: darken($color: $white, $amount: 0);
+        }
+      }
       &-links {
         width: 0;
         color: $white;
@@ -75,10 +81,12 @@
       padding-top: 20px;
       width: 100%;
       text-align: center;
-      color: $white;
       opacity: 0.3;
       font-weight: 300;
       font-size: 0.8em;
+      a {
+        color: $white;
+      }
     }
   }
 }
