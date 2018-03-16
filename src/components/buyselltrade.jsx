@@ -13,17 +13,12 @@ class BuySellTrade extends Component {
       showComponent: false,
     };
     this.contactButtonClick = this.contactButtonClick.bind(this);
-    this.componentButtonClick = this.componentButtonClick.bind(this);
   }
   contactButtonClick() {
     const contactButton = document.querySelector('.buyselltrade-about-button');
     contactButton.classList.toggle('buyselltrade-about-button-open');
     this.setState({ showComponent: !this.state.showComponent });
   }
-  componentButtonClick() {
-    this.setState({ showComponent: false });
-  }
-
   render() {
     return (
       <div className="buyselltrade">
@@ -33,7 +28,7 @@ class BuySellTrade extends Component {
               <p className="buyselltrade-title-top">Trading Post</p>
               <p className="buyselltrade-title-middle">Crystal Lake, IL</p>
               <p className="buyselltrade-title-bottom">Buy <span>/ </span>Sell <span>/ </span>Trade</p>
-              <p className="buyselltrade-title-tagline">Bringing you the best deals at the lowest prices.</p>
+              <p className="buyselltrade-title-tagline">Not your typical pawn shop, we bring you the best deals at the lowest prices.</p>
             </div>
             <div className="buyselltrade-about">
               <button onClick={this.contactButtonClick}className="buyselltrade-about-button button"><p>Get In Touch</p> <span>Close</span></button>
@@ -45,7 +40,7 @@ class BuySellTrade extends Component {
                 transitionLeaveTimeout={250}
               >
                 {this.state.showComponent
-                  ? <ContactButtonComponent key="contactButtonClickKey" componentButtonClick={this.componentButtonClick} />
+                  ? <ContactButtonComponent key="contactButtonClickKey" contactButtonClick={this.contactButtonClick} />
                   : null}
               </CSSTransitionGroup>
             </div>

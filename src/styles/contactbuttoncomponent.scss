@@ -1,17 +1,87 @@
 @import 'variables.scss';
 .contactbuttoncomponent {
+  color: $black;
   margin-top: 50px;
   height: 300px;
   display: block;
   position: relative;
   background-color: $lightGray;
   &-x {
+    right: 0;
+    position: absolute;
+    cursor: pointer;
+    transition: 0.13s linear;
     color: $black;
     font-size: 2.2em;
     font-weight: 800;
     z-index: 5;
-    float: right;
     height: 50px;
     width: 50px;
+    span {
+      top: 20px;
+      opacity: 100%;
+      position: absolute;
+      transition: 0.25s ease-in;
+      height: 4px;
+      border-radius: 3px;
+      background-color: $black;
+      width: 30px;
+      right: 10px;
+    }
+    span:nth-child(1) {
+      transform: rotate(45deg);
+    }
+    span:nth-child(2) {
+      transform: rotate(-45deg);
+    }
+    &:hover {
+      transition: 0.13s linear;
+      background-color: darken($color: $lightGray, $amount: 10);
+    }
+  }
+  &-top {
+    overflow: hidden;
+    letter-spacing: -1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 35px;
+    box-sizing: border-box;
+    height: 60%;
+    font-size: 1em;
+    @include breakpoint(xs){
+      font-size: 1em;
+    }
+    p {
+      padding-bottom: 10px;
+
+    }
+    span {
+      font-weight: 800;
+    }
+  }
+  &-bottom {
+    box-sizing: border-box;
+    height: 40%;
+    border-top: 1px solid rgba($color: $black, $alpha: 0.2);
+    &-phone {
+      padding-top: 20px;
+    }
+    &-button {
+      border-radius: 3px;
+      width: 200px;
+      height: 60px;
+      margin-top: 15px;
+      cursor: pointer;
+      position: relative;
+      @include absolutecenter(x);
+      background-color: $orange;
+      color: $white;
+      vertical-align: middle;
+      line-height: 30px;
+      font-size: 1.1em;
+      @include breakpoint(sm){
+
+      }
+    }
   }
 }

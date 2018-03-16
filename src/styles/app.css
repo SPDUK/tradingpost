@@ -147,8 +147,7 @@ a {
 .button {
   text-align: center;
   transition: 0.2s ease;
-  cursor: pointer;
-  border-radius: 0px; }
+  cursor: pointer; }
   @media (min-width: 768px) {
     .button {
       font-size: 1.1em; } }
