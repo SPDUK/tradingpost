@@ -94,7 +94,7 @@ class Navbar extends Component {
             <a className="navbar-mobile-links-active" href="https://www.ebay.com/usr/pajatek1">Ebay</a>
             <a className="navbar-mobile-links-active" href="https://chicago.craigslist.org/search/sss?sort=rel&is_paid=all&search_distance_type=mi&query=7100+Teckler+Blvd" role="navigation">Craigslist</a>
             <a className="navbar-mobile-links-active" href="https://offerupnow.com/p/2881193/">OfferUp</a>
-            <a onClick={this.navScrollClick}  className="navbar-mobile-links-active contact-link">Contact</a>
+            <a onClick={this.navScrollClick} className="navbar-mobile-links-active contact-link">Contact</a>
           </div>
         </div>
       </nav>

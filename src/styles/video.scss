@@ -1,0 +1,36 @@
+@import 'variables.scss';
+
+.video {
+  background-color: $lightGray;
+  margin: 0px auto;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  &-title {
+    padding-bottom: 20px;
+    &-top{
+      font-weight: 800;
+    }
+    &-bottom {
+      letter-spacing: -1px;
+    }
+    @include breakpoint(sm){
+      font-size: 1.3em;
+    }
+  }
+  &-player {
+    iframe {
+      width: 320px;
+      height: 180px;
+      @include breakpoint(sm){
+        width: 600px;
+        height: 338px;
+      }
+      @include breakpoint(md){
+        width: 800px;
+        height: 450px;
+      }
+    }
+    display: inline-block;
+  }
+}

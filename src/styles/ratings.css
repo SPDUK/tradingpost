@@ -59,8 +59,7 @@
         position: relative;
         font-size: 1.3em;
         background-color: #e7e7e7;
-        height: 80px;
-        line-height: 40px; }
+        height: 80px; }
         @media (min-width: 992px) {
           .ratings-reviews-review-stars {
             margin-right: 15%;
@@ -68,7 +67,9 @@
             width: 70%; } }
         .ratings-reviews-review-stars i {
           position: relative;
-          top: 40%;
+          padding-top: 15px;
+          padding-bottom: 15px;
           letter-spacing: -1px; }
         .ratings-reviews-review-stars p {
+          font-weight: 800;
           font-size: 0.8em; }

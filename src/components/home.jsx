@@ -4,6 +4,7 @@ import Navbar from './navbar';
 import BuySellTrade from './buyselltrade';
 import Ratings from './ratings';
 import ContactInfo from './contactinfo';
+import Video from './video';
 import Footer from './footer';
 
 class Home extends Component {
@@ -14,6 +15,7 @@ class Home extends Component {
         <BuySellTrade />
         <Ratings />
         <ContactInfo />
+        <Video />
         <Footer />
       </div>
     );

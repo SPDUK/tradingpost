@@ -1,0 +1,28 @@
+.video {
+  background-color: #F4F4F4;
+  margin: 0px auto;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .video-title {
+    padding-bottom: 20px; }
+    .video-title-top {
+      font-weight: 800; }
+    .video-title-bottom {
+      letter-spacing: -1px; }
+    @media (min-width: 768px) {
+      .video-title {
+        font-size: 1.3em; } }
+  .video-player {
+    display: inline-block; }
+    .video-player iframe {
+      width: 320px;
+      height: 180px; }
+      @media (min-width: 768px) {
+        .video-player iframe {
+          width: 600px;
+          height: 338px; } }
+      @media (min-width: 992px) {
+        .video-player iframe {
+          width: 800px;
+          height: 450px; } }
