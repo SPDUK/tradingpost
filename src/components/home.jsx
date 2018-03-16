@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-// components
 import Navbar from './navbar';
 import BuySellTrade from './buyselltrade';
 import Ratings from './ratings';
