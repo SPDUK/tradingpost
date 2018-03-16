@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 
 // components
 import Navbar from './navbar';
-import Footer from './footer';
 import BuySellTrade from './buyselltrade';
+import Ratings from './ratings';
 import ContactInfo from './contactinfo';
+import Footer from './footer';
 
 class Home extends Component {
   render() {
@@ -12,6 +13,7 @@ class Home extends Component {
       <div className="home">
         <Navbar />
         <BuySellTrade />
+        <Ratings />
         <ContactInfo />
         <Footer />
       </div>

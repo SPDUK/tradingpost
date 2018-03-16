@@ -1,0 +1,74 @@
+.ratings {
+  height: 400px; }
+  .ratings-reviews {
+    width: 80%;
+    margin: 10%;
+    color: white; }
+    @media (min-width: 768px) {
+      .ratings-reviews {
+        position: relative;
+        width: 50%;
+        margin: 0 auto; } }
+    .ratings-reviews-review {
+      margin: 0 auto;
+      margin-top: 10px;
+      color: white; }
+      .ratings-reviews-review-icon {
+        width: 100px;
+        height: 100px;
+        top: 30px;
+        z-index: -1;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+        background-color: #F4F4F4;
+        border-radius: 60px; }
+        .ratings-reviews-review-icon i {
+          font-size: 50px;
+          top: 15px;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          position: relative; }
+        .ratings-reviews-review-icon-facebook {
+          color: #2D5DC4; }
+        .ratings-reviews-review-icon-offerup {
+          color: #436436; }
+        .ratings-reviews-review-icon-ebay {
+          color: #E71D36; }
+      .ratings-reviews-review-title {
+        color: #363636;
+        font-weight: 800;
+        font-size: 1.3em;
+        text-align: center;
+        height: 60px;
+        color: #363636;
+        background-color: #F4F4F4; }
+        @media (min-width: 992px) {
+          .ratings-reviews-review-title {
+            margin-right: 15%;
+            margin-left: 15%;
+            width: 70%; } }
+        .ratings-reviews-review-title p {
+          position: relative;
+          top: 30%; }
+      .ratings-reviews-review-stars {
+        text-align: center;
+        color: #F15025;
+        position: relative;
+        font-size: 1.3em;
+        background-color: #e7e7e7;
+        height: 80px;
+        line-height: 40px; }
+        @media (min-width: 992px) {
+          .ratings-reviews-review-stars {
+            margin-right: 15%;
+            margin-left: 15%;
+            width: 70%; } }
+        .ratings-reviews-review-stars i {
+          position: relative;
+          top: 40%;
+          letter-spacing: -1px; }
+        .ratings-reviews-review-stars p {
+          font-size: 0.8em; }

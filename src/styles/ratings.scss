@@ -1,0 +1,84 @@
+@import 'variables.scss';
+.ratings {
+  height: 400px;
+  &-reviews {
+    width: 80%;
+    margin: 10%;
+    color: $white;
+    @include breakpoint(sm){
+      position: relative;
+      width: 50%;
+      margin: 0 auto;
+    }
+    &-review {
+      margin: 0 auto;
+      margin-top: 10px;
+      color: white;
+      &-icon {
+        width: 100px;
+        height: 100px;
+        top:30px;
+        z-index: -1;
+        @include absolutecenter(x);
+        position: relative;
+        background-color: $lightGray;
+        border-radius: 60px;
+         i {
+           font-size: 50px;
+           top: 15px;
+           @include absolutecenter(x);
+           position: relative;
+         }
+         &-facebook {
+           color: $lightBlue;
+         }
+         &-offerup {
+           color: $green;
+         }
+         &-ebay {
+           color: $red;
+         }
+      }
+      &-title {
+        color: $black;
+        font-weight: 800;
+        font-size: 1.3em;
+        text-align: center;
+        height: 60px;
+        color: $black;
+        background-color: $lightGray;
+        @include breakpoint(md){
+          margin-right: 15%;
+          margin-left: 15%;
+          width: 70%;
+        }
+        p {
+          position: relative;
+          top: 30%;
+        }
+      }
+      &-stars {
+        text-align: center;
+        color: $orange;
+        @include breakpoint(md){
+          margin-right: 15%;
+          margin-left: 15%;
+          width: 70%;
+        }
+        position: relative;
+        font-size: 1.3em;
+        background-color: darken($color: $lightGray, $amount: 5);
+        height: 80px;
+        line-height: 40px;
+        i{
+          position: relative;
+          top: 40%;
+          letter-spacing: -1px;
+        }
+        p {
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+}
