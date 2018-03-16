@@ -189,8 +189,9 @@
       }
     }
     &-button {
+      transition: 0.2s linear;
       border-radius: 4px;
-      border: 2px solid black;
+      border: 2px solid $black;
       height: 45px;
       letter-spacing: 0.0425em;
       width: 170px;
@@ -203,15 +204,16 @@
         width: 220px;
       }
       &:hover {
+        transition: 0.2s linear;
         background: $black;
         color: $white;
       }
       span {
+        transition: 0.2s ease;
         left: -55px;
         text-align: center;
         position: relative;
         text-align: center;
-        transition: 0.2s ease;
         opacity: 0;
       }
       p {
@@ -225,11 +227,11 @@
       }
       &-open {
         span {
-          transition:  linear 0.3s;
+          transition:  ease 0.1s;
           opacity: 1;
         }
         p {
-          transition: 0.3 linear;
+          transition: ease 0.1s;
           opacity: 0;
         }
       }

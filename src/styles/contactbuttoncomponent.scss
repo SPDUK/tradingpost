@@ -47,13 +47,20 @@
     padding-top: 35px;
     box-sizing: border-box;
     height: 60%;
-    font-size: 1em;
-    @include breakpoint(xs){
+    @media only screen and (max-width : 320px) {
       font-size: 1em;
-    }
+      }
+      @media only screen and (min-width : 435px) {
+        font-size: 1.13em;
+        }
+      @include breakpoint(sm){
+        font-size: 1.3em;
+      }
     p {
       padding-bottom: 10px;
-
+      @include breakpoint(md){
+        padding-bottom: 50px;
+      }
     }
     span {
       font-weight: 800;
@@ -65,22 +72,36 @@
     border-top: 1px solid rgba($color: $black, $alpha: 0.2);
     &-phone {
       padding-top: 20px;
+      a {
+        color: $black;
+        font-weight: 800;
+      }
     }
     &-button {
-      border-radius: 3px;
-      width: 200px;
-      height: 60px;
+      transition: linear 0.2s;
+      border-radius: 4px;
+      width: 170px;
+      height: 45px;
       margin-top: 15px;
+      border: 2px solid $orange;
       cursor: pointer;
       position: relative;
       @include absolutecenter(x);
-      background-color: $orange;
-      color: $white;
+      background-color: $lightGray;
+      color: $black;
       vertical-align: middle;
-      line-height: 30px;
-      font-size: 1.1em;
-      @include breakpoint(sm){
-
+      line-height: 45px;
+      font-size: 1em;
+      @include breakpoint(sm) {
+        height: 50px;
+        width: 220px;
+        line-height: 50px;
+      }
+      &:hover {
+        transition: linear 0.2s;
+        background-color: $orange;
+        color: $white;
+        border: 2px solid $orange;
       }
     }
   }

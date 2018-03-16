@@ -166,8 +166,9 @@
           padding-bottom: 85px;
           font-size: 1.5em; } }
     .buyselltrade-about-button {
+      transition: 0.2s linear;
       border-radius: 4px;
-      border: 2px solid black;
+      border: 2px solid #363636;
       height: 45px;
       letter-spacing: 0.0425em;
       width: 170px;
@@ -180,14 +181,15 @@
           font-size: 1em;
           width: 220px; } }
       .buyselltrade-about-button:hover {
+        transition: 0.2s linear;
         background: #363636;
         color: white; }
       .buyselltrade-about-button span {
+        transition: 0.2s ease;
         left: -55px;
         text-align: center;
         position: relative;
         text-align: center;
-        transition: 0.2s ease;
         opacity: 0; }
       .buyselltrade-about-button p {
         transition: 0.2s ease;
@@ -197,10 +199,10 @@
         position: relative;
         opacity: 1; }
       .buyselltrade-about-button-open span {
-        transition: linear 0.3s;
+        transition: ease 0.1s;
         opacity: 1; }
       .buyselltrade-about-button-open p {
-        transition: 0.3 linear;
+        transition: ease 0.1s;
         opacity: 0; }
   .buyselltrade-contact {
     color: #363636;
