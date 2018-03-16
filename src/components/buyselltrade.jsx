@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { CSSTransitionGroup } from 'react-transition-group';
-import { animateScroll as scroll } from 'react-scroll';
 
 import ContactButtonComponent from './contactbuttoncomponent';
 import '../styles/buyselltrade.css';

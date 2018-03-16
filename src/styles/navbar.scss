@@ -39,6 +39,7 @@
       display: block;
     }
     &-links {
+      cursor: pointer;
       float: right;
       a {
         color: $white;
@@ -118,13 +119,13 @@
 
       &:hover {
         transition: 0.2s ease-in;
-        cursor: pointer;
       }
     }
     &-links {
       display: none;
       width: 100%;
       &-active {
+        cursor: pointer;
         color: $white;
         transition: 0.2s ease;
         display: inline-block;

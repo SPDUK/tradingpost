@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Element, animateScroll as scroll, scroller } from 'react-scroll';
 import '../styles/contactinfo.css';
 
 const URL = `https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_GMAPS}&q=Trading+Post,CrystalLake+IL&zoom=15`;
@@ -7,7 +7,7 @@ const URL = `https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_
 const ContactInfo = () => {
   return (
     <div className="contactinfo">
-      <div className="contactinfo-times">
+      <Element name="infotimes" className="contactinfo-times">
         <div className="contactinfo-times-title">
           <p>Opening Times</p>
         </div>
@@ -20,7 +20,7 @@ const ContactInfo = () => {
           <li className="contactinfo-times-day">Saturday<span> 10:00 - 18:00</span></li>
           <li className="contactinfo-times-day">Sunday<span> 10:00 - 16:00</span></li>
         </ul>
-      </div>
+      </Element>
       <div className="contactinfo-location">
         <div className="contactinfo-location-title">
           <p>Location</p>
