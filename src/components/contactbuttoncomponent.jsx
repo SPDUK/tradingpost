@@ -10,6 +10,7 @@ class ContactButtonComponent extends Component {
     scroller.scrollTo('infotimes', {
       duration: 1000,
       delay: 100,
+      offset: -70,
       smooth: 'easeInOutQuad',
     });
   }

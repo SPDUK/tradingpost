@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { CSSTransitionGroup } from 'react-transition-group';
-
+import { animateScroll as scroll, scroller } from 'react-scroll';
 import ContactButtonComponent from './contactbuttoncomponent';
 import '../styles/buyselltrade.css';
 import '../styles/app.css';
@@ -14,10 +14,14 @@ class BuySellTrade extends Component {
     this.contactButtonClick = this.contactButtonClick.bind(this);
   }
   contactButtonClick() {
+    if (!this.state.showComponent) {
+      scroll.scrollTo(250);
+    }
     const contactButton = document.querySelector('.buyselltrade-about-button');
     contactButton.classList.toggle('buyselltrade-about-button-open');
     this.setState({ showComponent: !this.state.showComponent });
   }
+
   render() {
     return (
       <div className="buyselltrade">

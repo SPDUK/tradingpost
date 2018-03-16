@@ -31,8 +31,7 @@
     .contactbuttoncomponent-x span:nth-child(2) {
       transform: rotate(-45deg); }
     .contactbuttoncomponent-x:hover {
-      transition: 0.13s linear;
-      background-color: #dbdbdb; }
+      transition: 0.13s linear; }
   .contactbuttoncomponent-top {
     overflow: hidden;
     letter-spacing: -1px;

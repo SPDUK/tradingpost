@@ -36,7 +36,7 @@
     }
     &:hover {
       transition: 0.13s linear;
-      background-color: darken($color: $lightGray, $amount: 10);
+      // background-color: darken($color: $lightGray, $amount: 10);
     }
   }
   &-top {
