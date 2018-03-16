@@ -40,7 +40,7 @@ class Navbar extends Component {
 
   handleScroll() {
     const myNav = document.querySelector('.navbar');
-    window.onscroll = function () {
+    window.onscroll = function navScrollFunc () {
       if (document.documentElement.scrollTop >= 25) {
         myNav.classList.add('nav-darkBlack');
         myNav.classList.remove('nav-black');
@@ -56,9 +56,9 @@ class Navbar extends Component {
       e.preventDevault();
     }
     scroller.scrollTo('infotimes', {
-    duration: 1000,
-    delay: 100,
-    smooth: 'easeInOutQuad',
+      duration: 1000,
+      delay: 100,
+      smooth: 'easeInOutQuad',
     });
   }
 
