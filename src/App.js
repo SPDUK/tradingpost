@@ -5,6 +5,7 @@ import React, { Component } from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 // components
 import Home from './components/home';
+import Contact from './pages/contact/contact';
 // css
 import './styles/app.css';
 
@@ -14,6 +15,7 @@ class App extends Component {
       <HashRouter>
         <Switch>
           <Route path="/" exact component={Home} />
+          <Route path="/contact" exact component={Contact} />
         </Switch>
       </HashRouter>
     );

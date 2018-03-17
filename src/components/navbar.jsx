@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { HashRouter, Route, Switch, Link } from 'react-router-dom';
 import { animateScroll as scroll, scroller } from 'react-scroll';
 
 import TradingPostIcon from '../images/tpcl orng.svg';
@@ -72,10 +73,10 @@ class Navbar extends Component {
         </div>
         <div className="navbar-wide">
           <div className="navbar-wide-links">
-            <a onClick={this.navScrollClick} className="navbar-wide-links navbar-wide-links navbar-wide-links-contact">Contact</a>
+            <Link to="/contact" className="navbar-wide-links navbar-wide-links navbar-wide-links-contact">Contact</Link>
             <a className="navbar-wide-links" href="https://offerupnow.com/p/2881193/">Offerup</a>
-            <a className="navbar-wide-links" href="https://chicago.craigslist.org/search/sss?sort=rel&is_paid=all&search_distance_type=mi&query=7100+Teckler+Blvd">Craigslist</a>
             <a className="navbar-wide-links" href="https://www.ebay.com/usr/pajatek1">Ebay</a>
+            <a className="navbar-wide-links" href="https://chicago.craigslist.org/search/sss?sort=rel&is_paid=all&search_distance_type=mi&query=7100+Teckler+Blvd"></a>
           </div>
         </div>
         <div className="navbar-mobile">
@@ -92,9 +93,8 @@ class Navbar extends Component {
           </div>
           <div className="navbar-mobile-links">
             <a className="navbar-mobile-links-active" href="https://www.ebay.com/usr/pajatek1">Ebay</a>
-            <a className="navbar-mobile-links-active" href="https://chicago.craigslist.org/search/sss?sort=rel&is_paid=all&search_distance_type=mi&query=7100+Teckler+Blvd" role="navigation">Craigslist</a>
             <a className="navbar-mobile-links-active" href="https://offerupnow.com/p/2881193/">OfferUp</a>
-            <a onClick={this.navScrollClick} className="navbar-mobile-links-active contact-link">Contact</a>
+            <Link to="/contact" className="navbar-mobile-links-active contact-link">Contact</Link>
           </div>
         </div>
       </nav>
