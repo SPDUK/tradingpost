@@ -1,8 +1,16 @@
 import React from 'react';
-
+import { HashRouter, Route, Switch, Link } from 'react-router-dom';
+import { animateScroll as scroll, scroller } from 'react-scroll';
 import '../styles/footer.css';
 
 const Footer = () => {
+
+  function scrollTopFunction() {
+    scroll.scrollTo(0, {
+      duration: 300,
+      delay: 0,
+    });
+  }
   return (
     <div className="footer">
       <div className="footer-social">
@@ -13,9 +21,16 @@ const Footer = () => {
       </div>
       <div className="footer-contact">
         <div className="footer-contact-info">
-          <a className="footer-contact-info-links" href="https://www.ebay.com/usr/pajatek1">Ebay</a>
-          <a className="footer-contact-info-links" href="https://offerupnow.com/p/2881193/">Offerup</a>
-          <a className="footer-contact-info-links" href="https://chicago.craigslist.org/search/sss?sort=rel&is_paid=all&search_distance_type=mi&query=7100+Teckler+Blvd">Craigslist</a>
+          <div className="footer-contact-info-top">
+            <a className="footer-contact-info-links" href="https://www.ebay.com/usr/pajatek1">Ebay</a>
+            <a className="footer-contact-info-links" href="https://offerupnow.com/p/2881193/">Offerup</a>
+          </div>
+          <div className="footer-contact-info-bottom">
+            <Link onClick={scrollTopFunction} to="/" className="footer-contact-info-links">Home</Link>
+            <Link  onClick={scrollTopFunction} to="/about" className="footer-contact-info-links">About</Link>
+            <Link onClick={scrollTopFunction} to="/album" className="footer-contact-info-links">Images</Link>
+          </div> 
+
         </div>
         <div className="footer-contact-adress">
           <p className="footer-contact-info-phone">Phone: <a href="tel:8158930218" aria-label="8 1 5. 8 9 3. 0 2 1 8.">(815) 893-0218</a></p>

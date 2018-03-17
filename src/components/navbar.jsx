@@ -56,10 +56,19 @@ class Navbar extends Component {
     function handleClick(e) {
       e.preventDevault();
     }
-    scroller.scrollTo('infotimes', {
-      duration: 1000,
-      delay: 100,
-      smooth: 'easeInOutQuad',
+    setTimeout(function() {
+      scroller.scrollTo('infotimes', {
+        duration: 1000,
+        offset: -70,
+        smooth: 'easeInOutQuad',
+      });
+    }, 200);
+  }
+
+  scrollTopFunction() {
+    scroll.scrollTo(0, {
+      duration: 300,
+      delay:0,
     });
   }
 
@@ -67,16 +76,17 @@ class Navbar extends Component {
     return (
       <nav id="mynav" className="navbar">
         <div className="navbar-icon">
-          <a href="#">
+          <Link onClick={this.scrollTopFunction} to ="/">
             <img src={TradingPostIcon} alt="Trading Post Buy Sell Trade Icon" />
-          </a>
+          </Link>
         </div>
         <div className="navbar-wide">
           <div className="navbar-wide-links">
-            <Link to="/contact" className="navbar-wide-links navbar-wide-links navbar-wide-links-contact">Contact</Link>
+            <Link to="/" onClick={this.navScrollClick} className="navbar-wide-links navbar-wide-links navbar-wide-links-contact">Contact</Link>
             <a className="navbar-wide-links" href="https://offerupnow.com/p/2881193/">Offerup</a>
             <a className="navbar-wide-links" href="https://www.ebay.com/usr/pajatek1">Ebay</a>
-            <a className="navbar-wide-links" href="https://chicago.craigslist.org/search/sss?sort=rel&is_paid=all&search_distance_type=mi&query=7100+Teckler+Blvd"></a>
+            <Link onClick={this.scrollTopFunction} to="/about" className="navbar-wide-links">About</Link>
+            <Link onClick={this.scrollTopFunction} to="/album" className="navbar-wide-links">Images</Link>
           </div>
         </div>
         <div className="navbar-mobile">
@@ -94,7 +104,9 @@ class Navbar extends Component {
           <div className="navbar-mobile-links">
             <a className="navbar-mobile-links-active" href="https://www.ebay.com/usr/pajatek1">Ebay</a>
             <a className="navbar-mobile-links-active" href="https://offerupnow.com/p/2881193/">OfferUp</a>
-            <Link to="/contact" className="navbar-mobile-links-active contact-link">Contact</Link>
+            <Link onClick={this.scrollTopFunction} to="/about" className="navbar-mobile-links-active">About</Link>
+            <Link onClick={this.scrollTopFunction} to="/album" className="navbar-mobile-links-active">Images</Link>
+            <Link onClick={this.scrollTopFunction} to="/contact" className="navbar-mobile-links-active contact-link">Contact</Link>
           </div>
         </div>
       </nav>

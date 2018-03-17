@@ -15,8 +15,8 @@
     top: 10px; }
     @media (min-width: 768px) {
       .navbar-icon {
-        left: 5px;
-        top: 3px; } }
+        left: 10px;
+        top: 5px; } }
     .navbar-icon img {
       transition: 0.2s ease;
       transform: scale(1);
@@ -24,8 +24,8 @@
       width: 50px; }
       @media (min-width: 768px) {
         .navbar-icon img {
-          height: 65px;
-          width: 65px; } }
+          height: 60px;
+          width: 60px; } }
       .navbar-icon img:hover {
         transition: 0.2s ease;
         transform: scale(1.05); }

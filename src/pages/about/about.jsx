@@ -3,16 +3,18 @@ import React from 'react';
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 
-import './contact.css';
+import './about.css';
 
-const Contact = () => {
+const About = () => {
   return (
     <div>
       <Navbar />
-      <div className="contact"></div>
+      <div className="about">
+      lol
+      </div>
       <Footer />
     </div>
   );
 };
 
-export default Contact;
+export default About;

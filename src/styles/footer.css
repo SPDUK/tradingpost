@@ -45,9 +45,11 @@
         .footer-contact-info-phone a {
           color: white; }
       .footer-contact-info-links {
-        width: 0;
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px;
         color: white;
-        display: block;
+        display: inline-block;
         padding-bottom: 5px;
         opacity: 0.9; }
         .footer-contact-info-links:hover {
