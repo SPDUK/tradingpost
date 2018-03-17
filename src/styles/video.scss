@@ -7,9 +7,12 @@
   padding-top: 50px;
   padding-bottom: 50px;
   &-title {
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 20px;
     &-top{
       font-weight: 800;
+      padding-bottom: 7px;
     }
     &-bottom {
       letter-spacing: -1px;
@@ -20,8 +23,11 @@
   }
   &-player {
     iframe {
-      width: 320px;
+      width: 300px;
       height: 180px;
+      @media (max-width: 319px) {
+        width: 90%;
+      }
       @include breakpoint(sm){
         width: 600px;
         height: 338px;

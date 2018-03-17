@@ -77,6 +77,9 @@
       }
     }
     &-title {
+      @media (max-width: 240px) {
+        padding-top: 120px;
+      }
       font-size: 2em;
       text-align: center;
       a {
