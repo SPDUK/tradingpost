@@ -4,9 +4,11 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../styles/ratings.css';
 
+//set autoplay to false until updating react-slick, currently causes an error when on autoplay and you unmount the component
+
 const Ratings = () => {
   const settings = {
-    dots: false,
+    dots: true,
     arrows: false,
     infinite: true,
     autoplay: true,
