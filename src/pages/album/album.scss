@@ -2,5 +2,42 @@
 .album {
   height: 1500px;
   width: 100%;
-  background-color: $red;
+  background-color: darken($color: $black, $amount: 5);
+  &-container {
+    padding-top: 200px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 100px;
+    &-images {
+      img {
+        transition: 0.3s ease-in;
+        height: 270px;
+        width: 100%;
+        border-radius: 10px;
+        @media (min-width: 600px) {
+          height: 400px;
+        }
+        @media (min-width: 900px) {
+          height: 500px;
+        }
+        @include breakpoint(md){
+          transform: scale(0.8);
+          height: 500px;
+          width: 100%;
+        }
+        @include breakpoint(lg){
+          height: 350px;
+        }
+        @media (min-width: 2000px) {
+          height: 500px;
+        }
+      }
+    }
+  }
+  .slick-current {
+    transition: 0.3s ease-in;
+    transform: scale(1.2);
+    box-shadow: 0 30x 15px rgba(0,0,0,0.2);
+  }
+  
 }

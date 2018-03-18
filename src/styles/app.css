@@ -134,7 +134,8 @@ a {
     color: white !important; }
 
 .container {
-  margin: 0; }
+  margin-left: 10px;
+  margin-right: 10px; }
   @media (min-width: 768px) {
     .container {
       margin-left: 4%;

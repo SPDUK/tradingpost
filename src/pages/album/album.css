@@ -1,4 +1,35 @@
 .album {
   height: 1500px;
   width: 100%;
-  background-color: #E71D36; }
+  background-color: #292929; }
+  .album-container {
+    padding-top: 200px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 100px; }
+    .album-container-images img {
+      transition: 0.3s ease-in;
+      height: 270px;
+      width: 100%;
+      border-radius: 10px; }
+      @media (min-width: 600px) {
+        .album-container-images img {
+          height: 400px; } }
+      @media (min-width: 900px) {
+        .album-container-images img {
+          height: 500px; } }
+      @media (min-width: 992px) {
+        .album-container-images img {
+          transform: scale(0.8);
+          height: 500px;
+          width: 100%; } }
+      @media (min-width: 1200px) {
+        .album-container-images img {
+          height: 350px; } }
+      @media (min-width: 2000px) {
+        .album-container-images img {
+          height: 500px; } }
+  .album .slick-current {
+    transition: 0.3s ease-in;
+    transform: scale(1.2);
+    box-shadow: 0 30x 15px rgba(0, 0, 0, 0.2); }

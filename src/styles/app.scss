@@ -146,7 +146,8 @@ a {
 }
 
 .container {
-	margin: 0;
+	margin-left: 10px;
+	margin-right: 10px;
 	@include breakpoint(sm) {
 		margin-left: 4%;
 		margin-right: 4%;
