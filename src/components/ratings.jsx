@@ -6,12 +6,12 @@ import '../styles/ratings.css';
 
 const Ratings = () => {
   const settings = {
-    dots: true,
+    dots: false,
     arrows: false,
     infinite: true,
     autoplay: true,
     speed: 400,
-    autoplayspeed: 3500,
+    autoplayspeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
   };

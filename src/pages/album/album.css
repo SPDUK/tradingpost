@@ -1,12 +1,55 @@
 .album {
-  height: 1500px;
+  padding-bottom: 300px;
   width: 100%;
   background-color: #292929; }
+  @media (min-width: 2000px) {
+    .album {
+      height: 100vh; } }
+  .album-description {
+    text-align: center;
+    color: white; }
+    .album-description-links a {
+      width: 85%;
+      display: inline-block;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 4px; }
+      @media (min-width: 500px) {
+        .album-description-links a {
+          width: 180px;
+          font-size: 1.1em;
+          display: block;
+          margin: 30px auto; } }
+    .album-description-links-ebay {
+      background-color: #E71D36;
+      margin-bottom: 20px; }
+      @media (min-width: 768px) {
+        .album-description-links-ebay {
+          margin-top: 20px; } }
+      .album-description-links-ebay:hover {
+        background-color: #ec4b5f; }
+    .album-description-links-offerup {
+      background-color: #436436; }
+      .album-description-links-offerup:hover {
+        background-color: #598548; }
+    .album-description-text p {
+      padding: 20px; }
+      @media (min-width: 768px) {
+        .album-description-text p {
+          font-size: 1.1em; } }
+      @media (min-width: 992px) {
+        .album-description-text p {
+          font-size: 1.3em; } }
+      .album-description-text p span {
+        font-weight: 800; }
   .album-container {
-    padding-top: 200px;
+    padding-top: 100px;
     margin-left: 5%;
     margin-right: 5%;
     padding-bottom: 100px; }
+    @media (min-width: 992px) {
+      .album-container {
+        padding-top: 200px; } }
     .album-container-images img {
       transition: 0.3s ease-in;
       height: 270px;
@@ -22,12 +65,15 @@
         .album-container-images img {
           transform: scale(0.8);
           height: 500px;
+          max-height: 500px;
           width: 100%; } }
       @media (min-width: 1200px) {
         .album-container-images img {
+          max-height: 350px;
           height: 350px; } }
       @media (min-width: 2000px) {
         .album-container-images img {
+          max-height: 500px;
           height: 500px; } }
   .album .slick-current {
     transition: 0.3s ease-in;
