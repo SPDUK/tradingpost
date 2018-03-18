@@ -1,12 +1,15 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+// components
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 import './album.css';
-//images
+
+// images
 import img01 from '../../images/01.jpg';
 import img02 from '../../images/02.jpg';
 import img03 from '../../images/03.jpg';
@@ -21,85 +24,92 @@ import img12 from '../../images/12.jpg';
 import img13 from '../../images/13.jpg';
 import img14 from '../../images/14.jpg';
 
-export default class Album extends Component {
-  render() {
-    const settingsAlbum = {
-      dots: true,
-      className: 'center',
-      arrows: true,
-      centerMode: true,
-      infinite: true,
-      autoplay: true,
-      speed: 400,
-      lazyload: true,
-      autoplayspeed: 3500,
-      slidesToShow: 3,
-      responsive: [{
+
+const Album = () => {
+  const settingsAlbum = {
+    dots: true,
+    className: 'center',
+    arrows: true,
+    centerMode: true,
+    infinite: true,
+    autoplay: true,
+    speed: 400,
+    lazyload: true,
+    autoplayspeed: 3500,
+    slidesToShow: 3,
+    responsive: [
+      {
         breakpoint: 1201,
         settings: {
           lazyload: true,
           centerMode: false,
-          arrows:false,
+          arrows: false,
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
-        }
-      }],
-    };
-    return (
-      <div >
-        <Navbar/>
-        <div className="album">
-          <div className="album-container">
+          dots: true,
+        },
+      },
+    ],
+  };
+  return (
+    <div >
+      <Navbar />
+      <div className="album">
+        <div className="album-container">
           <Slider {...settingsAlbum}>
             <div className="album-container-images">
-              <img src={img01} alt="Trading Post Crystal Lake Pets"/>
+              <img src={img01} alt="Trading Post Crystal Lake Pets" />
             </div>
             <div className="album-container-images">
-              <img src={img02} alt=" Electronics"/>
+              <img src={img02} alt=" Electronics" />
             </div>
             <div className="album-container-images">
-              <img src={img03} alt=" Jewlery"/>
+              <img src={img03} alt=" Jewlery" />
             </div>
             <div className="album-container-images">
-              <img src={img04} alt=" Signed Jersey"/>
+              <img src={img04} alt=" Signed Jersey" />
             </div>
             <div className="album-container-images">
-              <img src={img05} alt="Laptops and Speakers"/>
+              <img src={img05} alt="Laptops and Speakers" />
             </div>
             <div className="album-container-images">
-              <img src={img06} alt="Home Electric Appliances"/>
+              <img src={img06} alt="Home Electric Appliances" />
             </div>
             <div className="album-container-images">
-              <img src={img07} alt="Trading Post Crystal Lake Pets"/>
+              <img src={img07} alt="Trading Post Crystal Lake Pets" />
             </div>
             <div className="album-container-images">
-              <img src={img08} alt="Trading Post Crystal Lake Pets"/>
+              <img src={img08} alt="Trading Post Crystal Lake Pets" />
             </div>
             <div className="album-container-images">
-              <img src={img10} alt="Trading Post Crystal Lake Pets"/>
+              <img src={img10} alt="Trading Post Crystal Lake Pets" />
             </div>
             <div className="album-container-images">
-              <img src={img11} alt="Trading Post Crystal Lake Pets"/>
+              <img src={img11} alt="Trading Post Crystal Lake Pets" />
             </div>
             <div className="album-container-images">
-              <img src={img12} alt="Trading Post Crystal Lake Pets"/>
+              <img src={img12} alt="Trading Post Crystal Lake Pets" />
             </div>
             <div className="album-container-images">
-              <img src={img13} alt="Trading Post Crystal Lake Pets"/>
+              <img src={img13} alt="Trading Post Crystal Lake Pets" />
             </div>
             <div className="album-container-images">
-              <img src={img14} alt="Trading Post Crystal Lake Pets"/>
+              <img src={img14} alt="Trading Post Crystal Lake Pets" />
             </div>
-            </Slider>
+          </Slider>
+        </div>
+        <div className="container album-description">
+          <div className="album-description-text">
+            text
           </div>
-          <div className="container">
-          hello
+          <div className="album-description-links">
+            links
           </div>
         </div>
-        <Footer/>
       </div>
-    );
-  }
-}
+      <Footer />
+    </div>
+  );
+};
+export default Album;
