@@ -32,6 +32,7 @@ import img14 from '../../images/14.jpg';
 // but the image slider does not work on internet explorer.
 // basically update slick when possible
 
+
 const Album = () => {
   const settingsAlbum = {
     dots: true,
