@@ -1,12 +1,10 @@
 import React from 'react';
-import { HashRouter, Route, Switch, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { animateScroll as scroll, scroller } from 'react-scroll';
-import Fade from 'react-reveal';
 
 import '../styles/footer.css';
 
 const Footer = () => {
-
   function scrollTopFunction() {
     scroll.scrollTo(0, {
       duration: 300,
@@ -31,8 +29,7 @@ const Footer = () => {
             <Link onClick={scrollTopFunction} to="/" className="footer-contact-info-links">Home</Link>
             <Link  onClick={scrollTopFunction} to="/about" className="footer-contact-info-links">About</Link>
             <Link onClick={scrollTopFunction} to="/album" className="footer-contact-info-links">Images</Link>
-          </div> 
-
+          </div>
         </div>
         <div className="footer-contact-adress">
           <p className="footer-contact-info-phone">Phone: <a href="tel:8158930218" aria-label="8 1 5. 8 9 3. 0 2 1 8.">(815) 893-0218</a></p>

@@ -1,11 +1,10 @@
 @import '../../styles/variables.scss';
-
 .about {
   background-color: $white;
   padding-top: 71px;
   &-container {
     margin: 40px auto;
-    @include breakpoint(md){
+    @include breakpoint(md) {
       border-radius: 10px;
       padding-left: 10px;
       padding-right: 10px;
@@ -29,7 +28,7 @@
       padding-left: 30px;
       padding-right: 30px;
       margin-top: 20px;
-      @include breakpoint(lg){
+      @include breakpoint(lg) {
         font-size: 1em;
       }
       p {

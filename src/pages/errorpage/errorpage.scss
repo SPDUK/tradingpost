@@ -1,6 +1,33 @@
 @import '../../styles/variables.scss';
 .errorpage {
+  margin-top: 71px;
   height: 100vh;
-  width: 100%;
   background-color: $black;
+  &-text {
+    padding-top: 100px;
+    width: 100%;
+    text-align: center;
+    font-size: 4em;
+    color: white;
+  }
+  &-button {
+    display: block;
+    background-color: $orange;
+    margin:  50px auto;
+    font-size: 1em;
+    padding: 20px;
+    text-align: center;
+    line-height: 50px;
+    @include breakpoint(sm) {
+      width: 60%;
+      height: 80px;
+      line-height: 80px;
+      border-radius: 4px;
+      font-size: 2.4em;
+      &:hover {
+        background-color: lighten($color:$orange, $amount: 10);
+      }
+    }
+  }
 }
+

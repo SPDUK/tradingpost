@@ -3,12 +3,13 @@
   background: $white;
   padding-top: 130px;
   padding-bottom: 80px;
+  overflow: hidden;
   &-grid {
     &-merch {
       margin-top: 40px;
       display: grid;
       grid-template-rows: 1fr 1fr 1fr;
-      @include breakpoint(sm){
+      @include breakpoint(sm) {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         grid-column-gap: 30px;
@@ -16,22 +17,22 @@
       &-card {
         border-radius: 20px;
         height: 100%;
-        @include breakpoint(sm){
-        transition: 0.3s ease;
-        transform: translateY(0);
+        @include breakpoint(sm) {
+          transition: 0.3s ease;
+          transform: translateY(0);
         }
-        &:hover{
-          @include breakpoint(sm){
-          box-shadow: 0 2px 15px rgba(0,0,0,0.2);
-          transition: 0.2s ease;
-          transform: translateY(-30px);
+        &:hover {
+          @include breakpoint(sm) {
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+            transition: 0.2s ease;
+            transform: translateY(-30px);
           }
         }
       }
     }
   }
   &-title {
-    display:block;
+    display: block;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.5fr 1fr;
     height: 200px;
@@ -45,10 +46,10 @@
       letter-spacing: -1px;
       text-align: center;
       font-size: 2.3em;
-      @include breakpoint(sm){
+      @include breakpoint(sm) {
         font-size: 3.1em;
       }
-      @include breakpoint(md){
+      @include breakpoint(md) {
         font-size: 3.2em;
       }
     }
@@ -61,16 +62,16 @@
       font-weight: 400;
       width: 100%;
       display: inline-block;
-      @include breakpoint(sm){
+      @include breakpoint(sm) {
         font-size: 2.4em;
       }
     }
-    &-bottom{
+    &-bottom {
       font-size: 1.2em;
       opacity: 0.7;
       width: 100%;
       display: inline-block;
-      @include breakpoint(sm){
+      @include breakpoint(sm) {
         font-size: 1.4em;
       }
       span {
@@ -83,7 +84,7 @@
       opacity: 0.6;
       padding-left: 8px;
       padding-right: 8px;
-      @include breakpoint(sm){
+      @include breakpoint(sm) {
         font-size: 1em;
       }
     }
@@ -102,14 +103,14 @@
       margin-bottom: 20px;
       height: 50px;
       font-size: 1em;
-      @include breakpoint(sm){
+      @include breakpoint(sm) {
         height: 100%;
-        margin:0;
+        margin: 0;
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
         border-top-right-radius: 15px;
         border-top-left-radius: 15px;
-        box-shadow: 0px -5px 20px rgba(0,0,0,.1);
+        box-shadow: 0px -5px 20px rgba(0, 0, 0, .1);
       }
       p {
         opacity: 0.9;
@@ -148,11 +149,10 @@
     a {
       display: grid;
       grid-template-rows: 1fr;
-
     }
     &-info {
-      display:none;
-      padding:5px;
+      display: none;
+      padding: 5px;
       font-size: 0.8em;
       align-self: center;
       line-height: 20px;
@@ -171,9 +171,8 @@
   &-about {
     color: $black;
     text-align: center;
-    @include breakpoint(md){
+    @include breakpoint(md) {
       padding-bottom: 30px;
-
     }
     &-top {
       padding-left: 10px;
@@ -182,7 +181,7 @@
       letter-spacing: 0.3px;
       font-weight: 400;
       font-size: 1em;
-      @include breakpoint(sm){
+      @include breakpoint(sm) {
         padding-top: 30px;
         padding-bottom: 85px;
         font-size: 1.5em;
@@ -222,12 +221,11 @@
         left: 30px;
         text-align: center;
         position: relative;
-
         opacity: 1;
       }
       &-open {
         span {
-          transition:  ease 0.1s;
+          transition: ease 0.1s;
           opacity: 1;
         }
         p {
@@ -268,7 +266,7 @@
         @include breakpoint(sm) {
           font-size: 1.4em;
         }
-        @include breakpoint(md){
+        @include breakpoint(md) {
           font-size: 1.5em;
         }
       }
@@ -279,24 +277,30 @@
 #elecBtn {
   background: $lightBlue;
 }
+
 #elecIcon {
   color: $lightBlue;
   font-size: 2em;
 }
+
 #toolsBtn {
   background: $green;
 }
+
 #toolsIcon {
   color: $green;
   font-size: 1.9em;
 }
+
 #jewelryBtn {
   background: $red;
 }
+
 #jewelryIcon {
   color: $red;
   font-size: 1.9em;
 }
+
 .contactButtonClick-enter {
   opacity: 0.1;
   height: 0;

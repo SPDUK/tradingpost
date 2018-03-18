@@ -1,7 +1,8 @@
 .buyselltrade {
   background: white;
   padding-top: 130px;
-  padding-bottom: 80px; }
+  padding-bottom: 80px;
+  overflow: hidden; }
   .buyselltrade-grid-merch {
     margin-top: 40px;
     display: grid;

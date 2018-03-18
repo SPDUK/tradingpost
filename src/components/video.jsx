@@ -5,11 +5,11 @@ import '../styles/video.css';
 const Video = () => {
   return (
     <div className="video">
-    <Fade>
-      <div className="video-title">
-        <p className="video-title-top">Check out our latest Youtube video</p>
-        <p className="video-title-bottom">Get a look at our business, how we run things and our daily life at the shop</p>
-      </div>
+      <Fade>
+        <div className="video-title">
+          <p className="video-title-top">Check out our latest Youtube video</p>
+          <p className="video-title-bottom">Get a look at our business, how we run things and our daily life at the shop</p>
+        </div>
       </Fade>
       <div className="video-player">
         <iframe
@@ -19,7 +19,6 @@ const Video = () => {
           title="Youtube Video Trading Post Crystal Lake"
         />
       </div>
-
     </div>
   );
 };
