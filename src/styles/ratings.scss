@@ -46,6 +46,8 @@
         text-align: center;
         height: 60px;
         color: $black;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
         background-color: $lightGray;
         @include breakpoint(md){
           margin-right: 15%;
@@ -67,6 +69,8 @@
         }
         position: relative;
         font-size: 1.3em;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
         background-color: darken($color: $lightGray, $amount: 5);
         height: 80px;
         i{

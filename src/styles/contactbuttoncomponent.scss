@@ -6,6 +6,7 @@
   display: block;
   position: relative;
   background-color: $lightGray;
+  border-radius: 15px;
   &-x {
     right: 0;
     position: absolute;
@@ -73,7 +74,8 @@
       padding-top: 20px;
       color: $black;
       a {
-        color: red !important;
+        color: lighten($color: $black, $amount: 30);
+        text-decoration: underline;
         font-weight: 800;
       }
     }

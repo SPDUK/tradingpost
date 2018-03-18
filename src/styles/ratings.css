@@ -44,6 +44,8 @@
         text-align: center;
         height: 60px;
         color: #363636;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
         background-color: #F4F4F4; }
         @media (min-width: 992px) {
           .ratings-reviews-review-title {
@@ -58,6 +60,8 @@
         color: #F15025;
         position: relative;
         font-size: 1.3em;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
         background-color: #e7e7e7;
         height: 80px; }
         @media (min-width: 992px) {

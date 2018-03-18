@@ -1,3 +1,34 @@
 .about {
-  height: 100vh;
-  background-color: red; }
+  background-color: white;
+  padding-top: 71px; }
+  .about-container {
+    margin: 40px auto; }
+    @media (min-width: 992px) {
+      .about-container {
+        border-radius: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 993px; } }
+  .about-main {
+    text-align: center;
+    background-color: #F4F4F4;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+    width: 100%; }
+    .about-main-title {
+      padding: 10px;
+      font-weight: 800;
+      font-size: 1.8em; }
+    .about-main-description {
+      color: #434343;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-top: 20px; }
+      @media (min-width: 1200px) {
+        .about-main-description {
+          font-size: 1em; } }
+      .about-main-description p {
+        padding-bottom: 30px; }
+      .about-main-description span {
+        font-weight: 800; }

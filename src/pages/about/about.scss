@@ -1,6 +1,43 @@
 @import '../../styles/variables.scss';
 
 .about {
-  height: 100vh;
-  background-color: red;
+  background-color: $white;
+  padding-top: 71px;
+  &-container {
+    margin: 40px auto;
+    @include breakpoint(md){
+      border-radius: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      width: 993px;
+    }
+  }
+  &-main {
+    text-align: center;
+    background-color: $lightGray;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+    width: 100%;
+    &-title {
+      padding: 10px;
+      font-weight: 800;
+      font-size: 1.8em;
+    }
+    &-description {
+      color: lighten($color: $black, $amount: 5);
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-top: 20px;
+      @include breakpoint(lg){
+        font-size: 1em;
+      }
+      p {
+        padding-bottom: 30px;
+      }
+      span {
+        font-weight: 800;
+      }
+    }
+  }
 }
