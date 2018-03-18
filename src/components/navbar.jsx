@@ -106,7 +106,8 @@ class Navbar extends Component {
             <a className="navbar-mobile-links-active" href="https://offerupnow.com/p/2881193/">OfferUp</a>
             <Link onClick={this.scrollTopFunction} to="/about" className="navbar-mobile-links-active">About</Link>
             <Link onClick={this.scrollTopFunction} to="/album" className="navbar-mobile-links-active">Images</Link>
-            <Link onClick={this.scrollTopFunction} to="/contact" className="navbar-mobile-links-active contact-link">Contact</Link>
+            <Link onClick={this.navScrollClick} to="/" className="navbar-mobile-links-active contact-link">Contact</Link>
+            <div onClick={this.burgerToggle} id="clickoff"className="navbar-mobile-links-active" />
           </div>
         </div>
       </nav>

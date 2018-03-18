@@ -124,8 +124,13 @@
     &-links {
       display: none;
       width: 100%;
+      #clickoff {
+        background-color: rgba($color: #000000, $alpha: 0);
+        height: 100vh;
+      }
       &-active {
         cursor: pointer;
+        border-bottom: 1px solid  rgba($color: #000000, $alpha: 0.2);
         color: $white;
         transition: 0.2s ease;
         display: inline-block;
@@ -134,12 +139,18 @@
         width: 100%;
         text-align: center;
         background: $black;
+        @media screen and ( max-height:400px) {
+          padding-top: 14px;
+          padding-bottom: 14px;
+        }
         @include breakpoint(sm) {
           display: none;
+          
         }
         &:hover {
           background-color: lighten($color: $black, $amount: 30);
         }
+
       }
     }
   }

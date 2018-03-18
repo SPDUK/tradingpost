@@ -10,7 +10,7 @@ const About = () => {
     <div>
       <Navbar />
       <div className="about">
-      lol
+      hey
       </div>
       <Footer />
     </div>
