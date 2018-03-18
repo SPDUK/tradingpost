@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { CSSTransitionGroup } from 'react-transition-group';
 import { animateScroll as scroll, scroller } from 'react-scroll';
 import ContactButtonComponent from './contactbuttoncomponent';
+import Fade from 'react-reveal';
 import '../styles/buyselltrade.css';
 import '../styles/app.css';
 
@@ -24,15 +25,21 @@ class BuySellTrade extends Component {
 
   render() {
     return (
+      <Fade>
       <div className="buyselltrade">
         <div className="container">
           <div className="buyselltrade-grid">
             <div className="buyselltrade-title">
+            <Fade top>
               <h1 className="buyselltrade-title-top">Trading Post</h1>
               <h1 className="buyselltrade-title-middle">Crystal Lake, IL</h1>
               <h2 className="buyselltrade-title-bottom">Buy <span>/ </span>Sell <span>/ </span>Trade</h2>
+              </Fade>
+              <Fade bottom>
               <h3 className="buyselltrade-title-tagline">Not your typical pawn shop, we bring you the best deals at the lowest prices</h3>
+              </Fade>
             </div>
+            <Fade>
             <div className="buyselltrade-about">
               <button onClick={this.contactButtonClick}className="buyselltrade-about-button button"><p>Get In Touch</p> <span>Close</span></button>
               <CSSTransitionGroup
@@ -47,8 +54,10 @@ class BuySellTrade extends Component {
                   : null}
               </CSSTransitionGroup>
             </div>
+            </Fade>
           </div>
           <div className="buyselltrade-grid-merch">
+          <Fade left>
             <div className="buyselltrade-grid-merch-card">
               <div className="buyselltrade-merch">
                 <p className="buyselltrade-merch-icon">
@@ -70,6 +79,8 @@ class BuySellTrade extends Component {
                 </a>
               </div>
             </div>
+            </Fade>
+            <Fade>
             <div className="buyselltrade-grid-merch-card">
               <div className="buyselltrade-merch">
                 <p className="buyselltrade-merch-icon">
@@ -91,6 +102,8 @@ class BuySellTrade extends Component {
                 </a>
               </div>
             </div>
+            </Fade>
+            <Fade right>
             <div className="buyselltrade-grid-merch-card">
               <div className="buyselltrade-merch">
                 <p className="buyselltrade-merch-icon">
@@ -112,7 +125,9 @@ class BuySellTrade extends Component {
                 </a>
               </div>
             </div>
+            </Fade>
           </div>
+          <Fade>
           <div className="buyselltrade-contact">
             <div className="buyselltrade-contact-info">
               <p className="buyselltrade-contact-info-top">Think you have something worth selling?</p>
@@ -122,8 +137,10 @@ class BuySellTrade extends Component {
               </p>
             </div>
           </div>
+          </Fade>
         </div>
       </div>
+      </Fade>
     );
   }
 }

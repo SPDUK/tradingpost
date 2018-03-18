@@ -68,6 +68,8 @@
         color: #838383;
         text-decoration: underline;
         font-weight: 800; }
+        .contactbuttoncomponent-bottom-phone a a:visited {
+          color: #838383; }
     .contactbuttoncomponent-bottom-button {
       transition: linear 0.2s;
       border-radius: 4px;

@@ -1,4 +1,5 @@
 import React from 'react';
+import Fade from 'react-reveal';
 
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
@@ -9,6 +10,7 @@ const About = () => {
   return (
     <div>
       <Navbar />
+      <Fade>
       <div className="about">
         <div className="about-container">
           <div className="about-main">
@@ -33,6 +35,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      </Fade>
       <Footer />
     </div>
   );

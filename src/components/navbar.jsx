@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { HashRouter, Route, Switch, Link } from 'react-router-dom';
 import { animateScroll as scroll, scroller } from 'react-scroll';
+import Fade from 'react-reveal';
 
 import TradingPostIcon from '../images/tpcl orng.svg';
 
@@ -75,12 +76,15 @@ class Navbar extends Component {
   render() {
     return (
       <nav id="mynav" className="navbar">
+      <Fade>
         <div className="navbar-icon">
           <Link onClick={this.scrollTopFunction} to ="/">
             <img src={TradingPostIcon} alt="Trading Post Buy Sell Trade Icon" />
           </Link>
         </div>
+        </Fade>
         <div className="navbar-wide">
+        <Fade right>
           <div className="navbar-wide-links">
             <Link to="/" onClick={this.navScrollClick} className="navbar-wide-links navbar-wide-links navbar-wide-links-contact">Contact</Link>
             <a className="navbar-wide-links" href="https://offerupnow.com/p/2881193/">Offerup</a>
@@ -88,6 +92,7 @@ class Navbar extends Component {
             <Link onClick={this.scrollTopFunction} to="/about" className="navbar-wide-links">About</Link>
             <Link onClick={this.scrollTopFunction} to="/album" className="navbar-wide-links">Images</Link>
           </div>
+          </Fade>
         </div>
         <div className="navbar-mobile">
           <div
@@ -102,11 +107,13 @@ class Navbar extends Component {
             <span />
           </div>
           <div className="navbar-mobile-links">
+          <Fade cascade clear>
             <a className="navbar-mobile-links-active" href="https://www.ebay.com/usr/pajatek1">Ebay</a>
             <a className="navbar-mobile-links-active" href="https://offerupnow.com/p/2881193/">OfferUp</a>
             <Link onClick={this.scrollTopFunction} to="/about" className="navbar-mobile-links-active">About</Link>
             <Link onClick={this.scrollTopFunction} to="/album" className="navbar-mobile-links-active">Images</Link>
             <Link onClick={this.navScrollClick} to="/" className="navbar-mobile-links-active contact-link">Contact</Link>
+            </Fade>
             <div onClick={this.burgerToggle} id="clickoff"className="navbar-mobile-links-active" />
           </div>
         </div>

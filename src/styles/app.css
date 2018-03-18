@@ -128,6 +128,7 @@ table {
   border-spacing: 0; }
 
 a {
+  color: white;
   text-decoration: inherit; }
   a:visited {
     text-decoration: inherit;

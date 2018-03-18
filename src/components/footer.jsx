@@ -1,6 +1,8 @@
 import React from 'react';
 import { HashRouter, Route, Switch, Link } from 'react-router-dom';
 import { animateScroll as scroll, scroller } from 'react-scroll';
+import Fade from 'react-reveal';
+
 import '../styles/footer.css';
 
 const Footer = () => {
@@ -39,7 +41,6 @@ const Footer = () => {
       </div>
       <div className="footer-contact-webdev">
         <a href="https://github.com/SPDUK">© Copyright 2018, SPDUK - Trading Post Crystal Lake</a>
-
       </div>
     </div>
   );

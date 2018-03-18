@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
+import Fade from 'react-reveal';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -65,6 +66,7 @@ const Album = () => {
   return (
     <div >
       <Navbar />
+      <Fade>
       <div className="album">
         <div className="album-container">
           <Slider {...settingsAlbum}>
@@ -119,6 +121,7 @@ const Album = () => {
           </div>
         </div>
       </div>
+      </Fade>
       <Footer />
     </div>
   );

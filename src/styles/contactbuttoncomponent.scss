@@ -77,6 +77,9 @@
         color: lighten($color: $black, $amount: 30);
         text-decoration: underline;
         font-weight: 800;
+        a:visited {
+          color: lighten($color: $black, $amount: 30);
+        }
       }
     }
     &-button {
