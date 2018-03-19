@@ -155,6 +155,8 @@ a {
       font-size: 1.1em; } }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .contactbuttoncomponent-bottom-phone a {
+    color: gray !important; }
   .buyselltrade-merch {
     display: block;
     position: relative;
