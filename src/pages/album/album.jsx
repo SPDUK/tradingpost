@@ -43,7 +43,7 @@ const Album = () => {
     centerMode: true,
     initialSlide: 2,
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     focusOnSelect: true,
     speed: 400,
     autoplayspeed: 3500,
