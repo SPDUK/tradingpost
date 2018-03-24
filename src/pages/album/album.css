@@ -51,10 +51,12 @@
       .album-container {
         padding-top: 200px; } }
     .album-container-images img {
+      cursor: pointer;
       transition: 0.3s ease-in;
-      height: 270px;
+      height: 270px !important;
+      max-height: 270px !important;
       width: 100%;
-      border-radius: 10px; }
+      border-radius: 4px; }
       @media (min-width: 600px) {
         .album-container-images img {
           height: 400px; } }
@@ -76,6 +78,6 @@
           max-height: 500px;
           height: 500px; } }
   .album .slick-current {
-    transition: 0.3s ease-in;
+    transition: 0.3s ease-in-out;
     transform: scale(1.2);
     box-shadow: 0 30x 15px rgba(0, 0, 0, 0.2); }
